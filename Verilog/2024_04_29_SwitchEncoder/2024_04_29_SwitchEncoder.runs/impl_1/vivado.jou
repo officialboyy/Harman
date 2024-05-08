@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr 29 17:27:57 2024
+# Process ID: 10924
+# Current directory: D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_29_SwitchEncoder/2024_04_29_SwitchEncoder.runs/impl_1
+# Command line: vivado.exe -log SwitchEncoder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SwitchEncoder.tcl -notrace
+# Log file: D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_29_SwitchEncoder/2024_04_29_SwitchEncoder.runs/impl_1/SwitchEncoder.vdi
+# Journal file: D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_29_SwitchEncoder/2024_04_29_SwitchEncoder.runs/impl_1\vivado.jou
+# Running On: ST04, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8541 MB
+#-----------------------------------------------------------
+source SwitchEncoder.tcl -notrace

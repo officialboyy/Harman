@@ -1,0 +1,17 @@
+/*
+ * Project1_final.c
+ *
+ * Created: 2024-04-08 ¿ÀÈÄ 12:25:11
+ * Author: SAMSUNG
+ */
+
+#include <mega128a.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}

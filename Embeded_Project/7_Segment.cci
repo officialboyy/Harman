@@ -1,0 +1,7 @@
+VERSION:3 SOURCE_TIMESTAMP:5879772B
+NODE:I LEVEL:0 LINE:40 "C:\cvavreval\inc\mega128.h"
+NODE:I LEVEL:0 LINE:41 "C:\cvavreval\inc\delay.h"
+NODE:C LEVEL:0 LINE:43 "seg_pat -> RAM:????"
+NODE:F LEVEL:0 LINE:48 "main(void)"
+NODE:F LEVEL:0 LINE:95 "Seg4_out(int num)"
+NODE:F LEVEL:0 LINE:155 "Seg4_stop(int num)"

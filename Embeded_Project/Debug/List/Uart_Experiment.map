@@ -1,0 +1,68 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+string_line                                                                       0x0500      32
+string_title                                                                      0x0520      20
+string_press                                                                      0x0534      18
+string_LED                                                                        0x0546      13
+string_7seg                                                                       0x0553      14
+string_main                                                                       0x0561      14
+string_Up_LED                                                                     0x056F      18
+string_Down_LED                                                                   0x0581      18
+string_Main_Menu                                                                  0x0593      13
+string_LED_ok                                                                     0x05A0      16
+string_7seg_ok                                                                    0x05B0      17
+string_Up_7seg                                                                    0x05C1      21
+string_Down_7seg                                                                  0x05D6      23
+string_DP_ID                                                                      0x05ED      19
+string_Re_main                                                                    0x0600      20
+string_Up_LED_title                                                               0x0614      19
+string_Down_LED_title                                                             0x0627      19
+string_Up_7seg_title                                                              0x063A      22
+string_Down_7seg_title                                                            0x0650      24
+string_DP_ID_title                                                                0x0668      20
+string_ID                                                                         0x067C      20
+seg_pat                                                                           0x0690      10
+LED_flag                                                                          0x069A       1
+seg_flag                                                                          0x069B       1
+main_flag                                                                         0x069C       1
+LED_flag_sub                                                                      0x069D       1
+seg_flag_sub                                                                      0x069E       1
+pStr                                                                              0x069F       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+led                                                                               R5           1
+TIM2_COMP_FLAG                                                                    R4           1
+TIM0_OVF_FLAG                                                                     R7           1
+cnt                                                                               R6           1
+i                                                                                 R9           1
+UART_Rx_data                                                                      R8           1
+UART_Rx_data_1                                                                    R11          1
+UART_Rx_data_2                                                                    R10          1
+UART_Rx_data_3                                                                    R13          1
+flag                                                                              R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0018A    452
+UART_menu                                                                         0x0034E     78
+UART_LED_menu                                                                     0x0039C     47
+UART_7seg_menu                                                                    0x003CB     49
+UART_Up_LED_menu                                                                  0x003FC     50
+UART_Down_LED_menu                                                                0x0042E     50
+UART_Up_7seg_menu                                                                 0x00460     63
+UART_Down_7seg_menu                                                               0x0049F     56
+UART_DP_ID_menu                                                                   0x004D7     63
+Time_out                                                                          0x00516     20
+Putch                                                                             0x0052A      7
+new_line                                                                          0x00531      5
+usart0_rx                                                                         0x00536      5
+timer_comp2                                                                       0x0053B      4
+timer_int0                                                                        0x0053F      9

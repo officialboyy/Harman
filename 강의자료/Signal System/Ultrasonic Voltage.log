@@ -1,0 +1,16 @@
+LTspice 24.0.9 for Windows
+Circuit: * C:\Users\user\Desktop\ParkJunho\Ultrasonic Voltage.asc
+Start Time: Thu Mar 21 10:18:01 2024
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Less than two connections to node output.  This node is used by r:u15:out:out.
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(u14:vcc)
+Ignoring empty pin current: Ix(u15:vcc)
+Ignoring empty pin current: Ix(u14:vcc)
+Ignoring empty pin current: Ix(u15:vcc)
+Total elapsed time: 5.712 seconds.
+

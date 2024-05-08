@@ -1,0 +1,47 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+tmp_val                                                                           0x0500       2
+ad_val                                                                            0x0502       2
+seg_pat                                                                           0x0504      10
+seg_pat_dot                                                                       0x050E      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+TIM0_OVF_FLAG                                                                     R5           1
+TIM1_COMP_FLAG                                                                    R4           1
+TIMER2_OVF_FLAG_BIT                                                               R7           1
+TIM3_COMP_FLAG                                                                    R6           1
+cnt                                                                               R9           1
+EINT4_FLAG_BIT                                                                    R8           1
+EINT5_FLAG_BIT                                                                    R11          1
+EINT6_FLAG_BIT                                                                    R10          1
+EINT7_FLAG_BIT                                                                    R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0008F    160
+birth_year                                                                        0x0012F     11
+birth_day                                                                         0x0013A     25
+TMP_disp                                                                          0x00153     48
+AD_disp                                                                           0x00183     35
+EXIT4_TIMER2                                                                      0x001A6      8
+EXIT5_TIMER1                                                                      0x001AE     17
+EXIT6_TIMER3                                                                      0x001BF      5
+EXIT7_TIMER3                                                                      0x001C4     19
+delay_1ms                                                                         0x001D7      4
+external_int4                                                                     0x001DB      3
+external_int5                                                                     0x001DE      3
+external_int6                                                                     0x001E1      3
+external_int7                                                                     0x001E4      3
+TIMER2_OVF_int                                                                    0x001E7      8
+timer_int0                                                                        0x001EF      9
+timer_comp1                                                                       0x001F8      3
+timer_comp3                                                                       0x001FB      7
+Putch                                                                             0x00202      7

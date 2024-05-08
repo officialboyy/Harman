@@ -1,0 +1,138 @@
+/*
+ * iic_bus.c
+ *
+ * Created: 2024-03-18 오후 2:18:03
+ * Author: SAMSUNG
+ */
+
+#include <mega128a.h>
+#include <delay.h>
+
+#define CLK_HIGH    PORTD |= 0x01   // PD.0=1
+#define CLK_LOW    PORTD &= 0xFE   // PD.0=0
+#define DAT_HIGH    PORTD |= 0x02   // PD.1=1
+#define DAT_LOW    PORTD &= 0xFD   // PD.1=0
+
+#define SCL_OUT   DDRD |= 0x01  // PD.0=1
+#define SDA_IN	DDRD &= 0xFD  // PD.1=0
+#define SDA_OUT	DDRD |= 0x02  // PD.1=1
+
+typedef unsigned char U8;
+
+U8 DEV_ADD_W = 0xA0;
+U8 DEV_ADD_R = 0xA1;
+U8 IIC_ADD = 0x55;
+U8 IIC_DAT = 0xFA;
+U8 READ_DATA = 0xFA;
+
+void START(void);
+void STOP(void);
+void ACK_write(void);
+void no_ACK(void);
+void ACK_read(void);
+void proc_data(U8 tt);
+void byte_write(void);
+void random_read(void);
+
+void main(void)
+{
+    DDRC = 0xFF;
+    PORTC = 0xAA;
+    
+    SCL_OUT;
+    SDA_OUT;
+    
+while (1)
+    {
+        START();
+        proc_data(DEV_ADD_W);
+        // ACK_write();
+        // proc_data(IIC_ADD);
+        // ACK_write();
+        // proc_data(IIC_DAT);
+        // ACK_write();
+        // STOP();
+
+    }
+}
+
+void START(void)
+{
+    DAT_HIGH;
+    CLK_HIGH;
+    DAT_LOW;
+    CLK_LOW;
+}
+
+void STOP(void)
+{
+    DAT_LOW;
+    CLK_HIGH;
+    DAT_HIGH;
+    CLK_LOW;
+}
+
+void ACK_write(void)
+{
+    U8 i;
+    SDA_IN;
+    CLK_HIGH;
+    for( i = 10; i > 0; i--)
+    {
+        if((PIND & 0x02) == 0x00)
+        {
+            i = 1;
+            PORTC = 0xF1;
+        }
+        else PORTC = 0x00;    
+    }
+    delay_us(12);
+    CLK_LOW;
+    SDA_OUT;
+    delay_us(6);
+}
+
+void ACK_read(void)
+{
+    U8 i;;
+    SDA_OUT;
+    CLK_HIGH;
+    for( i = 10; i > 0; i--)
+    {
+        if((PIND & 0x02) == 0x00)
+        {
+            i = 1;
+            PORTC = 0xF1;
+        }
+        else PORTC = 0x00;    
+    }
+    delay_us(12);
+    CLK_LOW;
+    SDA_IN;
+    delay_us(6);
+}
+
+void no_ACK(void)
+{
+    SDA_OUT;
+    CLK_HIGH;
+    
+}
+
+void proc_data(U8 tt)
+{
+    U8 i;
+    for(i = 0; i < 8; i++)
+    {
+        if((tt & 0x80) == 0x80)
+            DAT_HIGH;
+        else
+            DAT_LOW;   
+        
+        CLK_HIGH;
+        delay_us(5);
+        CLK_LOW;
+        
+        tt <<= 1;             
+    }
+}

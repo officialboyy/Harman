@@ -1,0 +1,3977 @@
+
+AVRASM ver. 2.1.30  D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm Mon Apr 01 17:55:11 2024
+
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1419): warning: Register r5 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1420): warning: Register r4 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1421): warning: Register r7 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1422): warning: Register r6 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1423): warning: Register r9 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1424): warning: Register r8 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1425): warning: Register r11 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1426): warning: Register r10 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1427): warning: Register r13 already defined by the .DEF directive
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1428): warning: Register r12 already defined by the .DEF directive
+                 
+                 
+                 ;CodeVisionAVR C Compiler V3.52 Evaluation
+                 ;(C) Copyright 1998-2023 Pavel Haiduc, HP InfoTech S.R.L.
+                 ;http://www.hpinfotech.ro
+                 
+                 ;Build configuration    : Debug
+                 ;Chip type              : ATmega128A
+                 ;Program type           : Application
+                 ;Clock frequency        : 16.000000 MHz
+                 ;Memory model           : Small
+                 ;Optimize for           : Size
+                 ;(s)printf features     : int, width
+                 ;(s)scanf features      : int, width
+                 ;External RAM size      : 0
+                 ;Data Stack size        : 1024 byte(s)
+                 ;Heap size              : 0 byte(s)
+                 ;Promote 'char' to 'int': Yes
+                 ;'char' is unsigned     : Yes
+                 ;8 bit enums            : Yes
+                 ;Global 'const' stored in FLASH: No
+                 ;Enhanced function parameter passing: Mode 2
+                 ;Enhanced core instructions: On
+                 ;Automatic register allocation for global variables: On
+                 ;Smart register allocation: On
+                 
+                 	#define _MODEL_SMALL_
+                 
+                 	#pragma AVRPART ADMIN PART_NAME ATmega128A
+                 	#pragma AVRPART MEMORY PROG_FLASH 131072
+                 	#pragma AVRPART MEMORY EEPROM 4096
+                 	#pragma AVRPART MEMORY INT_SRAM SIZE 4096
+                 	#pragma AVRPART MEMORY INT_SRAM START_ADDR 0x100
+                 
+                 	#define CALL_SUPPORTED 1
+                 
+                 	.LISTMAC
+                 	.EQU UDRE=0x5
+                 	.EQU RXC=0x7
+                 	.EQU USR=0xB
+                 	.EQU UDR=0xC
+                 	.EQU SPSR=0xE
+                 	.EQU SPDR=0xF
+                 	.EQU EERE=0x0
+                 	.EQU EEWE=0x1
+                 	.EQU EEMWE=0x2
+                 	.EQU EECR=0x1C
+                 	.EQU EEDR=0x1D
+                 	.EQU EEARL=0x1E
+                 	.EQU EEARH=0x1F
+                 	.EQU WDTCR=0x21
+                 	.EQU MCUCR=0x35
+                 	.EQU SPMCSR=0x68
+                 	.EQU RAMPZ=0x3B
+                 	.EQU SPL=0x3D
+                 	.EQU SPH=0x3E
+                 	.EQU SREG=0x3F
+                 	.EQU XMCRA=0x6D
+                 	.EQU XMCRB=0x6C
+                 
+                 	.DEF R0X0=R0
+                 	.DEF R0X1=R1
+                 	.DEF R0X2=R2
+                 	.DEF R0X3=R3
+                 	.DEF R0X4=R4
+                 	.DEF R0X5=R5
+                 	.DEF R0X6=R6
+                 	.DEF R0X7=R7
+                 	.DEF R0X8=R8
+                 	.DEF R0X9=R9
+                 	.DEF R0XA=R10
+                 	.DEF R0XB=R11
+                 	.DEF R0XC=R12
+                 	.DEF R0XD=R13
+                 	.DEF R0XE=R14
+                 	.DEF R0XF=R15
+                 	.DEF R0X10=R16
+                 	.DEF R0X11=R17
+                 	.DEF R0X12=R18
+                 	.DEF R0X13=R19
+                 	.DEF R0X14=R20
+                 	.DEF R0X15=R21
+                 	.DEF R0X16=R22
+                 	.DEF R0X17=R23
+                 	.DEF R0X18=R24
+                 	.DEF R0X19=R25
+                 	.DEF R0X1A=R26
+                 	.DEF R0X1B=R27
+                 	.DEF R0X1C=R28
+                 	.DEF R0X1D=R29
+                 	.DEF R0X1E=R30
+                 	.DEF R0X1F=R31
+                 
+                 	.EQU __SRAM_START=0x0100
+                 	.EQU __SRAM_END=0x10FF
+                 	.EQU __DSTACK_SIZE=0x0400
+                 	.EQU __HEAP_SIZE=0x0000
+                 	.EQU __CLEAR_SRAM_SIZE=__SRAM_END-__SRAM_START+1
+                 
+                 	.EQU __FLASH_PAGE_SIZE=0x80
+                 
+                 	.MACRO __CPD1N
+                 	CPI  R30,LOW(@0)
+                 	LDI  R26,HIGH(@0)
+                 	CPC  R31,R26
+                 	LDI  R26,BYTE3(@0)
+                 	CPC  R22,R26
+                 	LDI  R26,BYTE4(@0)
+                 	CPC  R23,R26
+                 	.ENDM
+                 
+                 	.MACRO __CPD2N
+                 	CPI  R26,LOW(@0)
+                 	LDI  R30,HIGH(@0)
+                 	CPC  R27,R30
+                 	LDI  R30,BYTE3(@0)
+                 	CPC  R24,R30
+                 	LDI  R30,BYTE4(@0)
+                 	CPC  R25,R30
+                 	.ENDM
+                 
+                 	.MACRO __CPWRR
+                 	CP   R@0,R@2
+                 	CPC  R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __CPWRN
+                 	CPI  R@0,LOW(@2)
+                 	LDI  R30,HIGH(@2)
+                 	CPC  R@1,R30
+                 	.ENDM
+                 
+                 	.MACRO __ADDB1MN
+                 	SUBI R30,LOW(-@0-(@1))
+                 	.ENDM
+                 
+                 	.MACRO __ADDB2MN
+                 	SUBI R26,LOW(-@0-(@1))
+                 	.ENDM
+                 
+                 	.MACRO __ADDW1MN
+                 	SUBI R30,LOW(-@0-(@1))
+                 	SBCI R31,HIGH(-@0-(@1))
+                 	.ENDM
+                 
+                 	.MACRO __ADDW2MN
+                 	SUBI R26,LOW(-@0-(@1))
+                 	SBCI R27,HIGH(-@0-(@1))
+                 	.ENDM
+                 
+                 	.MACRO __ADDW1FN
+                 	SUBI R30,LOW(-2*@0-(@1))
+                 	SBCI R31,HIGH(-2*@0-(@1))
+                 	.ENDM
+                 
+                 	.MACRO __ADDD1FN
+                 	SUBI R30,LOW(-2*@0-(@1))
+                 	SBCI R31,HIGH(-2*@0-(@1))
+                 	SBCI R22,BYTE3(-2*@0-(@1))
+                 	.ENDM
+                 
+                 	.MACRO __ADDD1N
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	SBCI R22,BYTE3(-@0)
+                 	SBCI R23,BYTE4(-@0)
+                 	.ENDM
+                 
+                 	.MACRO __ADDD2N
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	SBCI R24,BYTE3(-@0)
+                 	SBCI R25,BYTE4(-@0)
+                 	.ENDM
+                 
+                 	.MACRO __SUBD1N
+                 	SUBI R30,LOW(@0)
+                 	SBCI R31,HIGH(@0)
+                 	SBCI R22,BYTE3(@0)
+                 	SBCI R23,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __SUBD2N
+                 	SUBI R26,LOW(@0)
+                 	SBCI R27,HIGH(@0)
+                 	SBCI R24,BYTE3(@0)
+                 	SBCI R25,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __ANDBMNN
+                 	LDS  R30,@0+(@1)
+                 	ANDI R30,LOW(@2)
+                 	STS  @0+(@1),R30
+                 	.ENDM
+                 
+                 	.MACRO __ANDWMNN
+                 	LDS  R30,@0+(@1)
+                 	ANDI R30,LOW(@2)
+                 	STS  @0+(@1),R30
+                 	LDS  R30,@0+(@1)+1
+                 	ANDI R30,HIGH(@2)
+                 	STS  @0+(@1)+1,R30
+                 	.ENDM
+                 
+                 	.MACRO __ANDD1N
+                 	ANDI R30,LOW(@0)
+                 	ANDI R31,HIGH(@0)
+                 	ANDI R22,BYTE3(@0)
+                 	ANDI R23,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __ANDD2N
+                 	ANDI R26,LOW(@0)
+                 	ANDI R27,HIGH(@0)
+                 	ANDI R24,BYTE3(@0)
+                 	ANDI R25,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __ORBMNN
+                 	LDS  R30,@0+(@1)
+                 	ORI  R30,LOW(@2)
+                 	STS  @0+(@1),R30
+                 	.ENDM
+                 
+                 	.MACRO __ORWMNN
+                 	LDS  R30,@0+(@1)
+                 	ORI  R30,LOW(@2)
+                 	STS  @0+(@1),R30
+                 	LDS  R30,@0+(@1)+1
+                 	ORI  R30,HIGH(@2)
+                 	STS  @0+(@1)+1,R30
+                 	.ENDM
+                 
+                 	.MACRO __ORD1N
+                 	ORI  R30,LOW(@0)
+                 	ORI  R31,HIGH(@0)
+                 	ORI  R22,BYTE3(@0)
+                 	ORI  R23,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __ORD2N
+                 	ORI  R26,LOW(@0)
+                 	ORI  R27,HIGH(@0)
+                 	ORI  R24,BYTE3(@0)
+                 	ORI  R25,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __DELAY_USB
+                 	LDI  R24,LOW(@0)
+                 __DELAY_USB_LOOP:
+                 	DEC  R24
+                 	BRNE __DELAY_USB_LOOP
+                 	.ENDM
+                 
+                 	.MACRO __DELAY_USW
+                 	LDI  R24,LOW(@0)
+                 	LDI  R25,HIGH(@0)
+                 __DELAY_USW_LOOP:
+                 	SBIW R24,1
+                 	BRNE __DELAY_USW_LOOP
+                 	.ENDM
+                 
+                 	.MACRO __GETW1P
+                 	LD   R30,X+
+                 	LD   R31,X
+                 	SBIW R26,1
+                 	.ENDM
+                 
+                 	.MACRO __GETD1S
+                 	LDD  R30,Y+@0
+                 	LDD  R31,Y+@0+1
+                 	LDD  R22,Y+@0+2
+                 	LDD  R23,Y+@0+3
+                 	.ENDM
+                 
+                 	.MACRO __GETD2S
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	LDD  R24,Y+@0+2
+                 	LDD  R25,Y+@0+3
+                 	.ENDM
+                 
+                 	.MACRO __GETD1P_INC
+                 	LD   R30,X+
+                 	LD   R31,X+
+                 	LD   R22,X+
+                 	LD   R23,X+
+                 	.ENDM
+                 
+                 	.MACRO __GETD1P_DEC
+                 	LD   R23,-X
+                 	LD   R22,-X
+                 	LD   R31,-X
+                 	LD   R30,-X
+                 	.ENDM
+                 
+                 	.MACRO __PUTDP1
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTDP1_DEC
+                 	ST   -X,R23
+                 	ST   -X,R22
+                 	ST   -X,R31
+                 	ST   -X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1S
+                 	STD  Y+@0,R30
+                 	STD  Y+@0+1,R31
+                 	STD  Y+@0+2,R22
+                 	STD  Y+@0+3,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTD2S
+                 	STD  Y+@0,R26
+                 	STD  Y+@0+1,R27
+                 	STD  Y+@0+2,R24
+                 	STD  Y+@0+3,R25
+                 	.ENDM
+                 
+                 	.MACRO __PUTDZ2
+                 	STD  Z+@0,R26
+                 	STD  Z+@0+1,R27
+                 	STD  Z+@0+2,R24
+                 	STD  Z+@0+3,R25
+                 	.ENDM
+                 
+                 	.MACRO __CLRD1S
+                 	STD  Y+@0,R30
+                 	STD  Y+@0+1,R30
+                 	STD  Y+@0+2,R30
+                 	STD  Y+@0+3,R30
+                 	.ENDM
+                 
+                 	.MACRO __CPD10
+                 	SBIW R30,0
+                 	SBCI R22,0
+                 	SBCI R23,0
+                 	.ENDM
+                 
+                 	.MACRO __CPD20
+                 	SBIW R26,0
+                 	SBCI R24,0
+                 	SBCI R25,0
+                 	.ENDM
+                 
+                 	.MACRO __ADDD12
+                 	ADD  R30,R26
+                 	ADC  R31,R27
+                 	ADC  R22,R24
+                 	ADC  R23,R25
+                 	.ENDM
+                 
+                 	.MACRO __ADDD21
+                 	ADD  R26,R30
+                 	ADC  R27,R31
+                 	ADC  R24,R22
+                 	ADC  R25,R23
+                 	.ENDM
+                 
+                 	.MACRO __SUBD12
+                 	SUB  R30,R26
+                 	SBC  R31,R27
+                 	SBC  R22,R24
+                 	SBC  R23,R25
+                 	.ENDM
+                 
+                 	.MACRO __SUBD21
+                 	SUB  R26,R30
+                 	SBC  R27,R31
+                 	SBC  R24,R22
+                 	SBC  R25,R23
+                 	.ENDM
+                 
+                 	.MACRO __ANDD12
+                 	AND  R30,R26
+                 	AND  R31,R27
+                 	AND  R22,R24
+                 	AND  R23,R25
+                 	.ENDM
+                 
+                 	.MACRO __ORD12
+                 	OR   R30,R26
+                 	OR   R31,R27
+                 	OR   R22,R24
+                 	OR   R23,R25
+                 	.ENDM
+                 
+                 	.MACRO __XORD12
+                 	EOR  R30,R26
+                 	EOR  R31,R27
+                 	EOR  R22,R24
+                 	EOR  R23,R25
+                 	.ENDM
+                 
+                 	.MACRO __XORD21
+                 	EOR  R26,R30
+                 	EOR  R27,R31
+                 	EOR  R24,R22
+                 	EOR  R25,R23
+                 	.ENDM
+                 
+                 	.MACRO __COMD1
+                 	COM  R30
+                 	COM  R31
+                 	COM  R22
+                 	COM  R23
+                 	.ENDM
+                 
+                 	.MACRO __MULD2_2
+                 	LSL  R26
+                 	ROL  R27
+                 	ROL  R24
+                 	ROL  R25
+                 	.ENDM
+                 
+                 	.MACRO __LSRD1
+                 	LSR  R23
+                 	ROR  R22
+                 	ROR  R31
+                 	ROR  R30
+                 	.ENDM
+                 
+                 	.MACRO __LSLD1
+                 	LSL  R30
+                 	ROL  R31
+                 	ROL  R22
+                 	ROL  R23
+                 	.ENDM
+                 
+                 	.MACRO __ASRB4
+                 	ASR  R30
+                 	ASR  R30
+                 	ASR  R30
+                 	ASR  R30
+                 	.ENDM
+                 
+                 	.MACRO __ASRW8
+                 	MOV  R30,R31
+                 	CLR  R31
+                 	SBRC R30,7
+                 	SER  R31
+                 	.ENDM
+                 
+                 	.MACRO __LSRD16
+                 	MOV  R30,R22
+                 	MOV  R31,R23
+                 	LDI  R22,0
+                 	LDI  R23,0
+                 	.ENDM
+                 
+                 	.MACRO __LSLD16
+                 	MOV  R22,R30
+                 	MOV  R23,R31
+                 	LDI  R30,0
+                 	LDI  R31,0
+                 	.ENDM
+                 
+                 	.MACRO __CWD1
+                 	MOV  R22,R31
+                 	ADD  R22,R22
+                 	SBC  R22,R22
+                 	MOV  R23,R22
+                 	.ENDM
+                 
+                 	.MACRO __CWD2
+                 	MOV  R24,R27
+                 	ADD  R24,R24
+                 	SBC  R24,R24
+                 	MOV  R25,R24
+                 	.ENDM
+                 
+                 	.MACRO __SETMSD1
+                 	SER  R31
+                 	SER  R22
+                 	SER  R23
+                 	.ENDM
+                 
+                 	.MACRO __ADDW1R15
+                 	CLR  R0
+                 	ADD  R30,R15
+                 	ADC  R31,R0
+                 	.ENDM
+                 
+                 	.MACRO __ADDW2R15
+                 	CLR  R0
+                 	ADD  R26,R15
+                 	ADC  R27,R0
+                 	.ENDM
+                 
+                 	.MACRO __EQB12
+                 	CP   R30,R26
+                 	LDI  R30,1
+                 	BREQ PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __NEB12
+                 	CP   R30,R26
+                 	LDI  R30,1
+                 	BRNE PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __LEB12
+                 	CP   R30,R26
+                 	LDI  R30,1
+                 	BRGE PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __GEB12
+                 	CP   R26,R30
+                 	LDI  R30,1
+                 	BRGE PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __LTB12
+                 	CP   R26,R30
+                 	LDI  R30,1
+                 	BRLT PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __GTB12
+                 	CP   R30,R26
+                 	LDI  R30,1
+                 	BRLT PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __LEB12U
+                 	CP   R30,R26
+                 	LDI  R30,1
+                 	BRSH PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __GEB12U
+                 	CP   R26,R30
+                 	LDI  R30,1
+                 	BRSH PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __LTB12U
+                 	CP   R26,R30
+                 	LDI  R30,1
+                 	BRLO PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __GTB12U
+                 	CP   R30,R26
+                 	LDI  R30,1
+                 	BRLO PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __CPW01
+                 	CLR  R0
+                 	CP   R0,R30
+                 	CPC  R0,R31
+                 	.ENDM
+                 
+                 	.MACRO __CPW02
+                 	CLR  R0
+                 	CP   R0,R26
+                 	CPC  R0,R27
+                 	.ENDM
+                 
+                 	.MACRO __CPD12
+                 	CP   R30,R26
+                 	CPC  R31,R27
+                 	CPC  R22,R24
+                 	CPC  R23,R25
+                 	.ENDM
+                 
+                 	.MACRO __CPD21
+                 	CP   R26,R30
+                 	CPC  R27,R31
+                 	CPC  R24,R22
+                 	CPC  R25,R23
+                 	.ENDM
+                 
+                 	.MACRO __BSTB1
+                 	CLT
+                 	TST  R30
+                 	BREQ PC+2
+                 	SET
+                 	.ENDM
+                 
+                 	.MACRO __LNEGB1
+                 	TST  R30
+                 	LDI  R30,1
+                 	BREQ PC+2
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __LNEGW1
+                 	OR   R30,R31
+                 	LDI  R30,1
+                 	BREQ PC+2
+                 	LDI  R30,0
+                 	.ENDM
+                 
+                 	.MACRO __POINTB1MN
+                 	LDI  R30,LOW(@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTW1MN
+                 	LDI  R30,LOW(@0+(@1))
+                 	LDI  R31,HIGH(@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTD1M
+                 	LDI  R30,LOW(@0)
+                 	LDI  R31,HIGH(@0)
+                 	LDI  R22,BYTE3(@0)
+                 	LDI  R23,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __POINTW1FN
+                 	LDI  R30,LOW(2*@0+(@1))
+                 	LDI  R31,HIGH(2*@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTD1FN
+                 	LDI  R30,LOW(2*@0+(@1))
+                 	LDI  R31,HIGH(2*@0+(@1))
+                 	LDI  R22,BYTE3(2*@0+(@1))
+                 	LDI  R23,BYTE4(2*@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTB2MN
+                 	LDI  R26,LOW(@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTW2MN
+                 	LDI  R26,LOW(@0+(@1))
+                 	LDI  R27,HIGH(@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTD2M
+                 	LDI  R26,LOW(@0)
+                 	LDI  R27,HIGH(@0)
+                 	LDI  R24,BYTE3(@0)
+                 	LDI  R25,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __POINTW2FN
+                 	LDI  R26,LOW(2*@0+(@1))
+                 	LDI  R27,HIGH(2*@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTD2FN
+                 	LDI  R26,LOW(2*@0+(@1))
+                 	LDI  R27,HIGH(2*@0+(@1))
+                 	LDI  R24,BYTE3(2*@0+(@1))
+                 	LDI  R25,BYTE4(2*@0+(@1))
+                 	.ENDM
+                 
+                 	.MACRO __POINTBRM
+                 	LDI  R@0,LOW(@1)
+                 	.ENDM
+                 
+                 	.MACRO __POINTWRM
+                 	LDI  R@0,LOW(@2)
+                 	LDI  R@1,HIGH(@2)
+                 	.ENDM
+                 
+                 	.MACRO __POINTBRMN
+                 	LDI  R@0,LOW(@1+(@2))
+                 	.ENDM
+                 
+                 	.MACRO __POINTWRMN
+                 	LDI  R@0,LOW(@2+(@3))
+                 	LDI  R@1,HIGH(@2+(@3))
+                 	.ENDM
+                 
+                 	.MACRO __POINTWRFN
+                 	LDI  R@0,LOW(@2*2+(@3))
+                 	LDI  R@1,HIGH(@2*2+(@3))
+                 	.ENDM
+                 
+                 	.MACRO __GETD1N
+                 	LDI  R30,LOW(@0)
+                 	LDI  R31,HIGH(@0)
+                 	LDI  R22,BYTE3(@0)
+                 	LDI  R23,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __GETD2N
+                 	LDI  R26,LOW(@0)
+                 	LDI  R27,HIGH(@0)
+                 	LDI  R24,BYTE3(@0)
+                 	LDI  R25,BYTE4(@0)
+                 	.ENDM
+                 
+                 	.MACRO __GETB1MN
+                 	LDS  R30,@0+(@1)
+                 	.ENDM
+                 
+                 	.MACRO __GETB1HMN
+                 	LDS  R31,@0+(@1)
+                 	.ENDM
+                 
+                 	.MACRO __GETW1MN
+                 	LDS  R30,@0+(@1)
+                 	LDS  R31,@0+(@1)+1
+                 	.ENDM
+                 
+                 	.MACRO __GETD1MN
+                 	LDS  R30,@0+(@1)
+                 	LDS  R31,@0+(@1)+1
+                 	LDS  R22,@0+(@1)+2
+                 	LDS  R23,@0+(@1)+3
+                 	.ENDM
+                 
+                 	.MACRO __GETBRMN
+                 	LDS  R@0,@1+(@2)
+                 	.ENDM
+                 
+                 	.MACRO __GETWRMN
+                 	LDS  R@0,@2+(@3)
+                 	LDS  R@1,@2+(@3)+1
+                 	.ENDM
+                 
+                 	.MACRO __GETWRZ
+                 	LDD  R@0,Z+@2
+                 	LDD  R@1,Z+@2+1
+                 	.ENDM
+                 
+                 	.MACRO __GETD2Z
+                 	LDD  R26,Z+@0
+                 	LDD  R27,Z+@0+1
+                 	LDD  R24,Z+@0+2
+                 	LDD  R25,Z+@0+3
+                 	.ENDM
+                 
+                 	.MACRO __GETB2MN
+                 	LDS  R26,@0+(@1)
+                 	.ENDM
+                 
+                 	.MACRO __GETW2MN
+                 	LDS  R26,@0+(@1)
+                 	LDS  R27,@0+(@1)+1
+                 	.ENDM
+                 
+                 	.MACRO __GETD2MN
+                 	LDS  R26,@0+(@1)
+                 	LDS  R27,@0+(@1)+1
+                 	LDS  R24,@0+(@1)+2
+                 	LDS  R25,@0+(@1)+3
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1MN
+                 	STS  @0+(@1),R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1MN
+                 	STS  @0+(@1),R30
+                 	STS  @0+(@1)+1,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1MN
+                 	STS  @0+(@1),R30
+                 	STS  @0+(@1)+1,R31
+                 	STS  @0+(@1)+2,R22
+                 	STS  @0+(@1)+3,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1EN
+                 	LDI  R26,LOW(@0+(@1))
+                 	LDI  R27,HIGH(@0+(@1))
+                 	CALL __EEPROMWRB
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1EN
+                 	LDI  R26,LOW(@0+(@1))
+                 	LDI  R27,HIGH(@0+(@1))
+                 	CALL __EEPROMWRW
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1EN
+                 	LDI  R26,LOW(@0+(@1))
+                 	LDI  R27,HIGH(@0+(@1))
+                 	CALL __EEPROMWRD
+                 	.ENDM
+                 
+                 	.MACRO __PUTBR0MN
+                 	STS  @0+(@1),R0
+                 	.ENDM
+                 
+                 	.MACRO __PUTBMRN
+                 	STS  @0+(@1),R@2
+                 	.ENDM
+                 
+                 	.MACRO __PUTWMRN
+                 	STS  @0+(@1),R@2
+                 	STS  @0+(@1)+1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __PUTBZR
+                 	STD  Z+@1,R@0
+                 	.ENDM
+                 
+                 	.MACRO __PUTWZR
+                 	STD  Z+@2,R@0
+                 	STD  Z+@2+1,R@1
+                 	.ENDM
+                 
+                 	.MACRO __GETW1R
+                 	MOV  R30,R@0
+                 	MOV  R31,R@1
+                 	.ENDM
+                 
+                 	.MACRO __GETW2R
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	.ENDM
+                 
+                 	.MACRO __GETWRN
+                 	LDI  R@0,LOW(@2)
+                 	LDI  R@1,HIGH(@2)
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1R
+                 	MOV  R@0,R30
+                 	MOV  R@1,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTW2R
+                 	MOV  R@0,R26
+                 	MOV  R@1,R27
+                 	.ENDM
+                 
+                 	.MACRO __ADDWRN
+                 	SUBI R@0,LOW(-@2)
+                 	SBCI R@1,HIGH(-@2)
+                 	.ENDM
+                 
+                 	.MACRO __ADDWRR
+                 	ADD  R@0,R@2
+                 	ADC  R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __SUBWRN
+                 	SUBI R@0,LOW(@2)
+                 	SBCI R@1,HIGH(@2)
+                 	.ENDM
+                 
+                 	.MACRO __SUBWRR
+                 	SUB  R@0,R@2
+                 	SBC  R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __ANDWRN
+                 	ANDI R@0,LOW(@2)
+                 	ANDI R@1,HIGH(@2)
+                 	.ENDM
+                 
+                 	.MACRO __ANDWRR
+                 	AND  R@0,R@2
+                 	AND  R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __ORWRN
+                 	ORI  R@0,LOW(@2)
+                 	ORI  R@1,HIGH(@2)
+                 	.ENDM
+                 
+                 	.MACRO __ORWRR
+                 	OR   R@0,R@2
+                 	OR   R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __EORWRR
+                 	EOR  R@0,R@2
+                 	EOR  R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __GETWRS
+                 	LDD  R@0,Y+@2
+                 	LDD  R@1,Y+@2+1
+                 	.ENDM
+                 
+                 	.MACRO __PUTBSR
+                 	STD  Y+@1,R@0
+                 	.ENDM
+                 
+                 	.MACRO __PUTWSR
+                 	STD  Y+@2,R@0
+                 	STD  Y+@2+1,R@1
+                 	.ENDM
+                 
+                 	.MACRO __MOVEWRR
+                 	MOV  R@0,R@2
+                 	MOV  R@1,R@3
+                 	.ENDM
+                 
+                 	.MACRO __INWR
+                 	IN   R@0,@2
+                 	IN   R@1,@2+1
+                 	.ENDM
+                 
+                 	.MACRO __OUTWR
+                 	OUT  @2+1,R@1
+                 	OUT  @2,R@0
+                 	.ENDM
+                 
+                 	.MACRO __CALL1MN
+                 	LDS  R30,@0+(@1)
+                 	LDS  R31,@0+(@1)+1
+                 	ICALL
+                 	.ENDM
+                 
+                 	.MACRO __CALL1FN
+                 	LDI  R30,LOW(2*@0+(@1))
+                 	LDI  R31,HIGH(2*@0+(@1))
+                 	CALL __GETW1PF
+                 	ICALL
+                 	.ENDM
+                 
+                 	.MACRO __CALL2EN
+                 	PUSH R26
+                 	PUSH R27
+                 	LDI  R26,LOW(@0+(@1))
+                 	LDI  R27,HIGH(@0+(@1))
+                 	CALL __EEPROMRDW
+                 	POP  R27
+                 	POP  R26
+                 	ICALL
+                 	.ENDM
+                 
+                 	.MACRO __CALL2EX
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	CALL __EEPROMRDD
+                 	ICALL
+                 	.ENDM
+                 
+                 	.MACRO __GETW1STACK
+                 	IN   R30,SPL
+                 	IN   R31,SPH
+                 	ADIW R30,@0+1
+                 	LD   R0,Z+
+                 	LD   R31,Z
+                 	MOV  R30,R0
+                 	.ENDM
+                 
+                 	.MACRO __GETD1STACK
+                 	IN   R30,SPL
+                 	IN   R31,SPH
+                 	ADIW R30,@0+1
+                 	LD   R0,Z+
+                 	LD   R1,Z+
+                 	LD   R22,Z
+                 	MOVW R30,R0
+                 	.ENDM
+                 
+                 	.MACRO __NBST
+                 	BST  R@0,@1
+                 	IN   R30,SREG
+                 	LDI  R31,0x40
+                 	EOR  R30,R31
+                 	OUT  SREG,R30
+                 	.ENDM
+                 
+                 
+                 	.MACRO __PUTB1SN
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1SN
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1SN
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1SNS
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	ADIW R26,@1
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1SNS
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	ADIW R26,@1
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1SNS
+                 	LDD  R26,Y+@0
+                 	LDD  R27,Y+@0+1
+                 	ADIW R26,@1
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1PMN
+                 	LDS  R26,@0
+                 	LDS  R27,@0+1
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1PMN
+                 	LDS  R26,@0
+                 	LDS  R27,@0+1
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1PMN
+                 	LDS  R26,@0
+                 	LDS  R27,@0+1
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1PMNS
+                 	LDS  R26,@0
+                 	LDS  R27,@0+1
+                 	ADIW R26,@1
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1PMNS
+                 	LDS  R26,@0
+                 	LDS  R27,@0+1
+                 	ADIW R26,@1
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1PMNS
+                 	LDS  R26,@0
+                 	LDS  R27,@0+1
+                 	ADIW R26,@1
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1RN
+                 	MOVW R26,R@0
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1RN
+                 	MOVW R26,R@0
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1RN
+                 	MOVW R26,R@0
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1RNS
+                 	MOVW R26,R@0
+                 	ADIW R26,@1
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1RNS
+                 	MOVW R26,R@0
+                 	ADIW R26,@1
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1RNS
+                 	MOVW R26,R@0
+                 	ADIW R26,@1
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1RON
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	SUBI R26,LOW(-@2)
+                 	SBCI R27,HIGH(-@2)
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1RON
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	SUBI R26,LOW(-@2)
+                 	SBCI R27,HIGH(-@2)
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1RON
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	SUBI R26,LOW(-@2)
+                 	SBCI R27,HIGH(-@2)
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1RONS
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	ADIW R26,@2
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1RONS
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	ADIW R26,@2
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1RONS
+                 	MOV  R26,R@0
+                 	MOV  R27,R@1
+                 	ADIW R26,@2
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 
+                 	.MACRO __GETB1SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	LD   R30,Z
+                 	.ENDM
+                 
+                 	.MACRO __GETB1HSX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	LD   R31,Z
+                 	.ENDM
+                 
+                 	.MACRO __GETW1SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	CALL __GETW1Z
+                 	.ENDM
+                 
+                 	.MACRO __GETD1SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	CALL __GETD1Z
+                 	.ENDM
+                 
+                 	.MACRO __GETB2SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	LD   R26,X
+                 	.ENDM
+                 
+                 	.MACRO __GETW2SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	CALL __GETW2X
+                 	.ENDM
+                 
+                 	.MACRO __GETD2SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	CALL __GETD2X
+                 	.ENDM
+                 
+                 	.MACRO __GETBRSX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@1)
+                 	SBCI R31,HIGH(-@1)
+                 	LD   R@0,Z
+                 	.ENDM
+                 
+                 	.MACRO __GETWRSX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@2)
+                 	SBCI R31,HIGH(-@2)
+                 	LD   R@0,Z+
+                 	LD   R@1,Z
+                 	.ENDM
+                 
+                 	.MACRO __GETBRSX2
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	LD   R@0,X
+                 	.ENDM
+                 
+                 	.MACRO __GETWRSX2
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@2)
+                 	SBCI R27,HIGH(-@2)
+                 	LD   R@0,X+
+                 	LD   R@1,X
+                 	.ENDM
+                 
+                 	.MACRO __LSLW8SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	LD   R31,Z
+                 	CLR  R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __CLRW1SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	ST   X+,R30
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __CLRD1SX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	ST   X+,R30
+                 	ST   X+,R30
+                 	ST   X+,R30
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTB2SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	ST   Z,R26
+                 	.ENDM
+                 
+                 	.MACRO __PUTW2SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	ST   Z+,R26
+                 	ST   Z,R27
+                 	.ENDM
+                 
+                 	.MACRO __PUTD2SX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@0)
+                 	SBCI R31,HIGH(-@0)
+                 	ST   Z+,R26
+                 	ST   Z+,R27
+                 	ST   Z+,R24
+                 	ST   Z,R25
+                 	.ENDM
+                 
+                 	.MACRO __PUTBSRX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@1)
+                 	SBCI R31,HIGH(-@1)
+                 	ST   Z,R@0
+                 	.ENDM
+                 
+                 	.MACRO __PUTWSRX
+                 	MOVW R30,R28
+                 	SUBI R30,LOW(-@2)
+                 	SBCI R31,HIGH(-@2)
+                 	ST   Z+,R@0
+                 	ST   Z,R@1
+                 	.ENDM
+                 
+                 	.MACRO __PUTB1SNX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	LD   R0,X+
+                 	LD   R27,X
+                 	MOV  R26,R0
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X,R30
+                 	.ENDM
+                 
+                 	.MACRO __PUTW1SNX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	LD   R0,X+
+                 	LD   R27,X
+                 	MOV  R26,R0
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X,R31
+                 	.ENDM
+                 
+                 	.MACRO __PUTD1SNX
+                 	MOVW R26,R28
+                 	SUBI R26,LOW(-@0)
+                 	SBCI R27,HIGH(-@0)
+                 	LD   R0,X+
+                 	LD   R27,X
+                 	MOV  R26,R0
+                 	SUBI R26,LOW(-@1)
+                 	SBCI R27,HIGH(-@1)
+                 	ST   X+,R30
+                 	ST   X+,R31
+                 	ST   X+,R22
+                 	ST   X,R23
+                 	.ENDM
+                 
+                 	.MACRO __MULBRR
+                 	MULS R@0,R@1
+                 	MOVW R30,R0
+                 	.ENDM
+                 
+                 	.MACRO __MULBRRU
+                 	MUL  R@0,R@1
+                 	MOVW R30,R0
+                 	.ENDM
+                 
+                 	.MACRO __MULBRR0
+                 	MULS R@0,R@1
+                 	.ENDM
+                 
+                 	.MACRO __MULBRRU0
+                 	MUL  R@0,R@1
+                 	.ENDM
+                 
+                 	.MACRO __MULBNWRU
+                 	LDI  R26,@2
+                 	MUL  R26,R@0
+                 	MOVW R30,R0
+                 	MUL  R26,R@1
+                 	ADD  R31,R0
+                 	.ENDM
+                 
+                 ;NAME DEFINITIONS FOR GLOBAL VARIABLES ALLOCATED TO REGISTERS
+                 	.DEF _led=R5
+                 	.DEF _TIM2_COMP_FLAG=R4
+                 	.DEF _TIM0_OVF_FLAG=R7
+                 	.DEF _cnt=R6
+                 	.DEF _i=R9
+                 	.DEF _UART_Rx_data=R8
+                 	.DEF _UART_Rx_data_1=R11
+                 	.DEF _UART_Rx_data_2=R10
+                 	.DEF _UART_Rx_data_3=R13
+                 	.DEF _flag=R12
+                 
+                 	.CSEG
+                 	.ORG 0x00
+                 
+                 ;START OF CODE MARKER
+                 __START_OF_CODE:
+                 
+                 ;INTERRUPT VECTORS
+000000 940c 015a 	JMP  __RESET
+000002 940c 0000 	JMP  0x00
+000004 940c 0000 	JMP  0x00
+000006 940c 0000 	JMP  0x00
+000008 940c 0000 	JMP  0x00
+00000a 940c 0000 	JMP  0x00
+00000c 940c 0000 	JMP  0x00
+00000e 940c 0000 	JMP  0x00
+000010 940c 0000 	JMP  0x00
+000012 940c 053b 	JMP  _timer_comp2
+000014 940c 0000 	JMP  0x00
+000016 940c 0000 	JMP  0x00
+000018 940c 0000 	JMP  0x00
+00001a 940c 0000 	JMP  0x00
+00001c 940c 0000 	JMP  0x00
+00001e 940c 0000 	JMP  0x00
+000020 940c 053f 	JMP  _timer_int0
+000022 940c 0000 	JMP  0x00
+000024 940c 0536 	JMP  _usart0_rx
+000026 940c 0000 	JMP  0x00
+000028 940c 0000 	JMP  0x00
+00002a 940c 0000 	JMP  0x00
+00002c 940c 0000 	JMP  0x00
+00002e 940c 0000 	JMP  0x00
+000030 940c 0000 	JMP  0x00
+000032 940c 0000 	JMP  0x00
+000034 940c 0000 	JMP  0x00
+000036 940c 0000 	JMP  0x00
+000038 940c 0000 	JMP  0x00
+00003a 940c 0000 	JMP  0x00
+00003c 940c 0000 	JMP  0x00
+00003e 940c 0000 	JMP  0x00
+000040 940c 0000 	JMP  0x00
+000042 940c 0000 	JMP  0x00
+000044 940c 0000 	JMP  0x00
+                 
+                 ;GLOBAL REGISTER VARIABLES INITIALIZATION
+                 __REG_VARS:
+000046 ff00
+000047 0000      	.DB  0x0,0xFF,0x0,0x0
+000048 00ff
+000049 ffff      	.DB  0xFF,0x0,0xFF,0xFF
+00004a ff00      	.DB  0x0,0xFF
+                 
+                 _0x3:
+00004b 2d2d
+00004c 2d2d
+00004d 2d2d
+00004e 2d2d      	.DB  0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D
+00004f 2d2d
+000050 2d2d
+000051 2d2d
+000052 2d2d      	.DB  0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D
+000053 2d2d
+000054 2d2d
+000055 2d2d
+000056 2d2d      	.DB  0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D
+000057 2d2d
+000058 2d2d
+000059 2d2d
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1483): warning: .cseg .db misalignment - padding zero byte
+00005a 002d      	.DB  0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D
+                 _0x4:
+00005b 205b
+00005c 4155
+00005d 5452
+00005e 4520      	.DB  0x5B,0x20,0x55,0x41,0x52,0x54,0x20,0x45
+00005f 7078
+000060 7265
+000061 6d69
+000062 6e65      	.DB  0x78,0x70,0x65,0x72,0x69,0x6D,0x65,0x6E
+000063 2074
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1487): warning: .cseg .db misalignment - padding zero byte
+000064 005d      	.DB  0x74,0x20,0x5D
+                 _0x5:
+000065 7250
+000066 7365
+000067 2073
+000068 6874      	.DB  0x50,0x72,0x65,0x73,0x73,0x20,0x74,0x68
+000069 2065
+00006a 6843
+00006b 7261
+00006c 3a20      	.DB  0x65,0x20,0x43,0x68,0x61,0x72,0x20,0x3A
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1491): warning: .cseg .db misalignment - padding zero byte
+00006d 0020      	.DB  0x20
+                 _0x6:
+00006e 454c
+00006f 2044
+000070 6554
+000071 7473      	.DB  0x4C,0x45,0x44,0x20,0x54,0x65,0x73,0x74
+000072 3a20
+000073 4c20      	.DB  0x20,0x3A,0x20,0x4C
+                 _0x7:
+000074 5337
+000075 6765
+000076 5420
+000077 7365      	.DB  0x37,0x53,0x65,0x67,0x20,0x54,0x65,0x73
+000078 2074
+000079 203a
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1497): warning: .cseg .db misalignment - padding zero byte
+00007a 0053      	.DB  0x74,0x20,0x3A,0x20,0x53
+                 _0x8:
+00007b 614d
+00007c 6e69
+00007d 4d20
+00007e 6e65      	.DB  0x4D,0x61,0x69,0x6E,0x20,0x4D,0x65,0x6E
+00007f 2075
+000080 203a
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1500): warning: .cseg .db misalignment - padding zero byte
+000081 004d      	.DB  0x75,0x20,0x3A,0x20,0x4D
+                 _0x9:
+000082 2e31
+000083 4920
+000084 636e
+000085 6572      	.DB  0x31,0x2E,0x20,0x49,0x6E,0x63,0x72,0x65
+000086 7361
+000087 6e69
+000088 2067
+000089 454c      	.DB  0x61,0x73,0x69,0x6E,0x67,0x20,0x4C,0x45
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1504): warning: .cseg .db misalignment - padding zero byte
+00008a 0044      	.DB  0x44
+                 _0xA:
+00008b 2e32
+00008c 4420
+00008d 6365
+00008e 6572      	.DB  0x32,0x2E,0x20,0x44,0x65,0x63,0x72,0x65
+00008f 6573
+000090 6e69
+000091 2067
+000092 454c      	.DB  0x73,0x65,0x69,0x6E,0x67,0x20,0x4C,0x45
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1508): warning: .cseg .db misalignment - padding zero byte
+000093 0044      	.DB  0x44
+                 _0xB:
+000094 2e4d
+000095 4d20
+000096 6961
+000097 206e      	.DB  0x4D,0x2E,0x20,0x4D,0x61,0x69,0x6E,0x20
+000098 654d
+000099 756e      	.DB  0x4D,0x65,0x6E,0x75
+                 _0xC:
+00009a 454c
+00009b 2044
+00009c 6554
+00009d 7473      	.DB  0x4C,0x45,0x44,0x20,0x54,0x65,0x73,0x74
+00009e 5320
+00009f 6c65
+0000a0 6365
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1514): warning: .cseg .db misalignment - padding zero byte
+0000a1 0074      	.DB  0x20,0x53,0x65,0x6C,0x65,0x63,0x74
+                 _0xD:
+0000a2 7337
+0000a3 6765
+0000a4 5420
+0000a5 7365      	.DB  0x37,0x73,0x65,0x67,0x20,0x54,0x65,0x73
+0000a6 2074
+0000a7 6553
+0000a8 656c
+0000a9 7463      	.DB  0x74,0x20,0x53,0x65,0x6C,0x65,0x63,0x74
+                 _0xE:
+0000aa 2e33
+0000ab 5520
+0000ac 2070
+0000ad 6f43      	.DB  0x33,0x2E,0x20,0x55,0x70,0x20,0x43,0x6F
+0000ae 6e75
+0000af 6974
+0000b0 676e
+0000b1 3720      	.DB  0x75,0x6E,0x74,0x69,0x6E,0x67,0x20,0x37
+0000b2 6573
+0000b3 7367      	.DB  0x73,0x65,0x67,0x73
+                 _0xF:
+0000b4 2e34
+0000b5 4420
+0000b6 776f
+0000b7 206e      	.DB  0x34,0x2E,0x20,0x44,0x6F,0x77,0x6E,0x20
+0000b8 6f43
+0000b9 6e75
+0000ba 6974
+0000bb 676e      	.DB  0x43,0x6F,0x75,0x6E,0x74,0x69,0x6E,0x67
+0000bc 3720
+0000bd 6573
+0000be 7367      	.DB  0x20,0x37,0x73,0x65,0x67,0x73
+                 _0x10:
+0000bf 2e35
+0000c0 4420
+0000c1 7369
+0000c2 6c70      	.DB  0x35,0x2E,0x20,0x44,0x69,0x73,0x70,0x6C
+0000c3 7961
+0000c4 7920
+0000c5 756f
+0000c6 2074      	.DB  0x61,0x79,0x20,0x79,0x6F,0x75,0x74,0x20
+0000c7 4449      	.DB  0x49,0x44
+                 _0x11:
+0000c8 6552
+0000c9 7574
+0000ca 6e72
+0000cb 7420      	.DB  0x52,0x65,0x74,0x75,0x72,0x6E,0x20,0x74
+0000cc 206f
+0000cd 614d
+0000ce 6e69
+0000cf 4d20      	.DB  0x6F,0x20,0x4D,0x61,0x69,0x6E,0x20,0x4D
+0000d0 6e65
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1533): warning: .cseg .db misalignment - padding zero byte
+0000d1 0075      	.DB  0x65,0x6E,0x75
+                 _0x12:
+0000d2 205b
+0000d3 6e49
+0000d4 7263
+0000d5 6165      	.DB  0x5B,0x20,0x49,0x6E,0x63,0x72,0x65,0x61
+0000d6 6973
+0000d7 676e
+0000d8 4c20
+0000d9 4445      	.DB  0x73,0x69,0x6E,0x67,0x20,0x4C,0x45,0x44
+0000da 5d20      	.DB  0x20,0x5D
+                 _0x13:
+0000db 205b
+0000dc 6544
+0000dd 7263
+0000de 6165      	.DB  0x5B,0x20,0x44,0x65,0x63,0x72,0x65,0x61
+0000df 6973
+0000e0 676e
+0000e1 4c20
+0000e2 4445      	.DB  0x73,0x69,0x6E,0x67,0x20,0x4C,0x45,0x44
+0000e3 5d20      	.DB  0x20,0x5D
+                 _0x14:
+0000e4 205b
+0000e5 7055
+0000e6 4320
+0000e7 756f      	.DB  0x5B,0x20,0x55,0x70,0x20,0x43,0x6F,0x75
+0000e8 746e
+0000e9 6e69
+0000ea 2067
+0000eb 7337      	.DB  0x6E,0x74,0x69,0x6E,0x67,0x20,0x37,0x73
+0000ec 6765
+0000ed 2073
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1545): warning: .cseg .db misalignment - padding zero byte
+0000ee 005d      	.DB  0x65,0x67,0x73,0x20,0x5D
+                 _0x15:
+0000ef 205b
+0000f0 6f44
+0000f1 6e77
+0000f2 4320      	.DB  0x5B,0x20,0x44,0x6F,0x77,0x6E,0x20,0x43
+0000f3 756f
+0000f4 746e
+0000f5 6e69
+0000f6 2067      	.DB  0x6F,0x75,0x6E,0x74,0x69,0x6E,0x67,0x20
+0000f7 7337
+0000f8 6765
+0000f9 2073
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1549): warning: .cseg .db misalignment - padding zero byte
+0000fa 005d      	.DB  0x37,0x73,0x65,0x67,0x73,0x20,0x5D
+                 _0x16:
+0000fb 205b
+0000fc 6944
+0000fd 7073
+0000fe 616c      	.DB  0x5B,0x20,0x44,0x69,0x73,0x70,0x6C,0x61
+0000ff 2079
+000100 6f79
+000101 7275
+000102 4920      	.DB  0x79,0x20,0x79,0x6F,0x75,0x72,0x20,0x49
+000103 2044
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1553): warning: .cseg .db misalignment - padding zero byte
+000104 005d      	.DB  0x44,0x20,0x5D
+                 _0x17:
+000105 6f59
+000106 7275
+000107 4920
+000108 2044      	.DB  0x59,0x6F,0x75,0x72,0x20,0x49,0x44,0x20
+000109 203a
+00010a 6150
+00010b 6b72
+00010c 754a      	.DB  0x3A,0x20,0x50,0x61,0x72,0x6B,0x4A,0x75
+00010d 686e
+D:\PJH\Embeded_Project\Debug\List\Uart_Experiment.asm(1557): warning: .cseg .db misalignment - padding zero byte
+00010e 006f      	.DB  0x6E,0x68,0x6F
+                 _0x18:
+00010f 063f
+000110 4f5b
+000111 6d66
+000112 077d      	.DB  0x3F,0x6,0x5B,0x4F,0x66,0x6D,0x7D,0x7
+000113 6f7f      	.DB  0x7F,0x6F
+                 
+                 __GLOBAL_INI_TBL:
+000114 000a      	.DW  0x0A
+000115 0004      	.DW  0x04
+000116 008c      	.DW  __REG_VARS*2
+                 
+000117 001f      	.DW  0x1F
+000118 0500      	.DW  _string_line
+000119 0096      	.DW  _0x3*2
+                 
+00011a 0013      	.DW  0x13
+00011b 0520      	.DW  _string_title
+00011c 00b6      	.DW  _0x4*2
+                 
+00011d 0011      	.DW  0x11
+00011e 0534      	.DW  _string_press
+00011f 00ca      	.DW  _0x5*2
+                 
+000120 000c      	.DW  0x0C
+000121 0546      	.DW  _string_LED
+000122 00dc      	.DW  _0x6*2
+                 
+000123 000d      	.DW  0x0D
+000124 0553      	.DW  _string_7seg
+000125 00e8      	.DW  _0x7*2
+                 
+000126 000d      	.DW  0x0D
+000127 0561      	.DW  _string_main
+000128 00f6      	.DW  _0x8*2
+                 
+000129 0011      	.DW  0x11
+00012a 056f      	.DW  _string_Up_LED
+00012b 0104      	.DW  _0x9*2
+                 
+00012c 0011      	.DW  0x11
+00012d 0581      	.DW  _string_Down_LED
+00012e 0116      	.DW  _0xA*2
+                 
+00012f 000c      	.DW  0x0C
+000130 0593      	.DW  _string_Main_Menu
+000131 0128      	.DW  _0xB*2
+                 
+000132 000f      	.DW  0x0F
+000133 05a0      	.DW  _string_LED_ok
+000134 0134      	.DW  _0xC*2
+                 
+000135 0010      	.DW  0x10
+000136 05b0      	.DW  _string_7seg_ok
+000137 0144      	.DW  _0xD*2
+                 
+000138 0014      	.DW  0x14
+000139 05c1      	.DW  _string_Up_7seg
+00013a 0154      	.DW  _0xE*2
+                 
+00013b 0016      	.DW  0x16
+00013c 05d6      	.DW  _string_Down_7seg
+00013d 0168      	.DW  _0xF*2
+                 
+00013e 0012      	.DW  0x12
+00013f 05ed      	.DW  _string_DP_ID
+000140 017e      	.DW  _0x10*2
+                 
+000141 0013      	.DW  0x13
+000142 0600      	.DW  _string_Re_main
+000143 0190      	.DW  _0x11*2
+                 
+000144 0012      	.DW  0x12
+000145 0614      	.DW  _string_Up_LED_title
+000146 01a4      	.DW  _0x12*2
+                 
+000147 0012      	.DW  0x12
+000148 0627      	.DW  _string_Down_LED_title
+000149 01b6      	.DW  _0x13*2
+                 
+00014a 0015      	.DW  0x15
+00014b 063a      	.DW  _string_Up_7seg_title
+00014c 01c8      	.DW  _0x14*2
+                 
+00014d 0017      	.DW  0x17
+00014e 0650      	.DW  _string_Down_7seg_title
+00014f 01de      	.DW  _0x15*2
+                 
+000150 0013      	.DW  0x13
+000151 0668      	.DW  _string_DP_ID_title
+000152 01f6      	.DW  _0x16*2
+                 
+000153 0013      	.DW  0x13
+000154 067c      	.DW  _string_ID
+000155 020a      	.DW  _0x17*2
+                 
+000156 000a      	.DW  0x0A
+000157 0690      	.DW  _seg_pat
+000158 021e      	.DW  _0x18*2
+                 
+                 _0xFFFFFFFF:
+000159 0000      	.DW  0
+                 
+                 #define __GLOBAL_INI_TBL_PRESENT 1
+                 
+                 __RESET:
+00015a 94f8      	CLI
+00015b 27ee      	CLR  R30
+00015c bbec      	OUT  EECR,R30
+                 
+                 ;INTERRUPT VECTORS ARE PLACED
+                 ;AT THE START OF FLASH
+00015d e0f1      	LDI  R31,1
+00015e bff5      	OUT  MCUCR,R31
+00015f bfe5      	OUT  MCUCR,R30
+000160 93e0 006c 	STS  XMCRB,R30
+                 
+                 ;CLEAR R2-R14
+000162 e08d      	LDI  R24,(14-2)+1
+000163 e0a2      	LDI  R26,2
+000164 27bb      	CLR  R27
+                 __CLEAR_REG:
+000165 93ed      	ST   X+,R30
+000166 958a      	DEC  R24
+000167 f7e9      	BRNE __CLEAR_REG
+                 
+                 ;CLEAR SRAM
+000168 e080      	LDI  R24,LOW(__CLEAR_SRAM_SIZE)
+000169 e190      	LDI  R25,HIGH(__CLEAR_SRAM_SIZE)
+00016a e0a0      	LDI  R26,LOW(__SRAM_START)
+00016b e0b1      	LDI  R27,HIGH(__SRAM_START)
+                 __CLEAR_SRAM:
+00016c 93ed      	ST   X+,R30
+00016d 9701      	SBIW R24,1
+00016e f7e9      	BRNE __CLEAR_SRAM
+                 
+                 ;GLOBAL VARIABLES INITIALIZATION
+00016f e2e8      	LDI  R30,LOW(__GLOBAL_INI_TBL*2)
+000170 e0f2      	LDI  R31,HIGH(__GLOBAL_INI_TBL*2)
+                 __GLOBAL_INI_NEXT:
+000171 9185      	LPM  R24,Z+
+000172 9195      	LPM  R25,Z+
+000173 9700      	SBIW R24,0
+000174 f061      	BREQ __GLOBAL_INI_END
+000175 91a5      	LPM  R26,Z+
+000176 91b5      	LPM  R27,Z+
+000177 9005      	LPM  R0,Z+
+000178 9015      	LPM  R1,Z+
+000179 01bf      	MOVW R22,R30
+00017a 01f0      	MOVW R30,R0
+                 __GLOBAL_INI_LOOP:
+00017b 9005      	LPM  R0,Z+
+00017c 920d      	ST   X+,R0
+00017d 9701      	SBIW R24,1
+00017e f7e1      	BRNE __GLOBAL_INI_LOOP
+00017f 01fb      	MOVW R30,R22
+000180 cff0      	RJMP __GLOBAL_INI_NEXT
+                 __GLOBAL_INI_END:
+                 
+000181 bf8b      	OUT  RAMPZ,R24
+                 
+                 ;HARDWARE STACK POINTER INITIALIZATION
+000182 efef      	LDI  R30,LOW(__SRAM_END-__HEAP_SIZE)
+000183 bfed      	OUT  SPL,R30
+000184 e1e0      	LDI  R30,HIGH(__SRAM_END-__HEAP_SIZE)
+000185 bfee      	OUT  SPH,R30
+                 
+                 ;DATA STACK POINTER INITIALIZATION
+000186 e0c0      	LDI  R28,LOW(__SRAM_START+__DSTACK_SIZE)
+000187 e0d5      	LDI  R29,HIGH(__SRAM_START+__DSTACK_SIZE)
+                 
+000188 940c 018a 	JMP  _main
+                 
+                 	.ESEG
+                 	.ORG 0x00
+                 
+                 	.DSEG
+                 	.ORG 0x500
+                 
+                 	.CSEG
+                 	#ifndef __SLEEP_DEFINED__
+                 	#define __SLEEP_DEFINED__
+                 	.EQU __se_bit=0x20
+                 	.EQU __sm_mask=0x1C
+                 	.EQU __sm_powerdown=0x10
+                 	.EQU __sm_powersave=0x18
+                 	.EQU __sm_standby=0x14
+                 	.EQU __sm_ext_standby=0x1C
+                 	.EQU __sm_adc_noise_red=0x08
+                 	.SET power_ctrl_reg=mcucr
+                 	#endif
+                 
+                 	.DSEG
+                 ;void UART_menu(void);
+                 ;void UART_LED_menu(void);
+                 ;void UART_7seg_menu(void);
+                 ;void UART_Up_LED_menu(void);
+                 ;void UART_Down_LED_menu(void);
+                 ;void UART_Up_7seg_menu(void);
+                 ;void UART_Down_7seg_menu(void);
+                 ;void UART_DP_ID_menu(void);
+                 ;void Putch(char data);
+                 ;void Time_out(void);
+                 ;void new_line(void);
+                 ;void main(void)
+                 ; 0000 0041 {
+                 
+                 	.CSEG
+                 _main:
+                 ; .FSTART _main
+                 ; 0000 0042 
+                 ; 0000 0043 UCSR0A = 0x0;
+00018a e0e0      	LDI  R30,LOW(0)
+00018b b9eb      	OUT  0xB,R30
+                 ; 0000 0044 UCSR0B = 0b10011000; // RXCIE0 [7] =1 : 수신 완료 인터럽트 enable
+00018c e9e8      	LDI  R30,LOW(152)
+00018d b9ea      	OUT  0xA,R30
+                 ; 0000 0045 
+                 ; 0000 0046 UCSR0C = 0b00000110; // 비동기 데이터 8비트 모드
+00018e e0e6      	LDI  R30,LOW(6)
+00018f 93e0 0095 	STS  149,R30
+                 ; 0000 0047 UBRR0H = 0; // X-TAL = 16MHz 일때, BAUD = 9600
+000191 e0e0      	LDI  R30,LOW(0)
+000192 93e0 0090 	STS  144,R30
+                 ; 0000 0048 UBRR0L = 103;
+000194 e6e7      	LDI  R30,LOW(103)
+000195 b9e9      	OUT  0x9,R30
+                 ; 0000 0049 
+                 ; 0000 004A DDRC = 0xFF;
+000196 efef      	LDI  R30,LOW(255)
+000197 bbe4      	OUT  0x14,R30
+                 ; 0000 004B PORTC = led;
+000198 ba55      	OUT  0x15,R5
+                 ; 0000 004C 
+                 ; 0000 004D TIMSK = 0x81;           // tim2 비교 매치, tim0 overflow
+000199 e8e1      	LDI  R30,LOW(129)
+00019a bfe7      	OUT  0x37,R30
+                 ; 0000 004E TCCR2 = 0x0D;
+00019b e0ed      	LDI  R30,LOW(13)
+00019c bde5      	OUT  0x25,R30
+                 ; 0000 004F OCR2 = 255;
+00019d efef      	LDI  R30,LOW(255)
+00019e bde3      	OUT  0x23,R30
+                 ; 0000 0050 TCNT2 = 0;
+00019f e0e0      	LDI  R30,LOW(0)
+0001a0 bde4      	OUT  0x24,R30
+                 ; 0000 0051 
+                 ; 0000 0052 DDRB = 0xF0;
+0001a1 efe0      	LDI  R30,LOW(240)
+0001a2 bbe7      	OUT  0x17,R30
+                 ; 0000 0053 DDRD = 0xF0;
+0001a3 bbe1      	OUT  0x11,R30
+                 ; 0000 0054 DDRG = 0x0F;
+0001a4 e0ef      	LDI  R30,LOW(15)
+0001a5 93e0 0064 	STS  100,R30
+                 ; 0000 0055 
+                 ; 0000 0056 EIMSK = 0b00110000;
+0001a7 e3e0      	LDI  R30,LOW(48)
+0001a8 bfe9      	OUT  0x39,R30
+                 ; 0000 0057 EICRB = 0b00001010;
+0001a9 e0ea      	LDI  R30,LOW(10)
+0001aa bfea      	OUT  0x3A,R30
+                 ; 0000 0058 TCCR0 = 0x07;           // 1024
+0001ab e0e7      	LDI  R30,LOW(7)
+0001ac bfe3      	OUT  0x33,R30
+                 ; 0000 0059 TCNT0 = 0x00;           // 타이머/카운터0 레지스터 초기값
+0001ad e0e0      	LDI  R30,LOW(0)
+0001ae bfe2      	OUT  0x32,R30
+                 ; 0000 005A 
+                 ; 0000 005B SREG |= 0x80; // 전역 인터럽트 인에이블 I 비트 셋
+0001af 9478      	BSET 7
+                 ; 0000 005C 
+                 ; 0000 005D UART_menu();
+0001b0 d19d      	RCALL _UART_menu
+                 ; 0000 005E 
+                 ; 0000 005F while(1)
+                 _0x19:
+                 ; 0000 0060 {
+                 ; 0000 0061 if(flag==1)
+0001b1 e0e1      	LDI  R30,LOW(1)
+0001b2 15ec      	CP   R30,R12
+0001b3 f009      	BREQ PC+2
+0001b4 c06b      	RJMP _0x1C
+                 ; 0000 0062 {
+                 ; 0000 0063 if(UART_Rx_data == 'L' || UART_Rx_data == 'l') UART_Rx_data_1 = 'l';
+0001b5 e4ec      	LDI  R30,LOW(76)
+0001b6 15e8      	CP   R30,R8
+0001b7 f019      	BREQ _0x1E
+0001b8 e6ec      	LDI  R30,LOW(108)
+0001b9 15e8      	CP   R30,R8
+0001ba f411      	BRNE _0x1D
+                 _0x1E:
+0001bb e6ec      	LDI  R30,LOW(108)
+0001bc 2ebe      	MOV  R11,R30
+                 ; 0000 0064 if(UART_Rx_data == 'S' || UART_Rx_data == 's') UART_Rx_data_1 = 's';
+                 _0x1D:
+0001bd e5e3      	LDI  R30,LOW(83)
+0001be 15e8      	CP   R30,R8
+0001bf f019      	BREQ _0x21
+0001c0 e7e3      	LDI  R30,LOW(115)
+0001c1 15e8      	CP   R30,R8
+0001c2 f411      	BRNE _0x20
+                 _0x21:
+0001c3 e7e3      	LDI  R30,LOW(115)
+0001c4 2ebe      	MOV  R11,R30
+                 ; 0000 0065 if(UART_Rx_data == 'M' || UART_Rx_data == 'm')UART_Rx_data_1 = 'm';
+                 _0x20:
+0001c5 e4ed      	LDI  R30,LOW(77)
+0001c6 15e8      	CP   R30,R8
+0001c7 f019      	BREQ _0x24
+0001c8 e6ed      	LDI  R30,LOW(109)
+0001c9 15e8      	CP   R30,R8
+0001ca f411      	BRNE _0x23
+                 _0x24:
+0001cb e6ed      	LDI  R30,LOW(109)
+0001cc 2ebe      	MOV  R11,R30
+                 ; 0000 0066 main_flag = 1;
+                 _0x23:
+0001cd e0e1      	LDI  R30,LOW(1)
+0001ce 93e0 069c 	STS  _main_flag,R30
+                 ; 0000 0067 switch (UART_Rx_data_1)
+0001d0 2deb      	MOV  R30,R11
+0001d1 e0f0      	LDI  R31,0
+                 ; 0000 0068 {
+                 ; 0000 0069 case 'l':
+0001d2 36ec      	CPI  R30,LOW(0x6C)
+0001d3 e0a0      	LDI  R26,HIGH(0x6C)
+0001d4 07fa      	CPC  R31,R26
+0001d5 f4c9      	BRNE _0x29
+                 ; 0000 006A LED_flag = 1;
+0001d6 e0e1      	LDI  R30,LOW(1)
+0001d7 93e0 069a 	STS  _LED_flag,R30
+                 ; 0000 006B new_line();                 // 들여쓰기
+0001d9 d357      	RCALL _new_line
+                 ; 0000 006C new_line();                 // 들여쓰기
+0001da d356      	RCALL _new_line
+                 ; 0000 006D pStr = string_LED_ok;
+0001db eae0      	LDI  R30,LOW(_string_LED_ok)
+0001dc e0f5      	LDI  R31,HIGH(_string_LED_ok)
+0001dd d36a      	RCALL SUBOPT_0x0
+                 ; 0000 006E while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x2A:
+0001de d36e      	RCALL SUBOPT_0x1
+0001df f011      	BREQ _0x2C
+0001e0 d373      	RCALL SUBOPT_0x2
+0001e1 cffc      	RJMP _0x2A
+                 _0x2C:
+                 ; 0000 006F while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x2D:
+0001e2 9b5d      	SBIS 0xB,5
+0001e3 cffe      	RJMP _0x2D
+0001e4 e0ed      	LDI  R30,LOW(13)
+0001e5 b9ec      	OUT  0xC,R30
+                 ; 0000 0070 UART_LED_menu();
+0001e6 d1b5      	RCALL _UART_LED_menu
+                 ; 0000 0071 
+                 ; 0000 0072 pStr = string_press;
+0001e7 e3e4      	LDI  R30,LOW(_string_press)
+0001e8 e0f5      	LDI  R31,HIGH(_string_press)
+0001e9 d35e      	RCALL SUBOPT_0x0
+                 ; 0000 0073 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x30:
+0001ea d362      	RCALL SUBOPT_0x1
+0001eb f011      	BREQ _0x32
+0001ec d367      	RCALL SUBOPT_0x2
+0001ed cffc      	RJMP _0x30
+                 _0x32:
+                 ; 0000 0075 break;
+0001ee c030      	RJMP _0x28
+                 ; 0000 0076 
+                 ; 0000 0077 case 's':
+                 _0x29:
+0001ef 37e3      	CPI  R30,LOW(0x73)
+0001f0 e0a0      	LDI  R26,HIGH(0x73)
+0001f1 07fa      	CPC  R31,R26
+0001f2 f4c9      	BRNE _0x33
+                 ; 0000 0078 seg_flag = 1;
+0001f3 e0e1      	LDI  R30,LOW(1)
+0001f4 93e0 069b 	STS  _seg_flag,R30
+                 ; 0000 0079 new_line();                 // 들여쓰기
+0001f6 d33a      	RCALL _new_line
+                 ; 0000 007A new_line();                 // 들여쓰기
+0001f7 d339      	RCALL _new_line
+                 ; 0000 007B pStr = string_7seg_ok;
+0001f8 ebe0      	LDI  R30,LOW(_string_7seg_ok)
+0001f9 e0f5      	LDI  R31,HIGH(_string_7seg_ok)
+0001fa d34d      	RCALL SUBOPT_0x0
+                 ; 0000 007C while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x34:
+0001fb d351      	RCALL SUBOPT_0x1
+0001fc f011      	BREQ _0x36
+0001fd d356      	RCALL SUBOPT_0x2
+0001fe cffc      	RJMP _0x34
+                 _0x36:
+                 ; 0000 007D while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x37:
+0001ff 9b5d      	SBIS 0xB,5
+000200 cffe      	RJMP _0x37
+000201 e0ed      	LDI  R30,LOW(13)
+000202 b9ec      	OUT  0xC,R30
+                 ; 0000 007E UART_7seg_menu();
+000203 d1c7      	RCALL _UART_7seg_menu
+                 ; 0000 007F 
+                 ; 0000 0080 pStr = string_press;
+000204 e3e4      	LDI  R30,LOW(_string_press)
+000205 e0f5      	LDI  R31,HIGH(_string_press)
+000206 d341      	RCALL SUBOPT_0x0
+                 ; 0000 0081 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x3A:
+000207 d345      	RCALL SUBOPT_0x1
+000208 f011      	BREQ _0x3C
+000209 d34a      	RCALL SUBOPT_0x2
+00020a cffc      	RJMP _0x3A
+                 _0x3C:
+                 ; 0000 0083 break;
+00020b c013      	RJMP _0x28
+                 ; 0000 0084 
+                 ; 0000 0085 case 'm':
+                 _0x33:
+00020c 36ed      	CPI  R30,LOW(0x6D)
+00020d e0a0      	LDI  R26,HIGH(0x6D)
+00020e 07fa      	CPC  R31,R26
+00020f f479      	BRNE _0x28
+                 ; 0000 0086 new_line();                 // 들여쓰기
+000210 d34d      	RCALL SUBOPT_0x3
+                 ; 0000 0087 new_line();                 // 들여쓰기
+                 ; 0000 0088 PORTC = 0xFF;
+                 ; 0000 0089 PORTD = 0;
+                 ; 0000 008A PORTB = 0;
+                 ; 0000 008B main_flag = 1;
+                 ; 0000 008C LED_flag = 0;
+                 ; 0000 008D seg_flag = 0;
+                 ; 0000 008E pStr = string_Re_main;
+000211 e0e0      	LDI  R30,LOW(_string_Re_main)
+000212 e0f6      	LDI  R31,HIGH(_string_Re_main)
+000213 d334      	RCALL SUBOPT_0x0
+                 ; 0000 008F while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x3E:
+000214 d338      	RCALL SUBOPT_0x1
+000215 f011      	BREQ _0x40
+000216 d33d      	RCALL SUBOPT_0x2
+000217 cffc      	RJMP _0x3E
+                 _0x40:
+                 ; 0000 0090 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x41:
+000218 9b5d      	SBIS 0xB,5
+000219 cffe      	RJMP _0x41
+00021a d353      	RCALL SUBOPT_0x4
+                 ; 0000 0091 UART_menu();
+                 ; 0000 0092 
+                 ; 0000 0093 pStr = string_press;
+                 ; 0000 0094 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x44:
+00021b d331      	RCALL SUBOPT_0x1
+00021c f011      	BREQ _0x46
+00021d d336      	RCALL SUBOPT_0x2
+00021e cffc      	RJMP _0x44
+                 _0x46:
+                 ; 0000 0096 break;
+                 ; 0000 0097 }
+                 _0x28:
+                 ; 0000 0098 
+                 ; 0000 0099 flag=0;
+00021f 24cc      	CLR  R12
+                 ; 0000 009A }
+                 ; 0000 009B 
+                 ; 0000 009C if(main_flag == 1 && LED_flag == 1)
+                 _0x1C:
+000220 91a0 069c 	LDS  R26,_main_flag
+000222 30a1      	CPI  R26,LOW(0x1)
+000223 f421      	BRNE _0x48
+000224 91a0 069a 	LDS  R26,_LED_flag
+000226 30a1      	CPI  R26,LOW(0x1)
+000227 f009      	BREQ _0x49
+                 _0x48:
+000228 c072      	RJMP _0x47
+                 _0x49:
+                 ; 0000 009D {
+                 ; 0000 009E if(flag == 1)
+000229 e0e1      	LDI  R30,LOW(1)
+00022a 15ec      	CP   R30,R12
+00022b f009      	BREQ PC+2
+00022c c04d      	RJMP _0x4A
+                 ; 0000 009F {
+                 ; 0000 00A0 if(UART_Rx_data == '1') UART_Rx_data_2 = '1';
+00022d e3e1      	LDI  R30,LOW(49)
+00022e 15e8      	CP   R30,R8
+00022f f409      	BRNE _0x4B
+000230 2eae      	MOV  R10,R30
+                 ; 0000 00A1 if(UART_Rx_data == '2') UART_Rx_data_2 = '2';
+                 _0x4B:
+000231 e3e2      	LDI  R30,LOW(50)
+000232 15e8      	CP   R30,R8
+000233 f409      	BRNE _0x4C
+000234 2eae      	MOV  R10,R30
+                 ; 0000 00A2 if(UART_Rx_data == 'M' || UART_Rx_data == 'm') UART_Rx_data_2 = 'm';
+                 _0x4C:
+000235 e4ed      	LDI  R30,LOW(77)
+000236 15e8      	CP   R30,R8
+000237 f019      	BREQ _0x4E
+000238 e6ed      	LDI  R30,LOW(109)
+000239 15e8      	CP   R30,R8
+00023a f411      	BRNE _0x4D
+                 _0x4E:
+00023b e6ed      	LDI  R30,LOW(109)
+00023c 2eae      	MOV  R10,R30
+                 ; 0000 00A3 switch (UART_Rx_data_2)
+                 _0x4D:
+00023d 2dea      	MOV  R30,R10
+00023e e0f0      	LDI  R31,0
+                 ; 0000 00A4 {
+                 ; 0000 00A5 case '1':
+00023f 33e1      	CPI  R30,LOW(0x31)
+000240 e0a0      	LDI  R26,HIGH(0x31)
+000241 07fa      	CPC  R31,R26
+000242 f471      	BRNE _0x53
+                 ; 0000 00A6 new_line();                 // 들여쓰기
+000243 d2ed      	RCALL _new_line
+                 ; 0000 00A7 new_line();                 // 들여쓰기
+000244 d2ec      	RCALL _new_line
+                 ; 0000 00A8 UART_Up_LED_menu();
+000245 d1b6      	RCALL _UART_Up_LED_menu
+                 ; 0000 00A9 pStr = string_press;
+000246 e3e4      	LDI  R30,LOW(_string_press)
+000247 e0f5      	LDI  R31,HIGH(_string_press)
+000248 d2ff      	RCALL SUBOPT_0x0
+                 ; 0000 00AA while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x54:
+000249 d303      	RCALL SUBOPT_0x1
+00024a f011      	BREQ _0x56
+00024b d308      	RCALL SUBOPT_0x2
+00024c cffc      	RJMP _0x54
+                 _0x56:
+                 ; 0000 00AB LED_flag_sub = 0x01;
+00024d e0e1      	LDI  R30,LOW(1)
+00024e 93e0 069d 	STS  _LED_flag_sub,R30
+                 ; 0000 00AC break;
+000250 c028      	RJMP _0x52
+                 ; 0000 00AD 
+                 ; 0000 00AE case '2':
+                 _0x53:
+000251 33e2      	CPI  R30,LOW(0x32)
+000252 e0a0      	LDI  R26,HIGH(0x32)
+000253 07fa      	CPC  R31,R26
+000254 f471      	BRNE _0x57
+                 ; 0000 00AF new_line();                 // 들여쓰기
+000255 d2db      	RCALL _new_line
+                 ; 0000 00B0 new_line();                 // 들여쓰기
+000256 d2da      	RCALL _new_line
+                 ; 0000 00B1 UART_Down_LED_menu();
+000257 d1d6      	RCALL _UART_Down_LED_menu
+                 ; 0000 00B2 LED_flag_sub = 0x02;
+000258 e0e2      	LDI  R30,LOW(2)
+000259 93e0 069d 	STS  _LED_flag_sub,R30
+                 ; 0000 00B3 pStr = string_press;
+00025b e3e4      	LDI  R30,LOW(_string_press)
+00025c e0f5      	LDI  R31,HIGH(_string_press)
+00025d d2ea      	RCALL SUBOPT_0x0
+                 ; 0000 00B4 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x58:
+00025e d2ee      	RCALL SUBOPT_0x1
+00025f f011      	BREQ _0x5A
+000260 d2f3      	RCALL SUBOPT_0x2
+000261 cffc      	RJMP _0x58
+                 _0x5A:
+                 ; 0000 00B5 break;
+000262 c016      	RJMP _0x52
+                 ; 0000 00B6 
+                 ; 0000 00B7 case 'm':
+                 _0x57:
+000263 36ed      	CPI  R30,LOW(0x6D)
+000264 e0a0      	LDI  R26,HIGH(0x6D)
+000265 07fa      	CPC  R31,R26
+000266 f491      	BRNE _0x52
+                 ; 0000 00B8 new_line();                 // 들여쓰기
+000267 d2f6      	RCALL SUBOPT_0x3
+                 ; 0000 00B9 new_line();                 // 들여쓰기
+                 ; 0000 00BA PORTC = 0xFF;
+                 ; 0000 00BB PORTD = 0;
+                 ; 0000 00BC PORTB = 0;
+                 ; 0000 00BD main_flag = 1;
+                 ; 0000 00BE LED_flag = 0;
+                 ; 0000 00BF seg_flag = 0;
+                 ; 0000 00C0 LED_flag_sub = 0;
+000268 d30b      	RCALL SUBOPT_0x5
+                 ; 0000 00C1 seg_flag_sub = 0;
+000269 93e0 069e 	STS  _seg_flag_sub,R30
+                 ; 0000 00C2 pStr = string_Re_main;
+00026b e0e0      	LDI  R30,LOW(_string_Re_main)
+00026c e0f6      	LDI  R31,HIGH(_string_Re_main)
+00026d d2da      	RCALL SUBOPT_0x0
+                 ; 0000 00C3 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x5C:
+00026e d2de      	RCALL SUBOPT_0x1
+00026f f011      	BREQ _0x5E
+000270 d2e3      	RCALL SUBOPT_0x2
+000271 cffc      	RJMP _0x5C
+                 _0x5E:
+                 ; 0000 00C4 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x5F:
+000272 9b5d      	SBIS 0xB,5
+000273 cffe      	RJMP _0x5F
+000274 d2f9      	RCALL SUBOPT_0x4
+                 ; 0000 00C5 UART_menu();
+                 ; 0000 00C6 
+                 ; 0000 00C7 pStr = string_press;
+                 ; 0000 00C8 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x62:
+000275 d2d7      	RCALL SUBOPT_0x1
+000276 f011      	BREQ _0x64
+000277 d2dc      	RCALL SUBOPT_0x2
+000278 cffc      	RJMP _0x62
+                 _0x64:
+                 ; 0000 00CA break;
+                 ; 0000 00CB }
+                 _0x52:
+                 ; 0000 00CC 
+                 ; 0000 00CD flag = 0;
+000279 24cc      	CLR  R12
+                 ; 0000 00CE }
+                 ; 0000 00CF if(LED_flag_sub == 0x01)
+                 _0x4A:
+00027a 91a0 069d 	LDS  R26,_LED_flag_sub
+00027c 30a1      	CPI  R26,LOW(0x1)
+00027d f461      	BRNE _0x65
+                 ; 0000 00D0 {
+                 ; 0000 00D1 if (TIM2_COMP_FLAG == 1)
+00027e e0e1      	LDI  R30,LOW(1)
+00027f 15e4      	CP   R30,R4
+000280 f449      	BRNE _0x66
+                 ; 0000 00D2 {
+                 ; 0000 00D3 led = led << 1;
+000281 0c55      	LSL  R5
+                 ; 0000 00D4 led = led | 0x01;   // 최하위 비트 set
+000282 2a5e      	OR   R5,R30
+                 ; 0000 00D5 if (led == 0xFF) led = 0xFE;
+000283 efef      	LDI  R30,LOW(255)
+000284 15e5      	CP   R30,R5
+000285 f411      	BRNE _0x67
+000286 efee      	LDI  R30,LOW(254)
+000287 2e5e      	MOV  R5,R30
+                 ; 0000 00D6 PORTC = led;
+                 _0x67:
+000288 ba55      	OUT  0x15,R5
+                 ; 0000 00D7 TIM2_COMP_FLAG = 0;
+000289 2444      	CLR  R4
+                 ; 0000 00D8 }
+                 ; 0000 00D9 }
+                 _0x66:
+                 ; 0000 00DA if(LED_flag_sub == 0x02)
+                 _0x65:
+00028a 91a0 069d 	LDS  R26,_LED_flag_sub
+00028c 30a2      	CPI  R26,LOW(0x2)
+00028d f469      	BRNE _0x68
+                 ; 0000 00DB {
+                 ; 0000 00DC if (TIM2_COMP_FLAG == 1)
+00028e e0e1      	LDI  R30,LOW(1)
+00028f 15e4      	CP   R30,R4
+000290 f451      	BRNE _0x69
+                 ; 0000 00DD {
+                 ; 0000 00DE led = led >> 1;
+000291 9456      	LSR  R5
+                 ; 0000 00DF led = led | 0x80;   // 최상위 비트 set
+000292 e8e0      	LDI  R30,LOW(128)
+000293 2a5e      	OR   R5,R30
+                 ; 0000 00E0 if (led == 0xFF) led = 0x7F;
+000294 efef      	LDI  R30,LOW(255)
+000295 15e5      	CP   R30,R5
+000296 f411      	BRNE _0x6A
+000297 e7ef      	LDI  R30,LOW(127)
+000298 2e5e      	MOV  R5,R30
+                 ; 0000 00E1 PORTC = led;
+                 _0x6A:
+000299 ba55      	OUT  0x15,R5
+                 ; 0000 00E2 TIM2_COMP_FLAG = 0;
+00029a 2444      	CLR  R4
+                 ; 0000 00E3 }
+                 ; 0000 00E4 }
+                 _0x69:
+                 ; 0000 00E5 }
+                 _0x68:
+                 ; 0000 00E6 
+                 ; 0000 00E7 if(main_flag == 1 && seg_flag == 1)
+                 _0x47:
+00029b 91a0 069c 	LDS  R26,_main_flag
+00029d 30a1      	CPI  R26,LOW(0x1)
+00029e f421      	BRNE _0x6C
+00029f 91a0 069b 	LDS  R26,_seg_flag
+0002a1 30a1      	CPI  R26,LOW(0x1)
+0002a2 f009      	BREQ _0x6D
+                 _0x6C:
+0002a3 c0a8      	RJMP _0x6B
+                 _0x6D:
+                 ; 0000 00E8 {
+                 ; 0000 00E9 if(flag == 1)
+0002a4 e0e1      	LDI  R30,LOW(1)
+0002a5 15ec      	CP   R30,R12
+0002a6 f009      	BREQ PC+2
+0002a7 c081      	RJMP _0x6E
+                 ; 0000 00EA {
+                 ; 0000 00EB if(UART_Rx_data == '3') UART_Rx_data_3 = '3';
+0002a8 e3e3      	LDI  R30,LOW(51)
+0002a9 15e8      	CP   R30,R8
+0002aa f409      	BRNE _0x6F
+0002ab 2ede      	MOV  R13,R30
+                 ; 0000 00EC if(UART_Rx_data == '4') UART_Rx_data_3 = '4';
+                 _0x6F:
+0002ac e3e4      	LDI  R30,LOW(52)
+0002ad 15e8      	CP   R30,R8
+0002ae f409      	BRNE _0x70
+0002af 2ede      	MOV  R13,R30
+                 ; 0000 00ED if(UART_Rx_data == '5') UART_Rx_data_3 = '5';
+                 _0x70:
+0002b0 e3e5      	LDI  R30,LOW(53)
+0002b1 15e8      	CP   R30,R8
+0002b2 f409      	BRNE _0x71
+0002b3 2ede      	MOV  R13,R30
+                 ; 0000 00EE if(UART_Rx_data == 'M' || UART_Rx_data == 'm') UART_Rx_data_3 = 'm';
+                 _0x71:
+0002b4 e4ed      	LDI  R30,LOW(77)
+0002b5 15e8      	CP   R30,R8
+0002b6 f019      	BREQ _0x73
+0002b7 e6ed      	LDI  R30,LOW(109)
+0002b8 15e8      	CP   R30,R8
+0002b9 f411      	BRNE _0x72
+                 _0x73:
+0002ba e6ed      	LDI  R30,LOW(109)
+0002bb 2ede      	MOV  R13,R30
+                 ; 0000 00EF switch (UART_Rx_data_3)
+                 _0x72:
+0002bc 2ded      	MOV  R30,R13
+0002bd e0f0      	LDI  R31,0
+                 ; 0000 00F0 {
+                 ; 0000 00F1 case '3':                     // 문자열 전송
+0002be 33e3      	CPI  R30,LOW(0x33)
+0002bf e0a0      	LDI  R26,HIGH(0x33)
+0002c0 07fa      	CPC  R31,R26
+0002c1 f471      	BRNE _0x78
+                 ; 0000 00F2 new_line();                 // 들여쓰기
+0002c2 d26e      	RCALL _new_line
+                 ; 0000 00F3 new_line();                 // 들여쓰기
+0002c3 d26d      	RCALL _new_line
+                 ; 0000 00F4 UART_Up_7seg_menu();
+0002c4 d19b      	RCALL _UART_Up_7seg_menu
+                 ; 0000 00F5 
+                 ; 0000 00F6 pStr = string_press;
+0002c5 e3e4      	LDI  R30,LOW(_string_press)
+0002c6 e0f5      	LDI  R31,HIGH(_string_press)
+0002c7 d280      	RCALL SUBOPT_0x0
+                 ; 0000 00F7 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x79:
+0002c8 d284      	RCALL SUBOPT_0x1
+0002c9 f011      	BREQ _0x7B
+0002ca d289      	RCALL SUBOPT_0x2
+0002cb cffc      	RJMP _0x79
+                 _0x7B:
+                 ; 0000 00F8 seg_flag_sub = 0x01;
+0002cc e0e1      	LDI  R30,LOW(1)
+0002cd 93e0 069e 	STS  _seg_flag_sub,R30
+                 ; 0000 00F9 break;
+0002cf c058      	RJMP _0x77
+                 ; 0000 00FA 
+                 ; 0000 00FB case '4':
+                 _0x78:
+0002d0 33e4      	CPI  R30,LOW(0x34)
+0002d1 e0a0      	LDI  R26,HIGH(0x34)
+0002d2 07fa      	CPC  R31,R26
+0002d3 f471      	BRNE _0x7C
+                 ; 0000 00FC new_line();
+0002d4 d25c      	RCALL _new_line
+                 ; 0000 00FD new_line();                 // 들여쓰기
+0002d5 d25b      	RCALL _new_line
+                 ; 0000 00FE UART_Down_7seg_menu();
+0002d6 d1c8      	RCALL _UART_Down_7seg_menu
+                 ; 0000 00FF 
+                 ; 0000 0100 pStr = string_press;
+0002d7 e3e4      	LDI  R30,LOW(_string_press)
+0002d8 e0f5      	LDI  R31,HIGH(_string_press)
+0002d9 d26e      	RCALL SUBOPT_0x0
+                 ; 0000 0101 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x7D:
+0002da d272      	RCALL SUBOPT_0x1
+0002db f011      	BREQ _0x7F
+0002dc d277      	RCALL SUBOPT_0x2
+0002dd cffc      	RJMP _0x7D
+                 _0x7F:
+                 ; 0000 0102 seg_flag_sub = 0x02;
+0002de e0e2      	LDI  R30,LOW(2)
+0002df 93e0 069e 	STS  _seg_flag_sub,R30
+                 ; 0000 0103 break;
+0002e1 c046      	RJMP _0x77
+                 ; 0000 0104 
+                 ; 0000 0105 case '5':
+                 _0x7C:
+0002e2 33e5      	CPI  R30,LOW(0x35)
+0002e3 e0a0      	LDI  R26,HIGH(0x35)
+0002e4 07fa      	CPC  R31,R26
+0002e5 f4b9      	BRNE _0x80
+                 ; 0000 0106 new_line();
+0002e6 d24a      	RCALL _new_line
+                 ; 0000 0107 new_line();                 // 들여쓰기
+0002e7 d249      	RCALL _new_line
+                 ; 0000 0108 UART_DP_ID_menu();
+0002e8 d1ee      	RCALL _UART_DP_ID_menu
+                 ; 0000 0109 pStr = string_ID;
+0002e9 e7ec      	LDI  R30,LOW(_string_ID)
+0002ea e0f6      	LDI  R31,HIGH(_string_ID)
+0002eb d25c      	RCALL SUBOPT_0x0
+                 ; 0000 010A while(*pStr != 0) Putch(*pStr++);                      // 문자열 전�
+                 _0x81:
+0002ec d260      	RCALL SUBOPT_0x1
+0002ed f011      	BREQ _0x83
+0002ee d265      	RCALL SUBOPT_0x2
+0002ef cffc      	RJMP _0x81
+                 _0x83:
+                 ; 0000 010B new_line();
+0002f0 d240      	RCALL _new_line
+                 ; 0000 010C new_line();
+0002f1 d23f      	RCALL _new_line
+                 ; 0000 010D 
+                 ; 0000 010E pStr = string_press;
+0002f2 e3e4      	LDI  R30,LOW(_string_press)
+0002f3 e0f5      	LDI  R31,HIGH(_string_press)
+0002f4 d253      	RCALL SUBOPT_0x0
+                 ; 0000 010F while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x84:
+0002f5 d257      	RCALL SUBOPT_0x1
+0002f6 f011      	BREQ _0x86
+0002f7 d25c      	RCALL SUBOPT_0x2
+0002f8 cffc      	RJMP _0x84
+                 _0x86:
+                 ; 0000 0110 seg_flag_sub = 0x03;
+0002f9 e0e3      	LDI  R30,LOW(3)
+0002fa 93e0 069e 	STS  _seg_flag_sub,R30
+                 ; 0000 0111 
+                 ; 0000 0112 break;
+0002fc c02b      	RJMP _0x77
+                 ; 0000 0113 
+                 ; 0000 0114 case 'm':
+                 _0x80:
+0002fd 36ed      	CPI  R30,LOW(0x6D)
+0002fe e0a0      	LDI  R26,HIGH(0x6D)
+0002ff 07fa      	CPC  R31,R26
+000300 f539      	BRNE _0x77
+                 ; 0000 0115 new_line();                 // 들여쓰기
+000301 d22f      	RCALL _new_line
+                 ; 0000 0116 new_line();                 // 들여쓰기
+000302 d22e      	RCALL _new_line
+                 ; 0000 0117 PORTC = 0xFF;
+000303 efef      	LDI  R30,LOW(255)
+000304 bbe5      	OUT  0x15,R30
+                 ; 0000 0118 PORTD = 0;
+000305 e0e0      	LDI  R30,LOW(0)
+000306 bbe2      	OUT  0x12,R30
+                 ; 0000 0119 PORTB = 0;
+000307 bbe8      	OUT  0x18,R30
+                 ; 0000 011A main_flag = 1;
+000308 e0e1      	LDI  R30,LOW(1)
+000309 93e0 069c 	STS  _main_flag,R30
+                 ; 0000 011B LED_flag = 0;
+00030b e0e0      	LDI  R30,LOW(0)
+00030c 93e0 069a 	STS  _LED_flag,R30
+                 ; 0000 011C LED_flag_sub = 0;
+00030e d265      	RCALL SUBOPT_0x5
+                 ; 0000 011D seg_flag = 0;
+00030f 93e0 069b 	STS  _seg_flag,R30
+                 ; 0000 011E seg_flag_sub = 0;
+000311 e0e0      	LDI  R30,LOW(0)
+000312 93e0 069e 	STS  _seg_flag_sub,R30
+                 ; 0000 011F new_line();
+000314 d21c      	RCALL _new_line
+                 ; 0000 0120 pStr = string_Re_main;
+000315 e0e0      	LDI  R30,LOW(_string_Re_main)
+000316 e0f6      	LDI  R31,HIGH(_string_Re_main)
+000317 d230      	RCALL SUBOPT_0x0
+                 ; 0000 0121 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x88:
+000318 d234      	RCALL SUBOPT_0x1
+000319 f011      	BREQ _0x8A
+00031a d239      	RCALL SUBOPT_0x2
+00031b cffc      	RJMP _0x88
+                 _0x8A:
+                 ; 0000 0122 new_line();
+00031c d214      	RCALL _new_line
+                 ; 0000 0123 UART_menu();
+00031d d030      	RCALL _UART_menu
+                 ; 0000 0124 
+                 ; 0000 0125 pStr = string_press;
+00031e e3e4      	LDI  R30,LOW(_string_press)
+00031f e0f5      	LDI  R31,HIGH(_string_press)
+000320 d227      	RCALL SUBOPT_0x0
+                 ; 0000 0126 while(*pStr != 0) Putch(*pStr++);                     // 문자열 전송
+                 _0x8B:
+000321 d22b      	RCALL SUBOPT_0x1
+000322 f011      	BREQ _0x8D
+000323 d230      	RCALL SUBOPT_0x2
+000324 cffc      	RJMP _0x8B
+                 _0x8D:
+                 ; 0000 0127 main_flag = 1;
+000325 e0e1      	LDI  R30,LOW(1)
+000326 93e0 069c 	STS  _main_flag,R30
+                 ; 0000 0128 
+                 ; 0000 0129 break;
+                 ; 0000 012A }
+                 _0x77:
+                 ; 0000 012B flag = 0;
+000328 24cc      	CLR  R12
+                 ; 0000 012C }
+                 ; 0000 012D if(seg_flag_sub == 0x01)
+                 _0x6E:
+000329 91a0 069e 	LDS  R26,_seg_flag_sub
+00032b 30a1      	CPI  R26,LOW(0x1)
+00032c f469      	BRNE _0x8E
+                 ; 0000 012E {
+                 ; 0000 012F if(i < 0 || i > 9) i = 0;
+00032d e0e0      	LDI  R30,LOW(0)
+00032e 169e      	CP   R9,R30
+00032f f018      	BRLO _0x90
+000330 e0e9      	LDI  R30,LOW(9)
+000331 15e9      	CP   R30,R9
+000332 f408      	BRSH _0x8F
+                 _0x90:
+000333 2499      	CLR  R9
+                 ; 0000 0130 Time_out();
+                 _0x8F:
+000334 d1e1      	RCALL _Time_out
+                 ; 0000 0131 if(cnt >= 10)
+000335 e0ea      	LDI  R30,LOW(10)
+000336 166e      	CP   R6,R30
+000337 f010      	BRLO _0x92
+                 ; 0000 0132 {
+                 ; 0000 0133 i++;
+000338 9493      	INC  R9
+                 ; 0000 0134 cnt = 0;
+000339 2466      	CLR  R6
+                 ; 0000 0135 }
+                 ; 0000 0136 }
+                 _0x92:
+                 ; 0000 0137 if(seg_flag_sub == 0x02)
+                 _0x8E:
+00033a 91a0 069e 	LDS  R26,_seg_flag_sub
+00033c 30a2      	CPI  R26,LOW(0x2)
+00033d f471      	BRNE _0x93
+                 ; 0000 0138 {
+                 ; 0000 0139 if(i < 0 || i > 9) i = 9;
+00033e e0e0      	LDI  R30,LOW(0)
+00033f 169e      	CP   R9,R30
+000340 f018      	BRLO _0x95
+000341 e0e9      	LDI  R30,LOW(9)
+000342 15e9      	CP   R30,R9
+000343 f410      	BRSH _0x94
+                 _0x95:
+000344 e0e9      	LDI  R30,LOW(9)
+000345 2e9e      	MOV  R9,R30
+                 ; 0000 013A Time_out();
+                 _0x94:
+000346 d1cf      	RCALL _Time_out
+                 ; 0000 013B 
+                 ; 0000 013C if(cnt >= 10)
+000347 e0ea      	LDI  R30,LOW(10)
+000348 166e      	CP   R6,R30
+000349 f010      	BRLO _0x97
+                 ; 0000 013D {
+                 ; 0000 013E i--;
+00034a 949a      	DEC  R9
+                 ; 0000 013F cnt = 0;
+00034b 2466      	CLR  R6
+                 ; 0000 0140 }
+                 ; 0000 0141 }
+                 _0x97:
+                 ; 0000 0142 
+                 ; 0000 0143 
+                 ; 0000 0144 
+                 ; 0000 0145 }
+                 _0x93:
+                 ; 0000 0146 
+                 ; 0000 0147 }
+                 _0x6B:
+00034c ce64      	RJMP _0x19
+                 ; 0000 0148 }
+                 _0x98:
+00034d cfff      	RJMP _0x98
+                 ; .FEND
+                 ;void UART_menu(void)
+                 ; 0000 014B {
+                 _UART_menu:
+                 ; .FSTART _UART_menu
+                 ; 0000 014C 
+                 ; 0000 014D pStr = string_line;
+00034e e0e0      	LDI  R30,LOW(_string_line)
+00034f e0f5      	LDI  R31,HIGH(_string_line)
+000350 d1f7      	RCALL SUBOPT_0x0
+                 ; 0000 014E while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x99:
+000351 d1fb      	RCALL SUBOPT_0x1
+000352 f011      	BREQ _0x9B
+000353 d200      	RCALL SUBOPT_0x2
+000354 cffc      	RJMP _0x99
+                 _0x9B:
+                 ; 0000 014F while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x9C:
+000355 9b5d      	SBIS 0xB,5
+000356 cffe      	RJMP _0x9C
+000357 e0ed      	LDI  R30,LOW(13)
+000358 b9ec      	OUT  0xC,R30
+                 ; 0000 0150 
+                 ; 0000 0151 pStr = string_title;
+000359 e2e0      	LDI  R30,LOW(_string_title)
+00035a e0f5      	LDI  R31,HIGH(_string_title)
+00035b d1ec      	RCALL SUBOPT_0x0
+                 ; 0000 0152 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x9F:
+00035c d1f0      	RCALL SUBOPT_0x1
+00035d f011      	BREQ _0xA1
+00035e d1f5      	RCALL SUBOPT_0x2
+00035f cffc      	RJMP _0x9F
+                 _0xA1:
+                 ; 0000 0153 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xA2:
+000360 9b5d      	SBIS 0xB,5
+000361 cffe      	RJMP _0xA2
+000362 e0ed      	LDI  R30,LOW(13)
+000363 b9ec      	OUT  0xC,R30
+                 ; 0000 0154 
+                 ; 0000 0155 pStr = string_press;
+000364 e3e4      	LDI  R30,LOW(_string_press)
+000365 e0f5      	LDI  R31,HIGH(_string_press)
+000366 d1e1      	RCALL SUBOPT_0x0
+                 ; 0000 0156 while(*pStr != 0) Putch(*pStr++);    	              // 문자열 전송
+                 _0xA5:
+000367 d1e5      	RCALL SUBOPT_0x1
+000368 f011      	BREQ _0xA7
+000369 d1ea      	RCALL SUBOPT_0x2
+00036a cffc      	RJMP _0xA5
+                 _0xA7:
+                 ; 0000 0157 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xA8:
+00036b 9b5d      	SBIS 0xB,5
+00036c cffe      	RJMP _0xA8
+00036d e0ed      	LDI  R30,LOW(13)
+00036e b9ec      	OUT  0xC,R30
+                 ; 0000 0158 
+                 ; 0000 0159 pStr = string_LED;
+00036f e4e6      	LDI  R30,LOW(_string_LED)
+000370 e0f5      	LDI  R31,HIGH(_string_LED)
+000371 d1d6      	RCALL SUBOPT_0x0
+                 ; 0000 015A while(*pStr != 0) Putch(*pStr++);    	              // 문자열 전송
+                 _0xAB:
+000372 d1da      	RCALL SUBOPT_0x1
+000373 f011      	BREQ _0xAD
+000374 d1df      	RCALL SUBOPT_0x2
+000375 cffc      	RJMP _0xAB
+                 _0xAD:
+                 ; 0000 015B while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xAE:
+000376 9b5d      	SBIS 0xB,5
+000377 cffe      	RJMP _0xAE
+000378 e0ed      	LDI  R30,LOW(13)
+000379 b9ec      	OUT  0xC,R30
+                 ; 0000 015C 
+                 ; 0000 015D pStr = string_7seg;
+00037a e5e3      	LDI  R30,LOW(_string_7seg)
+00037b e0f5      	LDI  R31,HIGH(_string_7seg)
+00037c d1cb      	RCALL SUBOPT_0x0
+                 ; 0000 015E while(*pStr != 0) Putch(*pStr++);    	              // 문자열 전송
+                 _0xB1:
+00037d d1cf      	RCALL SUBOPT_0x1
+00037e f011      	BREQ _0xB3
+00037f d1d4      	RCALL SUBOPT_0x2
+000380 cffc      	RJMP _0xB1
+                 _0xB3:
+                 ; 0000 015F while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xB4:
+000381 9b5d      	SBIS 0xB,5
+000382 cffe      	RJMP _0xB4
+000383 e0ed      	LDI  R30,LOW(13)
+000384 b9ec      	OUT  0xC,R30
+                 ; 0000 0160 
+                 ; 0000 0161 pStr = string_main;
+000385 e6e1      	LDI  R30,LOW(_string_main)
+000386 e0f5      	LDI  R31,HIGH(_string_main)
+000387 d1c0      	RCALL SUBOPT_0x0
+                 ; 0000 0162 while(*pStr != 0) Putch(*pStr++);    	              // 문자열 전송
+                 _0xB7:
+000388 d1c4      	RCALL SUBOPT_0x1
+000389 f011      	BREQ _0xB9
+00038a d1c9      	RCALL SUBOPT_0x2
+00038b cffc      	RJMP _0xB7
+                 _0xB9:
+                 ; 0000 0163 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xBA:
+00038c 9b5d      	SBIS 0xB,5
+00038d cffe      	RJMP _0xBA
+00038e d1e9      	RCALL SUBOPT_0x6
+                 ; 0000 0164 
+                 ; 0000 0165 pStr = string_line;
+                 ; 0000 0166 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xBD:
+00038f d1bd      	RCALL SUBOPT_0x1
+000390 f011      	BREQ _0xBF
+000391 d1c2      	RCALL SUBOPT_0x2
+000392 cffc      	RJMP _0xBD
+                 _0xBF:
+                 ; 0000 0167 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xC0:
+000393 9b5d      	SBIS 0xB,5
+000394 cffe      	RJMP _0xC0
+000395 d1e7      	RCALL SUBOPT_0x7
+                 ; 0000 0168 
+                 ; 0000 0169 flag=0;
+                 ; 0000 016A LED_flag=0;
+                 ; 0000 016B seg_flag=0;
+000396 e0e0      	LDI  R30,LOW(0)
+000397 93e0 069b 	STS  _seg_flag,R30
+                 ; 0000 016C main_flag=0;
+000399 93e0 069c 	STS  _main_flag,R30
+                 ; 0000 016D LED_flag_sub = 0;
+00039b c0fc      	RJMP _0x2000003
+                 ; 0000 016E seg_flag_sub = 0;
+                 ; 0000 016F 
+                 ; 0000 0170 }
+                 ; .FEND
+                 ;void UART_LED_menu(void)
+                 ; 0000 0173 {
+                 _UART_LED_menu:
+                 ; .FSTART _UART_LED_menu
+                 ; 0000 0174 pStr = string_line;
+00039c e0e0      	LDI  R30,LOW(_string_line)
+00039d e0f5      	LDI  R31,HIGH(_string_line)
+00039e d1a9      	RCALL SUBOPT_0x0
+                 ; 0000 0175 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xC3:
+00039f d1ad      	RCALL SUBOPT_0x1
+0003a0 f011      	BREQ _0xC5
+0003a1 d1b2      	RCALL SUBOPT_0x2
+0003a2 cffc      	RJMP _0xC3
+                 _0xC5:
+                 ; 0000 0176 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xC6:
+0003a3 9b5d      	SBIS 0xB,5
+0003a4 cffe      	RJMP _0xC6
+0003a5 d1de      	RCALL SUBOPT_0x8
+                 ; 0000 0177 
+                 ; 0000 0178 pStr = string_Up_LED;
+                 ; 0000 0179 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xC9:
+0003a6 d1a6      	RCALL SUBOPT_0x1
+0003a7 f011      	BREQ _0xCB
+0003a8 d1ab      	RCALL SUBOPT_0x2
+0003a9 cffc      	RJMP _0xC9
+                 _0xCB:
+                 ; 0000 017A while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xCC:
+0003aa 9b5d      	SBIS 0xB,5
+0003ab cffe      	RJMP _0xCC
+0003ac d1dc      	RCALL SUBOPT_0x9
+                 ; 0000 017B 
+                 ; 0000 017C pStr = string_Down_LED;
+                 ; 0000 017D while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xCF:
+0003ad d19f      	RCALL SUBOPT_0x1
+0003ae f011      	BREQ _0xD1
+0003af d1a4      	RCALL SUBOPT_0x2
+0003b0 cffc      	RJMP _0xCF
+                 _0xD1:
+                 ; 0000 017E while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xD2:
+0003b1 9b5d      	SBIS 0xB,5
+0003b2 cffe      	RJMP _0xD2
+0003b3 d1da      	RCALL SUBOPT_0xA
+                 ; 0000 017F 
+                 ; 0000 0180 pStr = string_Main_Menu;
+                 ; 0000 0181 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xD5:
+0003b4 d198      	RCALL SUBOPT_0x1
+0003b5 f011      	BREQ _0xD7
+0003b6 d19d      	RCALL SUBOPT_0x2
+0003b7 cffc      	RJMP _0xD5
+                 _0xD7:
+                 ; 0000 0182 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xD8:
+0003b8 9b5d      	SBIS 0xB,5
+0003b9 cffe      	RJMP _0xD8
+0003ba d1bd      	RCALL SUBOPT_0x6
+                 ; 0000 0183 
+                 ; 0000 0184 pStr = string_line;
+                 ; 0000 0185 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xDB:
+0003bb d191      	RCALL SUBOPT_0x1
+0003bc f011      	BREQ _0xDD
+0003bd d196      	RCALL SUBOPT_0x2
+0003be cffc      	RJMP _0xDB
+                 _0xDD:
+                 ; 0000 0186 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xDE:
+0003bf 9b5d      	SBIS 0xB,5
+0003c0 cffe      	RJMP _0xDE
+0003c1 e0ed      	LDI  R30,LOW(13)
+0003c2 b9ec      	OUT  0xC,R30
+                 ; 0000 0187 
+                 ; 0000 0188 flag=0;
+0003c3 24cc      	CLR  R12
+                 ; 0000 0189 LED_flag=1;
+0003c4 e0e1      	LDI  R30,LOW(1)
+0003c5 93e0 069a 	STS  _LED_flag,R30
+                 ; 0000 018A seg_flag=0;
+0003c7 e0e0      	LDI  R30,LOW(0)
+0003c8 93e0 069b 	STS  _seg_flag,R30
+                 ; 0000 018B LED_flag_sub = 0;
+0003ca c0cd      	RJMP _0x2000003
+                 ; 0000 018C seg_flag_sub = 0;
+                 ; 0000 018D }
+                 ; .FEND
+                 ;void UART_7seg_menu(void)
+                 ; 0000 0190 {
+                 _UART_7seg_menu:
+                 ; .FSTART _UART_7seg_menu
+                 ; 0000 0191 pStr = string_line;
+0003cb e0e0      	LDI  R30,LOW(_string_line)
+0003cc e0f5      	LDI  R31,HIGH(_string_line)
+0003cd d17a      	RCALL SUBOPT_0x0
+                 ; 0000 0192 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xE1:
+0003ce d17e      	RCALL SUBOPT_0x1
+0003cf f011      	BREQ _0xE3
+0003d0 d183      	RCALL SUBOPT_0x2
+0003d1 cffc      	RJMP _0xE1
+                 _0xE3:
+                 ; 0000 0193 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xE4:
+0003d2 9b5d      	SBIS 0xB,5
+0003d3 cffe      	RJMP _0xE4
+0003d4 d1be      	RCALL SUBOPT_0xB
+                 ; 0000 0194 
+                 ; 0000 0195 pStr = string_Up_7seg;
+                 ; 0000 0196 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xE7:
+0003d5 d177      	RCALL SUBOPT_0x1
+0003d6 f011      	BREQ _0xE9
+0003d7 d17c      	RCALL SUBOPT_0x2
+0003d8 cffc      	RJMP _0xE7
+                 _0xE9:
+                 ; 0000 0197 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xEA:
+0003d9 9b5d      	SBIS 0xB,5
+0003da cffe      	RJMP _0xEA
+0003db d1bc      	RCALL SUBOPT_0xC
+                 ; 0000 0198 
+                 ; 0000 0199 pStr = string_Down_7seg;
+                 ; 0000 019A while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xED:
+0003dc d170      	RCALL SUBOPT_0x1
+0003dd f011      	BREQ _0xEF
+0003de d175      	RCALL SUBOPT_0x2
+0003df cffc      	RJMP _0xED
+                 _0xEF:
+                 ; 0000 019B while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xF0:
+0003e0 9b5d      	SBIS 0xB,5
+0003e1 cffe      	RJMP _0xF0
+0003e2 d1ba      	RCALL SUBOPT_0xD
+                 ; 0000 019C 
+                 ; 0000 019D pStr = string_DP_ID;
+                 ; 0000 019E while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xF3:
+0003e3 d169      	RCALL SUBOPT_0x1
+0003e4 f011      	BREQ _0xF5
+0003e5 d16e      	RCALL SUBOPT_0x2
+0003e6 cffc      	RJMP _0xF3
+                 _0xF5:
+                 ; 0000 019F while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xF6:
+0003e7 9b5d      	SBIS 0xB,5
+0003e8 cffe      	RJMP _0xF6
+0003e9 d1a4      	RCALL SUBOPT_0xA
+                 ; 0000 01A0 
+                 ; 0000 01A1 pStr = string_Main_Menu;
+                 ; 0000 01A2 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xF9:
+0003ea d162      	RCALL SUBOPT_0x1
+0003eb f011      	BREQ _0xFB
+0003ec d167      	RCALL SUBOPT_0x2
+0003ed cffc      	RJMP _0xF9
+                 _0xFB:
+                 ; 0000 01A3 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0xFC:
+0003ee 9b5d      	SBIS 0xB,5
+0003ef cffe      	RJMP _0xFC
+0003f0 d187      	RCALL SUBOPT_0x6
+                 ; 0000 01A4 
+                 ; 0000 01A5 pStr = string_line;
+                 ; 0000 01A6 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0xFF:
+0003f1 d15b      	RCALL SUBOPT_0x1
+0003f2 f011      	BREQ _0x101
+0003f3 d160      	RCALL SUBOPT_0x2
+0003f4 cffc      	RJMP _0xFF
+                 _0x101:
+                 ; 0000 01A7 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x102:
+0003f5 9b5d      	SBIS 0xB,5
+0003f6 cffe      	RJMP _0x102
+0003f7 d185      	RCALL SUBOPT_0x7
+                 ; 0000 01A8 
+                 ; 0000 01A9 flag=0;
+                 ; 0000 01AA LED_flag=0;
+                 ; 0000 01AB seg_flag=1;
+0003f8 e0e1      	LDI  R30,LOW(1)
+0003f9 93e0 069b 	STS  _seg_flag,R30
+                 ; 0000 01AC LED_flag_sub = 0;
+0003fb c09c      	RJMP _0x2000003
+                 ; 0000 01AD seg_flag_sub = 0;
+                 ; 0000 01AE }
+                 ; .FEND
+                 ;void UART_Up_LED_menu(void)
+                 ; 0000 01B1 {
+                 _UART_Up_LED_menu:
+                 ; .FSTART _UART_Up_LED_menu
+                 ; 0000 01B2 pStr = string_line;
+0003fc e0e0      	LDI  R30,LOW(_string_line)
+0003fd e0f5      	LDI  R31,HIGH(_string_line)
+0003fe d149      	RCALL SUBOPT_0x0
+                 ; 0000 01B3 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x105:
+0003ff d14d      	RCALL SUBOPT_0x1
+000400 f011      	BREQ _0x107
+000401 d152      	RCALL SUBOPT_0x2
+000402 cffc      	RJMP _0x105
+                 _0x107:
+                 ; 0000 01B4 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x108:
+000403 9b5d      	SBIS 0xB,5
+000404 cffe      	RJMP _0x108
+000405 e0ed      	LDI  R30,LOW(13)
+000406 b9ec      	OUT  0xC,R30
+                 ; 0000 01B5 
+                 ; 0000 01B6 pStr = string_Up_LED_title;
+000407 e1e4      	LDI  R30,LOW(_string_Up_LED_title)
+000408 e0f6      	LDI  R31,HIGH(_string_Up_LED_title)
+000409 d13e      	RCALL SUBOPT_0x0
+                 ; 0000 01B7 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x10B:
+00040a d142      	RCALL SUBOPT_0x1
+00040b f011      	BREQ _0x10D
+00040c d147      	RCALL SUBOPT_0x2
+00040d cffc      	RJMP _0x10B
+                 _0x10D:
+                 ; 0000 01B8 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x10E:
+00040e 9b5d      	SBIS 0xB,5
+00040f cffe      	RJMP _0x10E
+000410 d173      	RCALL SUBOPT_0x8
+                 ; 0000 01B9 
+                 ; 0000 01BA pStr = string_Up_LED;
+                 ; 0000 01BB while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x111:
+000411 d13b      	RCALL SUBOPT_0x1
+000412 f011      	BREQ _0x113
+000413 d140      	RCALL SUBOPT_0x2
+000414 cffc      	RJMP _0x111
+                 _0x113:
+                 ; 0000 01BC while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x114:
+000415 9b5d      	SBIS 0xB,5
+000416 cffe      	RJMP _0x114
+000417 d171      	RCALL SUBOPT_0x9
+                 ; 0000 01BD 
+                 ; 0000 01BE pStr = string_Down_LED;
+                 ; 0000 01BF while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x117:
+000418 d134      	RCALL SUBOPT_0x1
+000419 f011      	BREQ _0x119
+00041a d139      	RCALL SUBOPT_0x2
+00041b cffc      	RJMP _0x117
+                 _0x119:
+                 ; 0000 01C0 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x11A:
+00041c 9b5d      	SBIS 0xB,5
+00041d cffe      	RJMP _0x11A
+00041e d16f      	RCALL SUBOPT_0xA
+                 ; 0000 01C1 
+                 ; 0000 01C2 pStr = string_Main_Menu;
+                 ; 0000 01C3 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x11D:
+00041f d12d      	RCALL SUBOPT_0x1
+000420 f011      	BREQ _0x11F
+000421 d132      	RCALL SUBOPT_0x2
+000422 cffc      	RJMP _0x11D
+                 _0x11F:
+                 ; 0000 01C4 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x120:
+000423 9b5d      	SBIS 0xB,5
+000424 cffe      	RJMP _0x120
+000425 d152      	RCALL SUBOPT_0x6
+                 ; 0000 01C5 
+                 ; 0000 01C6 pStr = string_line;
+                 ; 0000 01C7 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x123:
+000426 d126      	RCALL SUBOPT_0x1
+000427 f011      	BREQ _0x125
+000428 d12b      	RCALL SUBOPT_0x2
+000429 cffc      	RJMP _0x123
+                 _0x125:
+                 ; 0000 01C8 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x126:
+00042a 9b5d      	SBIS 0xB,5
+00042b cffe      	RJMP _0x126
+00042c d175      	RCALL SUBOPT_0xE
+                 ; 0000 01C9 
+                 ; 0000 01CA seg_flag=0;
+                 ; 0000 01CB seg_flag_sub = 0;
+00042d c06d      	RJMP _0x2000002
+                 ; 0000 01CC }
+                 ; .FEND
+                 ;void UART_Down_LED_menu(void)
+                 ; 0000 01CF {
+                 _UART_Down_LED_menu:
+                 ; .FSTART _UART_Down_LED_menu
+                 ; 0000 01D0 pStr = string_line;
+00042e e0e0      	LDI  R30,LOW(_string_line)
+00042f e0f5      	LDI  R31,HIGH(_string_line)
+000430 d117      	RCALL SUBOPT_0x0
+                 ; 0000 01D1 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x129:
+000431 d11b      	RCALL SUBOPT_0x1
+000432 f011      	BREQ _0x12B
+000433 d120      	RCALL SUBOPT_0x2
+000434 cffc      	RJMP _0x129
+                 _0x12B:
+                 ; 0000 01D2 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x12C:
+000435 9b5d      	SBIS 0xB,5
+000436 cffe      	RJMP _0x12C
+000437 e0ed      	LDI  R30,LOW(13)
+000438 b9ec      	OUT  0xC,R30
+                 ; 0000 01D3 
+                 ; 0000 01D4 pStr = string_Down_LED_title;
+000439 e2e7      	LDI  R30,LOW(_string_Down_LED_title)
+00043a e0f6      	LDI  R31,HIGH(_string_Down_LED_title)
+00043b d10c      	RCALL SUBOPT_0x0
+                 ; 0000 01D5 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x12F:
+00043c d110      	RCALL SUBOPT_0x1
+00043d f011      	BREQ _0x131
+00043e d115      	RCALL SUBOPT_0x2
+00043f cffc      	RJMP _0x12F
+                 _0x131:
+                 ; 0000 01D6 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x132:
+000440 9b5d      	SBIS 0xB,5
+000441 cffe      	RJMP _0x132
+000442 d141      	RCALL SUBOPT_0x8
+                 ; 0000 01D7 
+                 ; 0000 01D8 pStr = string_Up_LED;
+                 ; 0000 01D9 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x135:
+000443 d109      	RCALL SUBOPT_0x1
+000444 f011      	BREQ _0x137
+000445 d10e      	RCALL SUBOPT_0x2
+000446 cffc      	RJMP _0x135
+                 _0x137:
+                 ; 0000 01DA while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x138:
+000447 9b5d      	SBIS 0xB,5
+000448 cffe      	RJMP _0x138
+000449 d13f      	RCALL SUBOPT_0x9
+                 ; 0000 01DB 
+                 ; 0000 01DC pStr = string_Down_LED;
+                 ; 0000 01DD while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x13B:
+00044a d102      	RCALL SUBOPT_0x1
+00044b f011      	BREQ _0x13D
+00044c d107      	RCALL SUBOPT_0x2
+00044d cffc      	RJMP _0x13B
+                 _0x13D:
+                 ; 0000 01DE while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x13E:
+00044e 9b5d      	SBIS 0xB,5
+00044f cffe      	RJMP _0x13E
+000450 d13d      	RCALL SUBOPT_0xA
+                 ; 0000 01DF 
+                 ; 0000 01E0 pStr = string_Main_Menu;
+                 ; 0000 01E1 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x141:
+000451 d0fb      	RCALL SUBOPT_0x1
+000452 f011      	BREQ _0x143
+000453 d100      	RCALL SUBOPT_0x2
+000454 cffc      	RJMP _0x141
+                 _0x143:
+                 ; 0000 01E2 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x144:
+000455 9b5d      	SBIS 0xB,5
+000456 cffe      	RJMP _0x144
+000457 d120      	RCALL SUBOPT_0x6
+                 ; 0000 01E3 
+                 ; 0000 01E4 pStr = string_line;
+                 ; 0000 01E5 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x147:
+000458 d0f4      	RCALL SUBOPT_0x1
+000459 f011      	BREQ _0x149
+00045a d0f9      	RCALL SUBOPT_0x2
+00045b cffc      	RJMP _0x147
+                 _0x149:
+                 ; 0000 01E6 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x14A:
+00045c 9b5d      	SBIS 0xB,5
+00045d cffe      	RJMP _0x14A
+00045e d143      	RCALL SUBOPT_0xE
+                 ; 0000 01E7 
+                 ; 0000 01E8 seg_flag=0;
+                 ; 0000 01E9 seg_flag_sub = 0;
+00045f c03b      	RJMP _0x2000002
+                 ; 0000 01EA }
+                 ; .FEND
+                 ;void UART_Up_7seg_menu(void)
+                 ; 0000 01ED {
+                 _UART_Up_7seg_menu:
+                 ; .FSTART _UART_Up_7seg_menu
+                 ; 0000 01EE pStr = string_line;
+000460 e0e0      	LDI  R30,LOW(_string_line)
+000461 e0f5      	LDI  R31,HIGH(_string_line)
+000462 d0e5      	RCALL SUBOPT_0x0
+                 ; 0000 01EF while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x14D:
+000463 d0e9      	RCALL SUBOPT_0x1
+000464 f011      	BREQ _0x14F
+000465 d0ee      	RCALL SUBOPT_0x2
+000466 cffc      	RJMP _0x14D
+                 _0x14F:
+                 ; 0000 01F0 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x150:
+000467 9b5d      	SBIS 0xB,5
+000468 cffe      	RJMP _0x150
+000469 e0ed      	LDI  R30,LOW(13)
+00046a b9ec      	OUT  0xC,R30
+                 ; 0000 01F1 
+                 ; 0000 01F2 pStr = string_Up_7seg_title;
+00046b e3ea      	LDI  R30,LOW(_string_Up_7seg_title)
+00046c e0f6      	LDI  R31,HIGH(_string_Up_7seg_title)
+00046d d0da      	RCALL SUBOPT_0x0
+                 ; 0000 01F3 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x153:
+00046e d0de      	RCALL SUBOPT_0x1
+00046f f011      	BREQ _0x155
+000470 d0e3      	RCALL SUBOPT_0x2
+000471 cffc      	RJMP _0x153
+                 _0x155:
+                 ; 0000 01F4 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x156:
+000472 9b5d      	SBIS 0xB,5
+000473 cffe      	RJMP _0x156
+000474 d11e      	RCALL SUBOPT_0xB
+                 ; 0000 01F5 
+                 ; 0000 01F6 pStr = string_Up_7seg;
+                 ; 0000 01F7 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x159:
+000475 d0d7      	RCALL SUBOPT_0x1
+000476 f011      	BREQ _0x15B
+000477 d0dc      	RCALL SUBOPT_0x2
+000478 cffc      	RJMP _0x159
+                 _0x15B:
+                 ; 0000 01F8 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x15C:
+000479 9b5d      	SBIS 0xB,5
+00047a cffe      	RJMP _0x15C
+00047b d11c      	RCALL SUBOPT_0xC
+                 ; 0000 01F9 
+                 ; 0000 01FA pStr = string_Down_7seg;
+                 ; 0000 01FB while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x15F:
+00047c d0d0      	RCALL SUBOPT_0x1
+00047d f011      	BREQ _0x161
+00047e d0d5      	RCALL SUBOPT_0x2
+00047f cffc      	RJMP _0x15F
+                 _0x161:
+                 ; 0000 01FC while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x162:
+000480 9b5d      	SBIS 0xB,5
+000481 cffe      	RJMP _0x162
+000482 d11a      	RCALL SUBOPT_0xD
+                 ; 0000 01FD 
+                 ; 0000 01FE pStr = string_DP_ID;
+                 ; 0000 01FF while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x165:
+000483 d0c9      	RCALL SUBOPT_0x1
+000484 f011      	BREQ _0x167
+000485 d0ce      	RCALL SUBOPT_0x2
+000486 cffc      	RJMP _0x165
+                 _0x167:
+                 ; 0000 0200 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x168:
+000487 9b5d      	SBIS 0xB,5
+000488 cffe      	RJMP _0x168
+000489 d104      	RCALL SUBOPT_0xA
+                 ; 0000 0201 
+                 ; 0000 0202 pStr = string_Main_Menu;
+                 ; 0000 0203 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x16B:
+00048a d0c2      	RCALL SUBOPT_0x1
+00048b f011      	BREQ _0x16D
+00048c d0c7      	RCALL SUBOPT_0x2
+00048d cffc      	RJMP _0x16B
+                 _0x16D:
+                 ; 0000 0204 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x16E:
+00048e 9b5d      	SBIS 0xB,5
+00048f cffe      	RJMP _0x16E
+000490 d0e7      	RCALL SUBOPT_0x6
+                 ; 0000 0205 
+                 ; 0000 0206 pStr = string_line;
+                 ; 0000 0207 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x171:
+000491 d0bb      	RCALL SUBOPT_0x1
+000492 f011      	BREQ _0x173
+000493 d0c0      	RCALL SUBOPT_0x2
+000494 cffc      	RJMP _0x171
+                 _0x173:
+                 ; 0000 0208 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x174:
+000495 9b5d      	SBIS 0xB,5
+000496 cffe      	RJMP _0x174
+000497 d0e5      	RCALL SUBOPT_0x7
+                 ; 0000 0209 
+                 ; 0000 020A flag=0;
+                 ; 0000 020B LED_flag=0;
+                 ; 0000 020C LED_flag_sub = 0;
+                 _0x2000003:
+000498 e0e0      	LDI  R30,LOW(0)
+000499 93e0 069d 	STS  _LED_flag_sub,R30
+                 ; 0000 020D seg_flag_sub = 0;
+                 _0x2000002:
+00049b e0e0      	LDI  R30,LOW(0)
+00049c 93e0 069e 	STS  _seg_flag_sub,R30
+                 ; 0000 020E }
+00049e 9508      	RET
+                 ; .FEND
+                 ;void UART_Down_7seg_menu(void)
+                 ; 0000 0211 {
+                 _UART_Down_7seg_menu:
+                 ; .FSTART _UART_Down_7seg_menu
+                 ; 0000 0212 pStr = string_line;
+00049f e0e0      	LDI  R30,LOW(_string_line)
+0004a0 e0f5      	LDI  R31,HIGH(_string_line)
+0004a1 d0a6      	RCALL SUBOPT_0x0
+                 ; 0000 0213 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x177:
+0004a2 d0aa      	RCALL SUBOPT_0x1
+0004a3 f011      	BREQ _0x179
+0004a4 d0af      	RCALL SUBOPT_0x2
+0004a5 cffc      	RJMP _0x177
+                 _0x179:
+                 ; 0000 0214 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x17A:
+0004a6 9b5d      	SBIS 0xB,5
+0004a7 cffe      	RJMP _0x17A
+0004a8 e0ed      	LDI  R30,LOW(13)
+0004a9 b9ec      	OUT  0xC,R30
+                 ; 0000 0215 
+                 ; 0000 0216 pStr = string_Down_7seg_title;
+0004aa e5e0      	LDI  R30,LOW(_string_Down_7seg_title)
+0004ab e0f6      	LDI  R31,HIGH(_string_Down_7seg_title)
+0004ac d09b      	RCALL SUBOPT_0x0
+                 ; 0000 0217 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x17D:
+0004ad d09f      	RCALL SUBOPT_0x1
+0004ae f011      	BREQ _0x17F
+0004af d0a4      	RCALL SUBOPT_0x2
+0004b0 cffc      	RJMP _0x17D
+                 _0x17F:
+                 ; 0000 0218 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x180:
+0004b1 9b5d      	SBIS 0xB,5
+0004b2 cffe      	RJMP _0x180
+0004b3 d0df      	RCALL SUBOPT_0xB
+                 ; 0000 0219 
+                 ; 0000 021A pStr = string_Up_7seg;
+                 ; 0000 021B while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x183:
+0004b4 d098      	RCALL SUBOPT_0x1
+0004b5 f011      	BREQ _0x185
+0004b6 d09d      	RCALL SUBOPT_0x2
+0004b7 cffc      	RJMP _0x183
+                 _0x185:
+                 ; 0000 021C while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x186:
+0004b8 9b5d      	SBIS 0xB,5
+0004b9 cffe      	RJMP _0x186
+0004ba d0dd      	RCALL SUBOPT_0xC
+                 ; 0000 021D 
+                 ; 0000 021E pStr = string_Down_7seg;
+                 ; 0000 021F while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x189:
+0004bb d091      	RCALL SUBOPT_0x1
+0004bc f011      	BREQ _0x18B
+0004bd d096      	RCALL SUBOPT_0x2
+0004be cffc      	RJMP _0x189
+                 _0x18B:
+                 ; 0000 0220 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x18C:
+0004bf 9b5d      	SBIS 0xB,5
+0004c0 cffe      	RJMP _0x18C
+0004c1 d0db      	RCALL SUBOPT_0xD
+                 ; 0000 0221 
+                 ; 0000 0222 pStr = string_DP_ID;
+                 ; 0000 0223 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x18F:
+0004c2 d08a      	RCALL SUBOPT_0x1
+0004c3 f011      	BREQ _0x191
+0004c4 d08f      	RCALL SUBOPT_0x2
+0004c5 cffc      	RJMP _0x18F
+                 _0x191:
+                 ; 0000 0224 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x192:
+0004c6 9b5d      	SBIS 0xB,5
+0004c7 cffe      	RJMP _0x192
+0004c8 d0c5      	RCALL SUBOPT_0xA
+                 ; 0000 0225 
+                 ; 0000 0226 pStr = string_Main_Menu;
+                 ; 0000 0227 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x195:
+0004c9 d083      	RCALL SUBOPT_0x1
+0004ca f011      	BREQ _0x197
+0004cb d088      	RCALL SUBOPT_0x2
+0004cc cffc      	RJMP _0x195
+                 _0x197:
+                 ; 0000 0228 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x198:
+0004cd 9b5d      	SBIS 0xB,5
+0004ce cffe      	RJMP _0x198
+0004cf d0a8      	RCALL SUBOPT_0x6
+                 ; 0000 0229 
+                 ; 0000 022A pStr = string_line;
+                 ; 0000 022B while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x19B:
+0004d0 d07c      	RCALL SUBOPT_0x1
+0004d1 f011      	BREQ _0x19D
+0004d2 d081      	RCALL SUBOPT_0x2
+0004d3 cffc      	RJMP _0x19B
+                 _0x19D:
+                 ; 0000 022C while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x19E:
+0004d4 9b5d      	SBIS 0xB,5
+0004d5 cffe      	RJMP _0x19E
+0004d6 c037      	RJMP _0x2000001
+                 ; 0000 022D 
+                 ; 0000 022E LED_flag=0;
+                 ; 0000 022F LED_flag_sub = 0;
+                 ; 0000 0230 }
+                 ; .FEND
+                 ;void UART_DP_ID_menu(void)
+                 ; 0000 0233 {
+                 _UART_DP_ID_menu:
+                 ; .FSTART _UART_DP_ID_menu
+                 ; 0000 0234 pStr = string_line;
+0004d7 e0e0      	LDI  R30,LOW(_string_line)
+0004d8 e0f5      	LDI  R31,HIGH(_string_line)
+0004d9 d06e      	RCALL SUBOPT_0x0
+                 ; 0000 0235 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1A1:
+0004da d072      	RCALL SUBOPT_0x1
+0004db f011      	BREQ _0x1A3
+0004dc d077      	RCALL SUBOPT_0x2
+0004dd cffc      	RJMP _0x1A1
+                 _0x1A3:
+                 ; 0000 0236 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1A4:
+0004de 9b5d      	SBIS 0xB,5
+0004df cffe      	RJMP _0x1A4
+0004e0 e0ed      	LDI  R30,LOW(13)
+0004e1 b9ec      	OUT  0xC,R30
+                 ; 0000 0237 
+                 ; 0000 0238 pStr = string_DP_ID_title;
+0004e2 e6e8      	LDI  R30,LOW(_string_DP_ID_title)
+0004e3 e0f6      	LDI  R31,HIGH(_string_DP_ID_title)
+0004e4 d063      	RCALL SUBOPT_0x0
+                 ; 0000 0239 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1A7:
+0004e5 d067      	RCALL SUBOPT_0x1
+0004e6 f011      	BREQ _0x1A9
+0004e7 d06c      	RCALL SUBOPT_0x2
+0004e8 cffc      	RJMP _0x1A7
+                 _0x1A9:
+                 ; 0000 023A while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1AA:
+0004e9 9b5d      	SBIS 0xB,5
+0004ea cffe      	RJMP _0x1AA
+0004eb d0a7      	RCALL SUBOPT_0xB
+                 ; 0000 023B 
+                 ; 0000 023C pStr = string_Up_7seg;
+                 ; 0000 023D while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1AD:
+0004ec d060      	RCALL SUBOPT_0x1
+0004ed f011      	BREQ _0x1AF
+0004ee d065      	RCALL SUBOPT_0x2
+0004ef cffc      	RJMP _0x1AD
+                 _0x1AF:
+                 ; 0000 023E while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1B0:
+0004f0 9b5d      	SBIS 0xB,5
+0004f1 cffe      	RJMP _0x1B0
+0004f2 d0a5      	RCALL SUBOPT_0xC
+                 ; 0000 023F 
+                 ; 0000 0240 pStr = string_Down_7seg;
+                 ; 0000 0241 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1B3:
+0004f3 d059      	RCALL SUBOPT_0x1
+0004f4 f011      	BREQ _0x1B5
+0004f5 d05e      	RCALL SUBOPT_0x2
+0004f6 cffc      	RJMP _0x1B3
+                 _0x1B5:
+                 ; 0000 0242 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1B6:
+0004f7 9b5d      	SBIS 0xB,5
+0004f8 cffe      	RJMP _0x1B6
+0004f9 d0a3      	RCALL SUBOPT_0xD
+                 ; 0000 0243 
+                 ; 0000 0244 pStr = string_DP_ID;
+                 ; 0000 0245 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1B9:
+0004fa d052      	RCALL SUBOPT_0x1
+0004fb f011      	BREQ _0x1BB
+0004fc d057      	RCALL SUBOPT_0x2
+0004fd cffc      	RJMP _0x1B9
+                 _0x1BB:
+                 ; 0000 0246 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1BC:
+0004fe 9b5d      	SBIS 0xB,5
+0004ff cffe      	RJMP _0x1BC
+000500 d08d      	RCALL SUBOPT_0xA
+                 ; 0000 0247 
+                 ; 0000 0248 pStr = string_Main_Menu;
+                 ; 0000 0249 while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1BF:
+000501 d04b      	RCALL SUBOPT_0x1
+000502 f011      	BREQ _0x1C1
+000503 d050      	RCALL SUBOPT_0x2
+000504 cffc      	RJMP _0x1BF
+                 _0x1C1:
+                 ; 0000 024A while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1C2:
+000505 9b5d      	SBIS 0xB,5
+000506 cffe      	RJMP _0x1C2
+000507 d070      	RCALL SUBOPT_0x6
+                 ; 0000 024B 
+                 ; 0000 024C pStr = string_line;
+                 ; 0000 024D while(*pStr != 0) Putch(*pStr++);                      // 문자열 전송
+                 _0x1C5:
+000508 d044      	RCALL SUBOPT_0x1
+000509 f011      	BREQ _0x1C7
+00050a d049      	RCALL SUBOPT_0x2
+00050b cffc      	RJMP _0x1C5
+                 _0x1C7:
+                 ; 0000 024E while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;
+                 _0x1C8:
+00050c 9b5d      	SBIS 0xB,5
+00050d cffe      	RJMP _0x1C8
+                 _0x2000001:
+00050e e0ed      	LDI  R30,LOW(13)
+00050f b9ec      	OUT  0xC,R30
+                 ; 0000 024F 
+                 ; 0000 0250 LED_flag=0;
+000510 e0e0      	LDI  R30,LOW(0)
+000511 93e0 069a 	STS  _LED_flag,R30
+                 ; 0000 0251 LED_flag_sub = 0;
+000513 93e0 069d 	STS  _LED_flag_sub,R30
+                 ; 0000 0252 }
+000515 9508      	RET
+                 ; .FEND
+                 ;void Time_out(void)
+                 ; 0000 0255 {
+                 _Time_out:
+                 ; .FSTART _Time_out
+                 ; 0000 0256 PORTG = 0b00001000;
+000516 e0e8      	LDI  R30,LOW(8)
+000517 93e0 0065 	STS  101,R30
+                 ; 0000 0257 PORTD = ((seg_pat[i] & 0x0F) << 4) | (PORTD & 0x0F);
+000519 d08e      	RCALL SUBOPT_0xF
+00051a 70ef      	ANDI R30,LOW(0xF)
+00051b 95e2      	SWAP R30
+00051c 7fe0      	ANDI R30,0xF0
+00051d 2fae      	MOV  R26,R30
+00051e b3e2      	IN   R30,0x12
+00051f 70ef      	ANDI R30,LOW(0xF)
+000520 2bea      	OR   R30,R26
+000521 bbe2      	OUT  0x12,R30
+                 ; 0000 0258 PORTB = (seg_pat[i] & 0x70 ) | (PORTB & 0x0F);
+000522 d085      	RCALL SUBOPT_0xF
+000523 77e0      	ANDI R30,LOW(0x70)
+000524 2fae      	MOV  R26,R30
+000525 b3e8      	IN   R30,0x18
+000526 70ef      	ANDI R30,LOW(0xF)
+000527 2bea      	OR   R30,R26
+000528 bbe8      	OUT  0x18,R30
+                 ; 0000 0259 }
+000529 9508      	RET
+                 ; .FEND
+                 ;void Putch(char data)
+                 ; 0000 025D {
+                 _Putch:
+                 ; .FSTART _Putch
+                 ; 0000 025E while((UCSR0A & 0x20) == 0x0);	  //UDRE0[5] = 1 송신준비완료 될 때까지 대기
+00052a 931a      	ST   -Y,R17
+00052b 2f1a      	MOV  R17,R26
+                 ;	data -> R17
+                 _0x1CB:
+00052c 9b5d      	SBIS 0xB,5
+00052d cffe      	RJMP _0x1CB
+                 ; 0000 025F UDR0 = data;                   		  // 데이터 전송
+00052e b91c      	OUT  0xC,R17
+                 ; 0000 0260 }
+00052f 9119      	LD   R17,Y+
+000530 9508      	RET
+                 ; .FEND
+                 ;void new_line(void)
+                 ; 0000 0263 {
+                 _new_line:
+                 ; .FSTART _new_line
+                 ; 0000 0264 while((UCSR0A & 0x20) == 0x0); UDR0 =0x0D;            // NEW LINE
+                 _0x1CE:
+000531 9b5d      	SBIS 0xB,5
+000532 cffe      	RJMP _0x1CE
+000533 e0ed      	LDI  R30,LOW(13)
+000534 b9ec      	OUT  0xC,R30
+                 ; 0000 0265 }
+000535 9508      	RET
+                 ; .FEND
+                 ;interrupt [19] void usart0_rx(void)
+                 ; 0000 0268 {
+                 _usart0_rx:
+                 ; .FSTART _usart0_rx
+000536 d077      	RCALL SUBOPT_0x10
+                 ; 0000 0269 SREG &= 0x7F;
+                 ; 0000 026A UART_Rx_data = UDR0;
+000537 b08c      	IN   R8,12
+                 ; 0000 026B /*                      			// 수신
+                 ; 0000 026C if(UART_Rx_data == '1' || UART_Rx_data == '2')
+                 ; 0000 026D {
+                 ; 0000 026E LED_flag=1;
+                 ; 0000 026F }
+                 ; 0000 0270 if(UART_Rx_data == '3' || UART_Rx_data == '4' || UART_Rx_data == '5')
+                 ; 0000 0271 {
+                 ; 0000 0272 seg_flag=1;
+                 ; 0000 0273 }
+                 ; 0000 0274 else flag=1;
+                 ; 0000 0275 */
+                 ; 0000 0276 flag = 1;
+000538 e0e1      	LDI  R30,LOW(1)
+000539 2ece      	MOV  R12,R30
+                 ; 0000 0277 SREG |= 0x80;
+00053a c008      	RJMP _0x1D1
+                 ; 0000 0278 }
+                 ; .FEND
+                 ;interrupt [10] void timer_comp2(void)
+                 ; 0000 027B {
+                 _timer_comp2:
+                 ; .FSTART _timer_comp2
+00053b d072      	RCALL SUBOPT_0x10
+                 ; 0000 027C SREG &= 0x7F; // All Interrupt disable
+                 ; 0000 027D TIM2_COMP_FLAG = 1;
+00053c e0e1      	LDI  R30,LOW(1)
+00053d 2e4e      	MOV  R4,R30
+                 ; 0000 027E SREG |= 0x80; // All Interrupt enable
+00053e c004      	RJMP _0x1D1
+                 ; 0000 027F }
+                 ; .FEND
+                 ;interrupt [17] void timer_int0(void)
+                 ; 0000 0282 {
+                 _timer_int0:
+                 ; .FSTART _timer_int0
+00053f d06e      	RCALL SUBOPT_0x10
+                 ; 0000 0283 SREG &= 0x7F; // All Interrupt disable
+                 ; 0000 0284 TCNT0 = 0;
+000540 e0e0      	LDI  R30,LOW(0)
+000541 bfe2      	OUT  0x32,R30
+                 ; 0000 0285 cnt++;
+000542 9463      	INC  R6
+                 ; 0000 0286 SREG |= 0x80; // All Interrupt enable
+                 _0x1D1:
+000543 9478      	BSET 7
+                 ; 0000 0287 }
+000544 91e9      	LD   R30,Y+
+000545 bfef      	OUT  SREG,R30
+000546 91e9      	LD   R30,Y+
+000547 9518      	RETI
+                 ; .FEND
+                 
+                 	.DSEG
+                 _string_line:
+000500           	.BYTE 0x20
+                 _string_title:
+000520           	.BYTE 0x14
+                 _string_press:
+000534           	.BYTE 0x12
+                 _string_LED:
+000546           	.BYTE 0xD
+                 _string_7seg:
+000553           	.BYTE 0xE
+                 _string_main:
+000561           	.BYTE 0xE
+                 _string_Up_LED:
+00056f           	.BYTE 0x12
+                 _string_Down_LED:
+000581           	.BYTE 0x12
+                 _string_Main_Menu:
+000593           	.BYTE 0xD
+                 _string_LED_ok:
+0005a0           	.BYTE 0x10
+                 _string_7seg_ok:
+0005b0           	.BYTE 0x11
+                 _string_Up_7seg:
+0005c1           	.BYTE 0x15
+                 _string_Down_7seg:
+0005d6           	.BYTE 0x17
+                 _string_DP_ID:
+0005ed           	.BYTE 0x13
+                 _string_Re_main:
+000600           	.BYTE 0x14
+                 _string_Up_LED_title:
+000614           	.BYTE 0x13
+                 _string_Down_LED_title:
+000627           	.BYTE 0x13
+                 _string_Up_7seg_title:
+00063a           	.BYTE 0x16
+                 _string_Down_7seg_title:
+000650           	.BYTE 0x18
+                 _string_DP_ID_title:
+000668           	.BYTE 0x14
+                 _string_ID:
+00067c           	.BYTE 0x14
+                 _seg_pat:
+000690           	.BYTE 0xA
+                 _LED_flag:
+00069a           	.BYTE 0x1
+                 _seg_flag:
+00069b           	.BYTE 0x1
+                 _main_flag:
+00069c           	.BYTE 0x1
+                 _LED_flag_sub:
+00069d           	.BYTE 0x1
+                 _seg_flag_sub:
+00069e           	.BYTE 0x1
+                 _pStr:
+00069f           	.BYTE 0x2
+                 
+                 	.CSEG
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 67 TIMES, CODE SIZE REDUCTION:196 WORDS
+                 SUBOPT_0x0:
+000548 93e0 069f 	STS  _pStr,R30
+00054a 93f0 06a0 	STS  _pStr+1,R31
+00054c 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 67 TIMES, CODE SIZE REDUCTION:328 WORDS
+                 SUBOPT_0x1:
+00054d 91a0 069f 	LDS  R26,_pStr
+00054f 91b0 06a0 	LDS  R27,_pStr+1
+000551 91ec      	LD   R30,X
+000552 30e0      	CPI  R30,0
+000553 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 67 TIMES, CODE SIZE REDUCTION:592 WORDS
+                 SUBOPT_0x2:
+000554 e9af      	LDI  R26,LOW(_pStr)
+000555 e0b6      	LDI  R27,HIGH(_pStr)
+000556 91ed      	LD   R30,X+
+000557 91fd      	LD   R31,X+
+000558 9631      	ADIW R30,1
+000559 93fe      	ST   -X,R31
+00055a 93ee      	ST   -X,R30
+00055b 9731      	SBIW R30,1
+00055c 81a0      	LD   R26,Z
+00055d cfcc      	RJMP _Putch
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:14 WORDS
+                 SUBOPT_0x3:
+00055e dfd2      	RCALL _new_line
+00055f dfd1      	RCALL _new_line
+000560 efef      	LDI  R30,LOW(255)
+000561 bbe5      	OUT  0x15,R30
+000562 e0e0      	LDI  R30,LOW(0)
+000563 bbe2      	OUT  0x12,R30
+000564 bbe8      	OUT  0x18,R30
+000565 e0e1      	LDI  R30,LOW(1)
+000566 93e0 069c 	STS  _main_flag,R30
+000568 e0e0      	LDI  R30,LOW(0)
+000569 93e0 069a 	STS  _LED_flag,R30
+00056b 93e0 069b 	STS  _seg_flag,R30
+00056d 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
+                 SUBOPT_0x4:
+00056e e0ed      	LDI  R30,LOW(13)
+00056f b9ec      	OUT  0xC,R30
+000570 dddd      	RCALL _UART_menu
+000571 e3e4      	LDI  R30,LOW(_string_press)
+000572 e0f5      	LDI  R31,HIGH(_string_press)
+000573 cfd4      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
+                 SUBOPT_0x5:
+000574 e0e0      	LDI  R30,LOW(0)
+000575 93e0 069d 	STS  _LED_flag_sub,R30
+000577 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 8 TIMES, CODE SIZE REDUCTION:26 WORDS
+                 SUBOPT_0x6:
+000578 e0ed      	LDI  R30,LOW(13)
+000579 b9ec      	OUT  0xC,R30
+00057a e0e0      	LDI  R30,LOW(_string_line)
+00057b e0f5      	LDI  R31,HIGH(_string_line)
+00057c cfcb      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:8 WORDS
+                 SUBOPT_0x7:
+00057d e0ed      	LDI  R30,LOW(13)
+00057e b9ec      	OUT  0xC,R30
+00057f 24cc      	CLR  R12
+000580 e0e0      	LDI  R30,LOW(0)
+000581 93e0 069a 	STS  _LED_flag,R30
+000583 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:6 WORDS
+                 SUBOPT_0x8:
+000584 e0ed      	LDI  R30,LOW(13)
+000585 b9ec      	OUT  0xC,R30
+000586 e6ef      	LDI  R30,LOW(_string_Up_LED)
+000587 e0f5      	LDI  R31,HIGH(_string_Up_LED)
+000588 cfbf      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:6 WORDS
+                 SUBOPT_0x9:
+000589 e0ed      	LDI  R30,LOW(13)
+00058a b9ec      	OUT  0xC,R30
+00058b e8e1      	LDI  R30,LOW(_string_Down_LED)
+00058c e0f5      	LDI  R31,HIGH(_string_Down_LED)
+00058d cfba      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 7 TIMES, CODE SIZE REDUCTION:22 WORDS
+                 SUBOPT_0xA:
+00058e e0ed      	LDI  R30,LOW(13)
+00058f b9ec      	OUT  0xC,R30
+000590 e9e3      	LDI  R30,LOW(_string_Main_Menu)
+000591 e0f5      	LDI  R31,HIGH(_string_Main_Menu)
+000592 cfb5      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:10 WORDS
+                 SUBOPT_0xB:
+000593 e0ed      	LDI  R30,LOW(13)
+000594 b9ec      	OUT  0xC,R30
+000595 ece1      	LDI  R30,LOW(_string_Up_7seg)
+000596 e0f5      	LDI  R31,HIGH(_string_Up_7seg)
+000597 cfb0      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:10 WORDS
+                 SUBOPT_0xC:
+000598 e0ed      	LDI  R30,LOW(13)
+000599 b9ec      	OUT  0xC,R30
+00059a ede6      	LDI  R30,LOW(_string_Down_7seg)
+00059b e0f5      	LDI  R31,HIGH(_string_Down_7seg)
+00059c cfab      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:10 WORDS
+                 SUBOPT_0xD:
+00059d e0ed      	LDI  R30,LOW(13)
+00059e b9ec      	OUT  0xC,R30
+00059f eeed      	LDI  R30,LOW(_string_DP_ID)
+0005a0 e0f5      	LDI  R31,HIGH(_string_DP_ID)
+0005a1 cfa6      	RJMP SUBOPT_0x0
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:2 WORDS
+                 SUBOPT_0xE:
+0005a2 e0ed      	LDI  R30,LOW(13)
+0005a3 b9ec      	OUT  0xC,R30
+0005a4 e0e0      	LDI  R30,LOW(0)
+0005a5 93e0 069b 	STS  _seg_flag,R30
+0005a7 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:2 WORDS
+                 SUBOPT_0xF:
+0005a8 2de9      	MOV  R30,R9
+0005a9 e0f0      	LDI  R31,0
+0005aa 57e0      	SUBI R30,LOW(-_seg_pat)
+0005ab 4ff9      	SBCI R31,HIGH(-_seg_pat)
+0005ac 81e0      	LD   R30,Z
+0005ad 9508      	RET
+                 
+                 ;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:4 WORDS
+                 SUBOPT_0x10:
+0005ae 93ea      	ST   -Y,R30
+0005af b7ef      	IN   R30,SREG
+0005b0 93ea      	ST   -Y,R30
+0005b1 94f8      	BCLR 7
+0005b2 9508      	RET
+                 
+                 ;RUNTIME LIBRARY
+                 
+                 	.CSEG
+                 ;END OF CODE MARKER
+                 __END_OF_CODE:
+
+
+RESOURCE USE INFORMATION
+------------------------
+
+Notice:
+The register and instruction counts are symbol table hit counts,
+and hence implicitly used resources are not counted, eg, the
+'lpm' instruction without operands implicitly uses r0 and z,
+none of which are counted.
+
+x,y,z are separate entities in the symbol table and are
+counted separately from r26..r31 here.
+
+.dseg memory usage only counts static data declared with .byte
+
+ATmega128A register use summary:
+r0 :   4 r1 :   1 r2 :   0 r3 :   0 r4 :   5 r5 :  11 r6 :   5 r7 :   0 
+r8 :  16 r9 :   9 r10:   4 r11:   4 r12:   9 r13:   5 r14:   0 r15:   0 
+r16:   0 r17:   4 r18:   0 r19:   0 r20:   0 r21:   0 r22:   2 r23:   0 
+r24:   8 r25:   2 r26:  47 r27:   5 r28:   1 r29:   1 r30: 331 r31:  61 
+x  :   8 y  :   6 z  :   9 
+Registers used: 24 out of 35 (68.6%)
+
+ATmega128A instruction use summary:
+.lds  :   0 .lds.l:   0 .sts  :   0 .sts.l:   0 adc   :   0 add   :   0 
+adiw  :   1 and   :   0 andi  :   5 asr   :   0 bclr  :   1 bld   :   0 
+brbc  :   0 brbs  :   0 brcc  :   0 brcs  :   0 break :   0 breq  :  78 
+brge  :   0 brhc  :   0 brhs  :   0 brid  :   0 brie  :   0 brlo  :   4 
+brlt  :   0 brmi  :   0 brne  :  33 brpl  :   0 brsh  :   2 brtc  :   0 
+brts  :   0 brvc  :   0 brvs  :   0 bset  :   2 bst   :   0 call  :   0 
+cbi   :   0 cbr   :   0 clc   :   0 clh   :   0 cli   :   1 cln   :   0 
+clr   :  12 cls   :   0 clt   :   0 clv   :   0 clz   :   0 com   :   0 
+cp    :  28 cpc   :  10 cpi   :  19 cpse  :   0 dec   :   2 des   :   0 
+elpm  :   0 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 icall :   0 
+ijmp  :   0 in    :   4 inc   :   2 jmp   :  36 ld    :   8 ldd   :   0 
+ldi   : 219 lds   :  10 lpm   :   7 lsl   :   1 lsr   :   1 mov   :  22 
+movw  :   3 mul   :   0 muls  :   0 mulsu :   0 neg   :   0 nop   :   0 
+or    :   4 ori   :   0 out   :  59 pop   :   0 push  :   0 rcall : 249 
+ret   :  13 reti  :   1 rjmp  : 156 rol   :   0 ror   :   0 sbc   :   0 
+sbci  :   1 sbi   :   0 sbic  :   0 sbis  :  57 sbiw  :   4 sbr   :   0 
+sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 sei   :   0 sen   :   0 
+ser   :   0 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 
+spm   :   0 st    :   8 std   :   0 sts   :  36 sub   :   0 subi  :   1 
+swap  :   1 tst   :   0 wdr   :   0 
+Instructions used: 38 out of 117 (32.5%)
+
+ATmega128A memory use summary [bytes]:
+Segment   Begin    End      Code   Data   Used    Size   Use%
+---------------------------------------------------------------
+[.cseg] 0x000000 0x000b66   2366    552   2918  131072   2.2%
+[.dseg] 0x000100 0x0006a1      0    417    417    4096  10.2%
+[.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
+
+Assembly complete, 0 errors, 23 warnings

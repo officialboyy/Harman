@@ -1,0 +1,16 @@
+* C:\Users\user\Desktop\ParkJunho\Draft2.asc
+V1 N001 0 10V
+XX1 N001 0 NC_01 potentiometer params: R=20k, wiper=0.5
+
+* block symbol definitions
+.subckt potentiometer 1 3 2
+R1 1 2 {Ra}
+R2 2 3 {Rb}
+.param Ra=R*(1-w)
+.param Rb=R*(w)
+.param w=limit(wiper, 0.001, 0.999)
+.ends potentiometer
+
+.tran 1m
+.backanno
+.end

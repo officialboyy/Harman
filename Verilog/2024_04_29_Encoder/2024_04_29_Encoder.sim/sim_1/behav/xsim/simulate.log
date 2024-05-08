@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+en=0, d=00000000, a=000
+en=1, d=00000001, a=000
+en=1, d=00000010, a=001
+en=1, d=00000100, a=010
+en=1, d=00001000, a=011
+en=1, d=00010000, a=100
+en=1, d=00100000, a=101
+en=1, d=01000000, a=110
+en=1, d=10000000, a=111
+$finish called at time : 45 ns : File "D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_29_Encoder/2024_04_29_Encoder.srcs/sim_1/new/Encoder_tb.v" Line 32

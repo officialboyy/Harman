@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+DATA_FIVE                                                                         0x0500       5
+DATA_READ_FIVE                                                                    0x0505       5
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+DEV_ADD_W                                                                         R5           1
+DEV_ADD_R                                                                         R4           1
+IIC_ADD                                                                           R7           1
+IIC_DAT                                                                           R6           1
+READ_DATA                                                                         R9           1
+check_sum_write                                                                   R10,R11      2
+check_sum_read                                                                    R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00085     44
+Byte_write                                                                        0x000B1      5
+Page_write                                                                        0x000B6     18
+IIC_START                                                                         0x000C8      4
+IIC_STOP                                                                          0x000CC      4
+Process_8data                                                                     0x000D0     38
+Process_8data_read                                                                0x000F6     32
+ACK_read                                                                          0x00116     25
+Random_read                                                                       0x0012F      6
+no_ACK                                                                            0x00135      3
+ACK                                                                               0x00138     11
+Sequential_read                                                                   0x00143     29

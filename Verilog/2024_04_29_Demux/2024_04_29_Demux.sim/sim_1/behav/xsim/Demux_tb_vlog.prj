@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../2024_04_29_Demux.srcs/sources_1/new/Demux.v" \
+"../../../../2024_04_29_Demux.srcs/sim_1/new/Demux_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

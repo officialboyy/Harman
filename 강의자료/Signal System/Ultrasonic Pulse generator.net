@@ -1,0 +1,70 @@
+* C:\Users\user\Desktop\ParkJunho\Ultrasonic Pulse generator.asc
+R1 +V N004 2Meg
+R2 N004 N008 8.2k
+C1 N008 0 0.047µ
+C2 N009 0 0.1µ
+V1 +V 0 +12V
+R4 N001 N002 160k
+C3 N002 0 100p
+C4 N003 0 0.1µ
+XU7 N007 B VCC 0 74HC04 VCC=12 SPEED=1.0 TRIPDT=1e-9
+XU8 A B C VCC 0 74HC08 VCC=12 SPEED=1.0 TRIPDT=1e-9
+R3 +V N001 50k
+XU1 0 N002 A +V N003 N002 N001 +V NE555
+XU2 0 N008 N007 +V N009 N008 N004 +V NE555
+Rm1 +Tx N011 {Rm}
+Lm1 N011 N013 {Lm}
+Cm1 N013 -Tx {Cm}
+Co1 +Tx -Tx {Co}
+Rm2 N006 P001 340
+Lm2 N012 N014 48mH
+Cm2 P001 N012 300pF
+Co2 N006 N014 2150pF
+C5 D +Tx {Cc}
+XU4 C N005 VDD 0 CD4049B VDD=12 SPEED=1.0 TRIPDT=5e-9
+XU3 N005 D VDD 0 CD4049B VDD=12 SPEED=1.0 TRIPDT=5e-9
+XU9 C N010 VDD 0 CD4049B VDD=12 SPEED=1.0 TRIPDT=5e-9
+XU10 N010 D VDD 0 CD4049B VDD=12 SPEED=1.0 TRIPDT=5e-9
+XU11 C -Tx VDD 0 CD4049B VDD=12 SPEED=1.0 TRIPDT=5e-9
+XU12 C -Tx VDD 0 CD4049B VDD=12 SPEED=1.0 TRIPDT=5e-9
+.tran 100m
+* 7
+* 6
+* 2
+* 1
+* 5
+* 3
+* 8
+* 4
+* 7
+* 6
+* 2
+* 1
+* 5
+* 3
+* 8
+* 4
+.include 74HC.lib
+* 40kHz
+* 15Hz
+* Ra
+* Rb
+* C
+* Ra
+* Rb
+* C
+* 150k+10k
+.include cd4000.lib
+* 4584
+.param Cc=100n
+* .step param Cc list 10n 100n 330n 1000n
+* Ultrasonic \nTransmitter
+.param Rm=391
+.param Lm=73.3mH
+.param Cm=234pF
+.param Co=2121pF
+* .param Rm=\n.param Lm=\n.param Cm=\n.param Co=
+* CMOS IC Vcc=+12V
+.lib NE555.sub
+.backanno
+.end

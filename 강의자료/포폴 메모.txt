@@ -1,0 +1,32 @@
+프로젝트 정리를 해야되는거잖아. ㅍ폴.
+
+
+이번에 한거 임베디드. Atmega128 8비트 16비트 프로세서.
+C언어 프로그래밍 능력. 디버깅 실력. 데이터시트 해석. Tool : Codevision, C컴파일러, 오실로스코프, 멀티미터 등등... Chip data 이해도 상승.		KUT-128 Board 사용
+1. IO Port 제어
+2. 인터럽트
+3. 타이머/카운터
+4. UART
+5. ADC
+서브루틴 간략하게 작성시킴
+ -. C 언어 필수역량 ( 변수, for, if, while, switch, preprocessor, function, pointer[주소], structure[구조체] )
+
+프로그램 코드... 항목별, 함수별 => 플로우차트, 블럭다이어그램해서 정리히ㅏ느.
+애매하게 작성 시 오히려 감점.
+
+=> 야가다 근성. 끈기. 얻었고. 저는 야근도 하려면 할 수 있습니다.
+
+
+
+
+신시. LTspice, Pspice...
+
+포폴 참고 사이트
+(https://velog.io/@yoosion030/%EC%8B%A0%EC%9E%85%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EC%9E%91%EC%84%B1%EB%B2%95)
+(https://cucus.notion.site/92ffcf7b8b974ee5a8222cc30ec25fbe)
+(https://www.wanted.co.kr/community/post/9191)
+(https://okky.kr/articles/572801)
+(https://velog.io/@oh_yunseong/%EC%8B%A0%EC%9E%85%EA%B0%9C%EB%B0%9C%EC%9E%90-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-TIP-%EC%A0%95%EB%A6%AC)
+(https://brunch.co.kr/@skykamja24/640)
+(https://groupby.careers/12-things-developer-include-in-portfolios/)
+(https://www.codestates.com/blog/content/프론트엔드-개발자-취업)

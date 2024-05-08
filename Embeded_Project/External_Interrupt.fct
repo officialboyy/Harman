@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"External_Interrupt.c" LINE:20
+external_int4 DSTACK_USAGE:8 DSTACK_LEVEL:8 FILE:"External_Interrupt.c" LINE:75

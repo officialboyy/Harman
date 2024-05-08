@@ -1,0 +1,28 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+seg_pat                                                                           0x0500      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+N1                                                                                R5           1
+N10                                                                               R4           1
+N100                                                                              R7           1
+N1000                                                                             R6           1
+pos                                                                               R9           1
+hour                                                                              R8           1
+min                                                                               R11          1
+sec                                                                               R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00084     37
+Time_out                                                                          0x000A9     29
+external_int4                                                                     0x000C6     90
+external_int5                                                                     0x00120     16

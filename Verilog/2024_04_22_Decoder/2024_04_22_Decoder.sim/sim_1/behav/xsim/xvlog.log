@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_22_Decoder/2024_04_22_Decoder.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_22_Decoder/2024_04_22_Decoder.srcs/sim_1/new/Decoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_22_Decoder/2024_04_22_Decoder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

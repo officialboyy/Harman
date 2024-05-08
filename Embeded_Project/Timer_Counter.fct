@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"Timer_Counter.c" LINE:11
+external_int4 DSTACK_USAGE:3 DSTACK_LEVEL:3 FILE:"Timer_Counter.c" LINE:31

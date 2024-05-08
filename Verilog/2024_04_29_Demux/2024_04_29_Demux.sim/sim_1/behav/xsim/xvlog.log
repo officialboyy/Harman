@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_29_Demux/2024_04_29_Demux.srcs/sources_1/new/Demux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PJH/Github_clone/Haman3rd_PJH/Verilog/2024_04_29_Demux/2024_04_29_Demux.srcs/sim_1/new/Demux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demux_tb

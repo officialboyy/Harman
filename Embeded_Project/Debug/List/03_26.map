@@ -1,0 +1,25 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+seg_pat                                                                           0x0500      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+led                                                                               R5           1
+cnt                                                                               R4           1
+hour                                                                              R7           1
+min                                                                               R6           1
+sec                                                                               R9           1
+TIM0_OVF_FLAG                                                                     R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00085     19
+Time_out                                                                          0x00098     44
+timer_int0                                                                        0x000C4     10

@@ -1,0 +1,43 @@
+* C:\Users\user\Desktop\ParkJunho\Sinal detection_njm4558C.asc
+XU1 N005 N001 +V -V N002 NJM4558C_s
+R1 N001 N004 10k
+R2 N002 N001 1Meg
+V1 in 0 SINE(3.5 10mV {fr})
+C1 N004 in 1n
+XU2 N006 N003 +V -V out NJM4558C_s
+R3 N003 P001 10k
+R4 out N003 10k
+R5 N005 0 10k
+R6 N006 0 10k
+XU3 N011 N007 +V 0 N008 NJM4558C_s
+R7 N007 N010 10k
+R8 N008 N007 1Meg
+V2 in1 0 SINE(3.5 10mV {fr})
+C2 N010 in1 1n
+XU4 N014 N009 +V 0 out1 NJM4558C_s
+R9 N009 N008 1k
+R10 out1 N009 1k
+R11 N011 ref 10k
+R12 N014 ref 10k
+V3 +V 0 12V
+V4 -V 0 -12V
+R13 +V ref 10k
+R14 ref 0 10k
+C3 ref 0 1µF
+C4 P001 N002 1n
+D1 0 N012 1ss106
+C5 N012 out1 1n
+D2 N012 N013 1ss106
+C6 N013 0 680pF
+.model D D
+.lib C:\Users\user\AppData\Local\LTspice\lib\cmp\standard.dio
+.include NJM4558C.txt
+.tran 500us
+.param fr=40kHz
+* .step param fr list 10k, 40k, 100k
+* .step param fr list 10k, 40k, 100k
+* Signal Detection Circuit
+.model 1ss106 D(IS=2.35E-5 N=2.524 RS=48.12 CJO=1.36pf VJ=0.294 M=0.1635 TT=.1ns BV=40 IBV=100E-15)
+* 1ss106 Spice Model\n[ https://bunshiro.love/?p=4528 ]
+.backanno
+.end
