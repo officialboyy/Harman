@@ -1,0 +1,7 @@
+../Core/Src/test.c:28:6:TestText	1
+../Core/Src/test.c:83:6:TestLines	9
+../Core/Src/test.c:173:6:TestRectangles	2
+../Core/Src/test.c:190:6:TestFilledRectangles	2
+../Core/Src/test.c:208:6:TestFilledCircles	3
+../Core/Src/test.c:225:6:TestCircles	3
+../Core/Src/test.c:244:6:TestTriangles	2
