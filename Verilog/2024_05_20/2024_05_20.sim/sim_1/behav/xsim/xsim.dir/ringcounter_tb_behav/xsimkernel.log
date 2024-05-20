@@ -1,0 +1,7 @@
+Running: xsim.dir/ringcounter_tb_behav/xsimk.exe -simmode gui -wdb ringcounter_tb_behav.wdb -simrunnum 0 -socket 7012
+Design successfully loaded
+Design Loading Memory Usage: 7556 KB (Peak: 7556 KB)
+Design Loading CPU Usage: 108 ms
+Simulation completed
+Simulation Memory Usage: 8088 KB (Peak: 8088 KB)
+Simulation CPU Usage: 124 ms
