@@ -19,7 +19,8 @@
 
 ## 2. 하드웨어 환경감시를 위한 신호처리 시스템 프로젝트
 
-* 초음파 센서 거리 측정기
+* Measure distance for ultrasonic wave sensors
+> 
 
 ## 3. ARM Architecture 이해 및 RTOS 활용
 
