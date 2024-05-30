@@ -25,7 +25,10 @@
 
 ## 4. Verilog를 이용한 RTL 시스템 반도체 설계
 
-## 5. HAMAN 커넥티드 자율 이동체 개발 프로젝트
+## 5. HARMAN 커넥티드 자율 이동체 개발 프로젝트
+
+* ARM 32-bit Cortex M4 CPU Development Project
+> Ultrasonic wave Sensors, PWM channels, UART communications, Motors control, Bluetooth control.
 
 ## 6. Full Custom IC Onechip 설계
 
