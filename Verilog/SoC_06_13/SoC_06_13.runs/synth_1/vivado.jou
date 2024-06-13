@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jun 13 12:44:28 2024
+# Process ID: 7436
+# Current directory: C:/Harman/Verilog/SoC_06_13/SoC_06_13.runs/synth_1
+# Command line: vivado.exe -log clock_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_counter.tcl
+# Log file: C:/Harman/Verilog/SoC_06_13/SoC_06_13.runs/synth_1/clock_counter.vds
+# Journal file: C:/Harman/Verilog/SoC_06_13/SoC_06_13.runs/synth_1\vivado.jou
+# Running On: ST04, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8541 MB
+#-----------------------------------------------------------
+source clock_counter.tcl -notrace

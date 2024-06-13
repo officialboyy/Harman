@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module clockdivder #(parameter N=50_000) (
+module clockdivider #(parameter N=50_000_000) (
     input  clk,
     input  reset,
     output reg  clk1000Hz
@@ -12,11 +12,13 @@ module clockdivder #(parameter N=50_000) (
     if (~reset) begin
       cnt <= 0;
 //      clkout <= 0;
-    end else begin
+    end 
+    else begin
       if (cnt == (N - 1)) begin
         cnt <= 0;
         clk1000Hz <= ~clk1000Hz;
-      end else begin
+      end 
+      else begin
         cnt <=  cnt + 1;
       end
     end

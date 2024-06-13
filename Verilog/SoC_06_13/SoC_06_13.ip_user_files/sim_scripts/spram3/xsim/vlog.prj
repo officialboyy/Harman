@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../SoC_06_13.gen/sources_1/ip/spram3/sim/spram3.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
