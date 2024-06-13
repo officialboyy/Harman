@@ -54,13 +54,8 @@
 // (in parentheses) to your own signal names.
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
-spram2 your_instance_name (
-  .clka(clka),    // input wire clka
-  .ena(ena),      // input wire ena
-  .wea(wea),      // input wire [0 : 0] wea
-  .addra(addra),  // input wire [9 : 0] addra
-  .dina(dina),    // input wire [15 : 0] dina
-  .douta(douta)  // output wire [15 : 0] douta
+spram2 spram2_u1 (
+    .clka(clock), .ena(ena), .wea(wea), .addra(addr), .dina(din), .douta(dout2)
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 
