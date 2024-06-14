@@ -50,7 +50,7 @@ assign led_out = {ledb, leda};
       .reset(reset),
       .out_counter(w_counter)
   );  
-   clockdivder U2 (
+   clockdivider U2 (
       .clk(clk),
       .reset(reset),
       .clk1000Hz(w_clkout)
@@ -79,7 +79,8 @@ assign led_out = {ledb, leda};
  //     .clk(clk),
       .a(w_datafnd),
  //       .a(fndin),
-      .fnd(fnd)
+      .fnd(fnd),
+      .reset(reset)
   );
 
 endmodule

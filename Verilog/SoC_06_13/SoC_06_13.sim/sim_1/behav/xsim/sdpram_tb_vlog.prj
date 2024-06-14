@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SoC_06_13.ip_user_files/ipstatic" \
+"../../../../SoC_06_13.gen/sources_1/ip/sdpram3/sim/sdpram3.v" \
+"../../../../SoC_06_13.gen/sources_1/ip/sdpram2/sim/sdpram2.v" \
+"../../../../SoC_06_13.gen/sources_1/ip/sdpram1/sim/sdpram1.v" \
+"../../../../SoC_06_13.srcs/sim_1/new/sdpram_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

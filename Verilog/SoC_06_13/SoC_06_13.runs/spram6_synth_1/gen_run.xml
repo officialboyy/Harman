@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="spram6_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1718260088">
   <File Type="PA-TCL" Name="spram6.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="spram6_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="spram6_reports.tcl"/>
   <File Type="RDS-RDS" Name="spram6.vds"/>
   <File Type="RDS-UTIL" Name="spram6_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="spram6_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="spram6.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="spram6_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="spram6_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/spram6" RelGenDir="$PGENDIR/spram6">
     <File Path="$PSRCDIR/sources_1/ip/spram6/spram6.xci">
       <FileInfo>
@@ -50,9 +47,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jun 14 14:38:03 2024
+# Process ID: 4232
+# Current directory: C:/Harman/Verilog/SoC_06_13/SoC_06_13.runs/sdpram3_synth_1
+# Command line: vivado.exe -log sdpram3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sdpram3.tcl
+# Log file: C:/Harman/Verilog/SoC_06_13/SoC_06_13.runs/sdpram3_synth_1/sdpram3.vds
+# Journal file: C:/Harman/Verilog/SoC_06_13/SoC_06_13.runs/sdpram3_synth_1\vivado.jou
+# Running On: ST04, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8541 MB
+#-----------------------------------------------------------
+source sdpram3.tcl -notrace

@@ -1,7 +1,0 @@
-Running: xsim.dir/spram_tb_behav/xsimk.exe -simmode gui -wdb spram_tb_behav.wdb -simrunnum 0 -socket 1775
-Design successfully loaded
-Design Loading Memory Usage: 8216 KB (Peak: 8216 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 11432 KB (Peak: 11432 KB)
-Simulation CPU Usage: 124 ms

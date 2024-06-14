@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jun 14 17:22:49 2024
+# Process ID: 10768
+# Current directory: C:/Harman/Verilog/SoC_06_14/SoC_06_14.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1
+# Command line: vivado.exe -log spi_con_exam_IP_top_fndcontrol2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_con_exam_IP_top_fndcontrol2_0_0.tcl
+# Log file: C:/Harman/Verilog/SoC_06_14/SoC_06_14.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1/spi_con_exam_IP_top_fndcontrol2_0_0.vds
+# Journal file: C:/Harman/Verilog/SoC_06_14/SoC_06_14.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1\vivado.jou
+# Running On: ST04, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8541 MB
+#-----------------------------------------------------------
+source spi_con_exam_IP_top_fndcontrol2_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 473.430 ; gain = 179.289
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/SAMSUNG/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_con_exam_IP_top_fndcontrol2_0_0
+Command: synth_design -top spi_con_exam_IP_top_fndcontrol2_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17252
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1317.434 ; gain = 438.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi_con_exam_IP_top_fndcontrol2_0_0' [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ip/spi_con_exam_IP_top_fndcontrol2_0_0/synth/spi_con_exam_IP_top_fndcontrol2_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_fndcontrol2' [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ipshared/736e/src/top_fndcontrol2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'spi_task' [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ipshared/736e/src/spi_task.v:3]
+ERROR: [Synth 8-439] module 'btn_in' not found [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ipshared/736e/src/spi_task.v:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'spi_task' [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ipshared/736e/src/spi_task.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'top_fndcontrol2' [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ipshared/736e/src/top_fndcontrol2.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'spi_con_exam_IP_top_fndcontrol2_0_0' [c:/Harman/Verilog/SoC_06_14/SoC_06_14.gen/sources_1/bd/spi_con_exam_IP/ip/spi_con_exam_IP_top_fndcontrol2_0_0/synth/spi_con_exam_IP_top_fndcontrol2_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1425.035 ; gain = 546.559
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 17:23:17 2024...

@@ -2,16 +2,8 @@
 2020.2
 Oct 13 2023
 20:47:58
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1718242051,verilog,,C:/Harman/강의자료/SoC Peripheral 설계/create_new_ip_3/clockdivider.v,,clk_wiz_0,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1718242051,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram1/sim/spram1.v,1718259685,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.srcs/sim_1/new/spram_tb.v,,spram1,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram2/sim/spram2.v,1718259606,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram1/sim/spram1.v,,spram2,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram3/sim/spram3.v,1718259731,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram2/sim/spram2.v,,spram3,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram4/sim/spram4.v,1718260004,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram3/sim/spram3.v,,spram4,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram5/sim/spram5.v,1718260048,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram4/sim/spram4.v,,spram5,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram6/sim/spram6.v,1718260087,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/spram5/sim/spram5.v,,spram6,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
+C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/sdpram1/sim/sdpram1.v,1718343360,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.srcs/sim_1/new/sdpram_tb.v,,sdpram1,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
+C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/sdpram2/sim/sdpram2.v,1718343445,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/sdpram1/sim/sdpram1.v,,sdpram2,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
+C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/sdpram3/sim/sdpram3.v,1718343477,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.gen/sources_1/ip/sdpram2/sim/sdpram2.v,,sdpram3,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
 C:/Harman/Verilog/SoC_06_13/SoC_06_13.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.srcs/sim_1/new/spram_tb.v,1718264937,verilog,,,,spram_tb,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/Verilog/SoC_06_13/SoC_06_13.srcs/sources_1/new/Clock_counter.v,1718246255,verilog,,,,clock_counter,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/강의자료/SoC Peripheral 설계/create_new_ip_3/clockdivider.v,1718246416,verilog,,C:/Harman/강의자료/SoC Peripheral 설계/create_new_ip_3/counter.v,,clockdivider,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
-C:/Harman/강의자료/SoC Peripheral 설계/create_new_ip_3/counter.v,1718245493,verilog,,C:/Harman/Verilog/SoC_06_13/SoC_06_13.srcs/sources_1/new/Clock_counter.v,,counter,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,
+C:/Harman/Verilog/SoC_06_13/SoC_06_13.srcs/sim_1/new/sdpram_tb.v,1718345186,verilog,,,,sdpram_tb,,,../../../../SoC_06_13.ip_user_files/ipstatic,,,,,

@@ -1,0 +1,2 @@
+sdpram2.v,verilog,xil_defaultlib,../../../../SoC_06_13.gen/sources_1/ip/sdpram2/sim/sdpram2.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

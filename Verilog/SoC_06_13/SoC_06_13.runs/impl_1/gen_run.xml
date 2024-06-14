@@ -4,67 +4,60 @@
   <File Type="PA-TCL" Name="clock_counter.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="clock_counter_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="clock_counter_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="clock_counter_rqa_opted.pb"/>
+  <File Type="BITSTR-MSK" Name="clock_counter.msk"/>
+  <File Type="ROUTE-CLK" Name="clock_counter_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="clock_counter.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="clock_counter_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="clock_counter.bit"/>
+  <File Type="BG-DRC" Name="clock_counter.drc"/>
+  <File Type="BG-BGN" Name="clock_counter.bgn"/>
+  <File Type="BG-BIN" Name="clock_counter.bin"/>
+  <File Type="BITSTR-RBT" Name="clock_counter.rbt"/>
+  <File Type="BITSTR-NKY" Name="clock_counter.nky"/>
+  <File Type="BITSTR-BMM" Name="clock_counter_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="clock_counter.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="clock_counter_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="clock_counter_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="clock_counter_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="clock_counter_opt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="clock_counter_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="clock_counter.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="clock_counter.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="clock_counter_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="clock_counter.hwdef"/>
-  <File Type="PWROPT-DCP" Name="clock_counter_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="clock_counter_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="clock_counter_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="clock_counter_placed.dcp"/>
   <File Type="PLACE-IO" Name="clock_counter_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="clock_counter_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="clock_counter_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="clock_counter_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="clock_counter_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="clock_counter_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="clock_counter_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="clock_counter.bin"/>
-  <File Type="PLACE-TIMING" Name="clock_counter_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="clock_counter_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="clock_counter_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="clock_counter_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="clock_counter.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="clock_counter_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="clock_counter_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="clock_counter_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="clock_counter.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="clock_counter_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="clock_counter_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="clock_counter_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="clock_counter_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="clock_counter_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="clock_counter_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="clock_counter_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="clock_counter_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="clock_counter_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="clock_counter_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="clock_counter_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="clock_counter_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="clock_counter_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="clock_counter_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="clock_counter_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="clock_counter_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="clock_counter_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="clock_counter_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="clock_counter_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="clock_counter_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="clock_counter_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="clock_counter_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="clock_counter_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="clock_counter_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="clock_counter_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="clock_counter_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="clock_counter_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="clock_counter_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="clock_counter_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="clock_counter_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="clock_counter_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="clock_counter_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="clock_counter.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="clock_counter.nky"/>
-  <File Type="BITSTR-BMM" Name="clock_counter_bd.bmm"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="clock_counter_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="clock_counter_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="clock_counter_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="clock_counter_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="clock_counter_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="clock_counter_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="clock_counter_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="clock_counter_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="clock_counter.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="clock_counter_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="clock_counter_pld.pdi"/>
@@ -73,13 +66,6 @@
   <File Type="RNPI_FILE" Name="clock_counter.rnpi"/>
   <File Type="NPI_FILE" Name="clock_counter.npi"/>
   <File Type="RBD_FILE" Name="clock_counter.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="clock_counter.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="clock_counter.sysdef"/>
-  <File Type="BG-BGN" Name="clock_counter.bgn"/>
-  <File Type="BG-DRC" Name="clock_counter.drc"/>
-  <File Type="RDI-RDI" Name="clock_counter.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="clock_counter_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="clock_counter_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -150,6 +136,7 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>
