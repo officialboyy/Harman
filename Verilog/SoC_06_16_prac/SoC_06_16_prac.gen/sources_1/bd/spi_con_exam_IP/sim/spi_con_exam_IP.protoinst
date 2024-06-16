@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"spi_con_exam_IP": {
+			"proto_instances": {
+			}
+		}
+	}
+}

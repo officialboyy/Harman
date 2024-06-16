@@ -1,0 +1,358 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jun 16 16:36:05 2024
+# Process ID: 22088
+# Current directory: C:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1
+# Command line: vivado.exe -log spi_con_exam_IP_top_fndcontrol2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_con_exam_IP_top_fndcontrol2_0_0.tcl
+# Log file: C:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1/spi_con_exam_IP_top_fndcontrol2_0_0.vds
+# Journal file: C:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1\vivado.jou
+# Running On        :Park
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 5600 6-Core Processor              
+# CPU Frequency     :3500 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17086 MB
+# Swap memory       :3087 MB
+# Total Virtual     :20173 MB
+# Available Virtual :5338 MB
+#-----------------------------------------------------------
+source spi_con_exam_IP_top_fndcontrol2_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 515.527 ; gain = 203.316
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/junho/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_con_exam_IP_top_fndcontrol2_0_0
+Command: synth_design -top spi_con_exam_IP_top_fndcontrol2_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1375.574 ; gain = 445.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi_con_exam_IP_top_fndcontrol2_0_0' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ip/spi_con_exam_IP_top_fndcontrol2_0_0/synth/spi_con_exam_IP_top_fndcontrol2_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_fndcontrol2' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/top_fndcontrol2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'spi_task' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:3]
+INFO: [Synth 8-6157] synthesizing module 'btn_in' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/btn_in.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'btn_in' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/btn_in.v:3]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:47]
+WARNING: [Synth 8-7023] instance 'btn_in_u1' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:53]
+WARNING: [Synth 8-7023] instance 'btn_in_u2' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:59]
+WARNING: [Synth 8-7023] instance 'btn_in_u3' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:65]
+WARNING: [Synth 8-7023] instance 'btn_in_u4' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:65]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_master.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_master.v:3]
+WARNING: [Synth 8-7071] port 's_idle' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 's_ready' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 's_send' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 's_done' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'startw_pedge' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'sck_cnt' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'sck_index' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'rw_flag' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'startw_1d' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'startw_2d' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+WARNING: [Synth 8-7023] instance 'spi_master_u1' of module 'spi_master' has 23 connections declared, but only 13 given [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:208]
+INFO: [Synth 8-6157] synthesizing module 'spi_slave' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_slave.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'spi_slave' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_slave.v:8]
+WARNING: [Synth 8-7071] port 's_state' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'ss_pedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'ss_nedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sck_pedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sck_nedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_idle' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_slaveid' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_waddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_wdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_raddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_rdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_done' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sid_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'slave_id' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'mosi_1d' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'mosi_2d' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'wa_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'waddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'wd_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'wdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'ra_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'raddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'done_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'rd_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sck_nedge_1d' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'rdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg1' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg2' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg3' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg4' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+WARNING: [Synth 8-7023] instance 'spi_slave_u1' of module 'spi_slave' has 36 connections declared, but only 6 given [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'spi_task' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_task.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/clockdivider.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/clockdivider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datamux4x1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:3]
+WARNING: [Synth 8-567] referenced signal 'ina' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'inb' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'ine' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'inf' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'inc' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'ind' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'datamux4x1' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/datamux4x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/mux4x1.v:3]
+INFO: [Synth 8-226] default block is never used [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/mux4x1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/mux4x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fnddecoder' [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/fnddecoder.v:3]
+INFO: [Synth 8-226] default block is never used [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/fnddecoder.v:15]
+WARNING: [Synth 8-567] referenced signal 'reset' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/fnddecoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fnddecoder' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/fnddecoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_fndcontrol2' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/top_fndcontrol2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'spi_con_exam_IP_top_fndcontrol2_0_0' (0#1) [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ip/spi_con_exam_IP_top_fndcontrol2_0_0/synth/spi_con_exam_IP_top_fndcontrol2_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element s_raddr_1d_reg was removed.  [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_slave.v:251]
+WARNING: [Synth 8-6014] Unused sequential element s_raddr_2d_reg was removed.  [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/spi_slave.v:251]
+WARNING: [Synth 8-7137] Register clk1000Hz_reg in module clockdivider has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.gen/sources_1/bd/spi_con_exam_IP/ipshared/cef8/src/clockdivider.v:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1497.086 ; gain = 567.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1497.086 ; gain = 567.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1497.086 ; gain = 567.328
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1497.086 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1590.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1591.113 ; gain = 0.277
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               20 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 17    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 71    
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    29|
+|2     |LUT1   |     9|
+|3     |LUT2   |   148|
+|4     |LUT3   |    32|
+|5     |LUT4   |    65|
+|6     |LUT5   |    86|
+|7     |LUT6   |   141|
+|8     |MUXF7  |     1|
+|9     |FDCE   |   350|
+|10    |FDPE   |     3|
+|11    |FDRE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1591.113 ; gain = 661.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 1591.113 ; gain = 567.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1591.113 ; gain = 661.355
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1591.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e7144d5b
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 1591.113 ; gain = 1062.863
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1591.113 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1/spi_con_exam_IP_top_fndcontrol2_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP spi_con_exam_IP_top_fndcontrol2_0_0, cache-ID = 43353a69ee117eba
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1591.113 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Harman/Verilog/SoC_06_16_prac/SoC_06_16_prac.runs/spi_con_exam_IP_top_fndcontrol2_0_0_synth_1/spi_con_exam_IP_top_fndcontrol2_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file spi_con_exam_IP_top_fndcontrol2_0_0_utilization_synth.rpt -pb spi_con_exam_IP_top_fndcontrol2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 16 16:36:50 2024...
