@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-314,-267",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_mode_0 -pg 1 -lvl 0 -x -100 -y -100 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -100 -y 40 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -100 -y 20 -defaultsOSRD
+preplace portBus btn_0 -pg 1 -lvl 0 -x -100 -y -80 -defaultsOSRD
+preplace portBus fnd_0 -pg 1 -lvl 3 -x 670 -y -110 -defaultsOSRD
+preplace portBus fndsel_0 -pg 1 -lvl 3 -x 670 -y -130 -defaultsOSRD
+preplace portBus led_out_0 -pg 1 -lvl 3 -x 670 -y -90 -defaultsOSRD
+preplace inst top_fndcontrol2_0 -pg 1 -lvl 1 -x 110 -y -150 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 90 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 460 -y -40 -defaultsOSRD
+preplace inst reset_inv_0 -pg 1 -lvl 1 -x 110 -y -20 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 0 2 -50 180 270
+preplace netloc clk_wiz_locked 1 1 1 290 0n
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 3 -60 190 NJ 190 630
+preplace netloc btn_0_1 1 0 1 -70J -120n
+preplace netloc top_fndcontrol2_0_fnd 1 1 2 NJ -150 640J
+preplace netloc top_fndcontrol2_0_fndsel 1 1 2 NJ -170 650J
+preplace netloc top_fndcontrol2_0_led_out 1 1 2 270J -140 630J
+preplace netloc mode_0_1 1 0 1 -80J -140n
+preplace netloc sys_clock_1 1 0 1 -80J 40n
+preplace netloc reset_1 1 0 2 -70 170 280J
+preplace netloc reset_inv_0_Res 1 0 2 -40 160 260
+levelinfo -pg 1 -100 110 460 670
+pagesize -pg 1 -db -bbox -sgen -220 -240 810 240
+"
+}
+{
+   "da_board_cnt":"4",
+   "da_clkrst_cnt":"1"
+}

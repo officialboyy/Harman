@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log mb1_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb1_dlmb_v10_0.tcl
+
+
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mb1_dlmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 474.258 ; gain = 178.559
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb1_dlmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 4be8e20ce51b47dc to dir: C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/mb1_dlmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.cache/ip/2023.2/4/b/4be8e20ce51b47dc/mb1_ilmb_v10_0.dcp to C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/mb1_dlmb_v10_0_synth_1/mb1_dlmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.cache/ip/2023.2/4/b/4be8e20ce51b47dc/mb1_ilmb_v10_0_sim_netlist.v to C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/mb1_dlmb_v10_0_synth_1/mb1_dlmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.cache/ip/2023.2/4/b/4be8e20ce51b47dc/mb1_ilmb_v10_0_sim_netlist.vhdl to C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/mb1_dlmb_v10_0_synth_1/mb1_dlmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.cache/ip/2023.2/4/b/4be8e20ce51b47dc/mb1_ilmb_v10_0_stub.v to C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/mb1_dlmb_v10_0_synth_1/mb1_dlmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.cache/ip/2023.2/4/b/4be8e20ce51b47dc/mb1_ilmb_v10_0_stub.vhdl to C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/mb1_dlmb_v10_0_synth_1/mb1_dlmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mb1_dlmb_v10_0, cache-ID = 4be8e20ce51b47dc.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 10:23:30 2024...

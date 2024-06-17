@@ -1,0 +1,12 @@
+btn_in.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/btn_in.v,
+clockdivider.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/clockdivider.v,
+counter.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/counter.v,
+datamux4x1.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v,
+fnddecoder.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/fnddecoder.v,
+mux4x1.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/mux4x1.v,
+spi_master.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_master.v,
+spi_slave.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_slave.v,
+spi_task.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v,
+top_fndcontrol2.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/top_fndcontrol2.v,
+top_fndcontrol2_0.v,verilog,xil_defaultlib,../../../../SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/sim/top_fndcontrol2_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

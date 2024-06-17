@@ -1,0 +1,348 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jun 17 10:26:15 2024
+# Process ID: 15712
+# Current directory: C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1
+# Command line: vivado.exe -log mb1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb1_wrapper.tcl
+# Log file: C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/mb1_wrapper.vds
+# Journal file: C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1\vivado.jou
+# Running On: ST04, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8541 MB
+#-----------------------------------------------------------
+source mb1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 474.621 ; gain = 179.387
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top mb1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11280
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1334.250 ; gain = 440.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb1_wrapper' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/hdl/mb1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'mb1' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'mb1_axi_uartlite_0_1' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_axi_uartlite_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_axi_uartlite_0_1' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_axi_uartlite_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'mb1_axi_uartlite_0_1' is unconnected for instance 'axi_uartlite_0' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:101]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'mb1_axi_uartlite_0_1' has 22 connections declared, but only 21 given [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:101]
+INFO: [Synth 8-6157] synthesizing module 'mb1_clk_wiz_1_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_clk_wiz_1_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mb1_mdm_1_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_mdm_1_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mb1_microblaze_0_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_microblaze_0_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'mb1_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:141]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_AWPROT' of module 'mb1_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:141]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_ARPROT' of module 'mb1_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:141]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'mb1_microblaze_0_0' has 52 connections declared, but only 49 given [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mb1_microblaze_0_axi_periph_0' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:265]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_FYWRSO' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:699]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_FYWRSO' (0#1) [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:699]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_microblaze_0_axi_periph_0' (0#1) [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:265]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_XG4B8G' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:465]
+INFO: [Synth 8-6157] synthesizing module 'mb1_dlmb_bram_if_cntlr_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_dlmb_bram_if_cntlr_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mb1_dlmb_v10_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_dlmb_v10_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:611]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb1_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:611]
+INFO: [Synth 8-6157] synthesizing module 'mb1_ilmb_bram_if_cntlr_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_ilmb_bram_if_cntlr_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mb1_ilmb_v10_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_ilmb_v10_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:657]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb1_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:657]
+INFO: [Synth 8-6157] synthesizing module 'mb1_lmb_bram_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_lmb_bram_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:682]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:682]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb1_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:682]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_XG4B8G' (0#1) [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:465]
+INFO: [Synth 8-6157] synthesizing module 'mb1_rst_clk_wiz_1_100M_0' [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_rst_clk_wiz_1_100M_0' (0#1) [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/.Xil/Vivado-15712-ST04/realtime/mb1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:254]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:254]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:254]
+INFO: [Synth 8-6155] done synthesizing module 'mb1' (0#1) [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/synth/mb1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mb1_wrapper' (0#1) [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/hdl/mb1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_FYWRSO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_FYWRSO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_FYWRSO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_FYWRSO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1446.781 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_microblaze_0_0/mb1_microblaze_0_0/mb1_microblaze_0_0_in_context.xdc] for cell 'mb1_i/microblaze_0'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_microblaze_0_0/mb1_microblaze_0_0/mb1_microblaze_0_0_in_context.xdc] for cell 'mb1_i/microblaze_0'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_dlmb_v10_0/mb1_dlmb_v10_0/mb1_ilmb_v10_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_dlmb_v10_0/mb1_dlmb_v10_0/mb1_ilmb_v10_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_ilmb_v10_0/mb1_ilmb_v10_0/mb1_ilmb_v10_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_ilmb_v10_0/mb1_ilmb_v10_0/mb1_ilmb_v10_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_dlmb_bram_if_cntlr_0/mb1_dlmb_bram_if_cntlr_0/mb1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_dlmb_bram_if_cntlr_0/mb1_dlmb_bram_if_cntlr_0/mb1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_ilmb_bram_if_cntlr_0/mb1_ilmb_bram_if_cntlr_0/mb1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_ilmb_bram_if_cntlr_0/mb1_ilmb_bram_if_cntlr_0/mb1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_lmb_bram_0/mb1_lmb_bram_0/mb1_lmb_bram_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_lmb_bram_0/mb1_lmb_bram_0/mb1_lmb_bram_0_in_context.xdc] for cell 'mb1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_mdm_1_0/mb1_mdm_1_0/mb1_mdm_1_0_in_context.xdc] for cell 'mb1_i/mdm_1'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_mdm_1_0/mb1_mdm_1_0/mb1_mdm_1_0_in_context.xdc] for cell 'mb1_i/mdm_1'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0_in_context.xdc] for cell 'mb1_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0_in_context.xdc] for cell 'mb1_i/clk_wiz_1'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_rst_clk_wiz_1_100M_0/mb1_rst_clk_wiz_1_100M_0/mb1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_rst_clk_wiz_1_100M_0/mb1_rst_clk_wiz_1_100M_0/mb1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_axi_uartlite_0_1/mb1_axi_uartlite_0_1/mb1_axi_uartlite_0_1_in_context.xdc] for cell 'mb1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_axi_uartlite_0_1/mb1_axi_uartlite_0_1/mb1_axi_uartlite_0_1_in_context.xdc] for cell 'mb1_i/axi_uartlite_0'
+Parsing XDC File [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset_0'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'mode_0'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[0]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[1]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[2]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[3]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[4]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[5]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[6]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led_out_0[7]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[0]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[1]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[2]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[3]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[4]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[5]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'fnd_0[6]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'fndsel_0[0]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'fndsel_0[1]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'fndsel_0[2]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'fndsel_0[3]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'btn_0[0]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'btn_0[1]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'btn_0[2]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'btn_0[3]'. [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc:76]
+Finished Parsing XDC File [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mb1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Harman/Lecture Files/Verilog_RTL Design/digilent-xdc-master/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1446.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1446.781 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.gen/sources_1/bd/mb1/ip/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0/mb1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module mb1_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |mb1_axi_uartlite_0_1     |         1|
+|2     |mb1_clk_wiz_1_0          |         1|
+|3     |mb1_mdm_1_0              |         1|
+|4     |mb1_microblaze_0_0       |         1|
+|5     |mb1_rst_clk_wiz_1_100M_0 |         1|
+|6     |mb1_dlmb_bram_if_cntlr_0 |         1|
+|7     |mb1_dlmb_v10_0           |         1|
+|8     |mb1_ilmb_bram_if_cntlr_0 |         1|
+|9     |mb1_ilmb_v10_0           |         1|
+|10    |mb1_lmb_bram_0           |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |mb1_axi_uartlite_0     |     1|
+|2     |mb1_clk_wiz_1          |     1|
+|3     |mb1_dlmb_bram_if_cntlr |     1|
+|4     |mb1_dlmb_v10           |     1|
+|5     |mb1_ilmb_bram_if_cntlr |     1|
+|6     |mb1_ilmb_v10           |     1|
+|7     |mb1_lmb_bram           |     1|
+|8     |mb1_mdm_1              |     1|
+|9     |mb1_microblaze_0       |     1|
+|10    |mb1_rst_clk_wiz_1_100M |     1|
+|11    |IBUF                   |     2|
+|12    |OBUF                   |     1|
++------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1446.781 ; gain = 553.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1446.781 ; gain = 553.246
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1453.688 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1462.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 813c7783
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1462.270 ; gain = 976.043
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1462.270 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Harman/Verilog/SoC_06_17_Microblaze/SoC_06_17_Microblaze.runs/synth_1/mb1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb1_wrapper_utilization_synth.rpt -pb mb1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 10:27:16 2024...

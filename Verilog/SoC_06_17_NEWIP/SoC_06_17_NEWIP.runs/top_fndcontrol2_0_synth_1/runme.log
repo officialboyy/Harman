@@ -1,0 +1,346 @@
+
+*** Running vivado
+    with args -log top_fndcontrol2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_fndcontrol2_0.tcl
+
+
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_fndcontrol2_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 476.207 ; gain = 181.910
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/SAMSUNG/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: top_fndcontrol2_0
+Command: synth_design -top top_fndcontrol2_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9696
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 934.672 ; gain = 442.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_fndcontrol2_0' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/synth/top_fndcontrol2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_fndcontrol2' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/top_fndcontrol2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'spi_task' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:3]
+INFO: [Synth 8-6157] synthesizing module 'btn_in' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/btn_in.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'btn_in' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/btn_in.v:3]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:47]
+WARNING: [Synth 8-7023] instance 'btn_in_u1' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:47]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u2' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:53]
+WARNING: [Synth 8-7023] instance 'btn_in_u2' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:53]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u3' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:59]
+WARNING: [Synth 8-7023] instance 'btn_in_u3' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:59]
+WARNING: [Synth 8-7071] port 'btn_1d' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'btn_2d' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'max_cnt20' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'btn1' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:65]
+WARNING: [Synth 8-7071] port 'btn2' of module 'btn_in' is unconnected for instance 'btn_in_u4' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:65]
+WARNING: [Synth 8-7023] instance 'btn_in_u4' of module 'btn_in' has 9 connections declared, but only 4 given [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:65]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_master.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_master.v:3]
+WARNING: [Synth 8-7071] port 's_idle' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 's_ready' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 's_send' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 's_done' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'startw_pedge' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'sck_cnt' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'sck_index' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'rw_flag' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'startw_1d' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7071] port 'startw_2d' of module 'spi_master' is unconnected for instance 'spi_master_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+WARNING: [Synth 8-7023] instance 'spi_master_u1' of module 'spi_master' has 23 connections declared, but only 13 given [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:208]
+INFO: [Synth 8-6157] synthesizing module 'spi_slave' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_slave.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'spi_slave' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_slave.v:8]
+WARNING: [Synth 8-7071] port 's_state' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'ss_pedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'ss_nedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sck_pedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sck_nedge' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_idle' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_slaveid' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_waddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_wdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_raddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_rdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 's_done' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sid_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'slave_id' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'mosi_1d' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'mosi_2d' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'wa_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'waddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'wd_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'wdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'ra_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'raddr' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'done_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'rd_sckn_cnt' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'sck_nedge_1d' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'rdata' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg1' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg2' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg3' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7071] port 'user_reg4' of module 'spi_slave' is unconnected for instance 'spi_slave_u1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+WARNING: [Synth 8-7023] instance 'spi_slave_u1' of module 'spi_slave' has 36 connections declared, but only 6 given [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'spi_task' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_task.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/clockdivider.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/clockdivider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datamux4x1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:3]
+WARNING: [Synth 8-567] referenced signal 'ina' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'inb' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'ine' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'inf' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'inc' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:11]
+WARNING: [Synth 8-567] referenced signal 'ind' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'datamux4x1' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/datamux4x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/mux4x1.v:3]
+INFO: [Synth 8-226] default block is never used [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/mux4x1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/mux4x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fnddecoder' [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/fnddecoder.v:3]
+INFO: [Synth 8-226] default block is never used [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/fnddecoder.v:15]
+WARNING: [Synth 8-567] referenced signal 'reset' should be on the sensitivity list [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/fnddecoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fnddecoder' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/fnddecoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_fndcontrol2' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/top_fndcontrol2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_fndcontrol2_0' (0#1) [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/synth/top_fndcontrol2_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element s_raddr_1d_reg was removed.  [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_slave.v:251]
+WARNING: [Synth 8-6014] Unused sequential element s_raddr_2d_reg was removed.  [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/spi_slave.v:251]
+WARNING: [Synth 8-7137] Register clk1000Hz_reg in module clockdivider has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.gen/sources_1/ip/top_fndcontrol2_0/src/clockdivider.v:19]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1052.211 ; gain = 559.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1052.211 ; gain = 559.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1052.211 ; gain = 559.703
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1052.211 ; gain = 559.703
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               20 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 17    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	  17 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 71    
+	  26 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    27|
+|2     |LUT1   |     7|
+|3     |LUT2   |   149|
+|4     |LUT3   |    26|
+|5     |LUT4   |    69|
+|6     |LUT5   |    87|
+|7     |LUT6   |   137|
+|8     |MUXF7  |     1|
+|9     |FDCE   |   350|
+|10    |FDPE   |     3|
+|11    |FDRE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   857|
+|2     |  inst              |top_fndcontrol2 |   857|
+|3     |    U0              |spi_task        |   782|
+|4     |      btn_in_u1     |btn_in          |    61|
+|5     |      btn_in_u2     |btn_in_0        |    61|
+|6     |      btn_in_u3     |btn_in_1        |    63|
+|7     |      btn_in_u4     |btn_in_2        |    61|
+|8     |      spi_master_u1 |spi_master      |   138|
+|9     |      spi_slave_u1  |spi_slave       |   251|
+|10    |    U1              |counter         |     8|
+|11    |    U2              |clockdivider    |    67|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 77 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.215 ; gain = 737.707
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1239.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1329.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+지정된 경로를 찾을 수 없습니다.
+Synth Design complete | Checksum: 605c6a2e
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1329.387 ; gain = 841.875
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1629.488 ; gain = 0.094
+INFO: [Common 17-1381] The checkpoint 'C:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.runs/top_fndcontrol2_0_synth_1/top_fndcontrol2_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1629.488 ; gain = 300.102
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_fndcontrol2_0, cache-ID = 5fd66d860e13ec35
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1630.672 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Harman/Verilog/SoC_06_17_NEWIP/SoC_06_17_NEWIP.runs/top_fndcontrol2_0_synth_1/top_fndcontrol2_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_fndcontrol2_0_utilization_synth.rpt -pb top_fndcontrol2_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 09:21:00 2024...
