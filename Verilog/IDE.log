@@ -1,0 +1,27 @@
+17:26:04 DEBUG : Logs will be stored at 'C:/Harman/Verilog/IDE.log'.
+17:26:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Harman\Verilog\temp_xsdb_launch_script.tcl
+17:26:59 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+17:26:59 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+17:26:59 ERROR : (XSDB Server)'\gnuwin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+17:27:02 INFO  : Registering command handlers for Vitis TCF services
+17:27:10 INFO  : Platform repository initialization has completed.
+17:27:13 INFO  : XSCT server has started successfully.
+17:27:13 INFO  : Successfully done setting XSCT server connection channel  
+17:27:16 INFO  : plnx-install-location is set to ''
+17:27:16 INFO  : Successfully done setting workspace for the tool. 
+17:27:16 INFO  : Successfully done query RDI_DATADIR 
+17:28:33 INFO  : Result from executing command 'getProjects': mb1_wrapper
+17:28:33 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+17:28:34 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:28:36 INFO  : Platform 'mb1_wrapper' is added to custom repositories.
+17:28:39 INFO  : Platform 'mb1_wrapper' is added to custom repositories.
+17:29:00 INFO  : Result from executing command 'getProjects': mb1_wrapper
+17:29:00 INFO  : Result from executing command 'getPlatforms': mb1_wrapper|C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/mb1_wrapper.xpfm;xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+17:29:02 INFO  : Checking for BSP changes to sync application flags for project 'mbperiApp'...
+17:31:05 INFO  : Checking for BSP changes to sync application flags for project 'mbperiApp'...

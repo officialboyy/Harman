@@ -1,0 +1,23 @@
+{
+  "modelVersion": "1.0",
+  "projectName": "mbperiApp_prj",
+  "platform": "C:\\Harman\\Verilog\\SoC_06_18_MB_Peri\\mbperi\\export\\mbperi\\mbperi.xpfm",
+  "externalComponentRefs": [
+    "mbperiApp"
+  ],
+  "components": [],
+  "buildConfigurations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "supportedTargets": [
+        "HW_EMU",
+        "HW"
+      ]
+    }
+  ],
+  "activeBuildConfigId": "default",
+  "hostMode": "x86",
+  "isDirty": true,
+  "applicationFlow": "EMBEDDED"
+}
