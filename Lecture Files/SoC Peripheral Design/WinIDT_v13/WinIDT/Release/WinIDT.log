@@ -1,0 +1,32 @@
+﻿빌드 시작: 2022-09-09 오전 9:16:20
+     1>2 노드의 "D:\ebook\fpga_Microblaze\WinIDT_v13\WinIDT\WinIDT.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Release\WinIDT.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\WinIDT.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt WinIDTView.cpp
+         WinIDTView.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /l"0x0412" /IRelease\ /nologo /fo"Release\WinIDT.res" WinIDT.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ebook\fpga_Microblaze\WinIDT_v13\Release\WinIDT.exe" /INCREMENTAL:NO /NOLOGO ws2_32.lib /MANIFEST /ManifestFile:"Release\WinIDT.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ebook\fpga_Microblaze\WinIDT_v13\Release\WinIDT.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ebook\fpga_Microblaze\WinIDT_v13\Release\WinIDT.lib" /MACHINE:X86 Release\WinIDT.res
+         Release\CommThread.obj
+         Release\ConnectSocket.obj
+         Release\MainFrm.obj
+         Release\stdafx.obj
+         Release\WinIDT.obj
+         Release\WinIDTDoc.obj
+         Release\WinIDTView.obj
+         코드를 생성하고 있습니다.
+         코드를 생성했습니다.
+         WinIDT.vcxproj -> D:\ebook\fpga_Microblaze\WinIDT_v13\Release\WinIDT.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\ebook\fpga_Microblaze\WinIDT_v13\Release\WinIDT.exe;#1" /manifest Release\WinIDT.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         "Release\WinIDT.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Release\WinIDT.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"D:\ebook\fpga_Microblaze\WinIDT_v13\WinIDT\WinIDT.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:02.47

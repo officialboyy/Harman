@@ -1,0 +1,7 @@
+Running: xsim.dir/spi_maste_tbr_behav/xsimk.exe -simmode gui -wdb spi_maste_tbr_behav.wdb -simrunnum 0 -socket 10640
+Design successfully loaded
+Design Loading Memory Usage: 7412 KB (Peak: 7412 KB)
+Design Loading CPU Usage: 78 ms
+Simulation completed
+Simulation Memory Usage: 9156 KB (Peak: 9156 KB)
+Simulation CPU Usage: 93 ms
