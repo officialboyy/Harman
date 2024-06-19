@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+// Vivado v2024.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Wednesday June 19, 2024 - 11:54:42 am, from:
+//
+//     Map file     - C:\Harman\Verilog\SoC_06_19_UI\SoC_06_19_UI.gen\sources_1\bd\mb1\mb1.bmm
+//     Data file(s) - c:/Harman/Verilog/SoC_06_19_UI/SoC_06_19_UI.gen/sources_1/bd/mb1/ip/mb1_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'mb1_microblaze_0.mb1_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

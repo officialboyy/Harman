@@ -1,0 +1,21 @@
+2024-06-18T17:31:05.418037500255-17:31:05 **** Incremental Build of configuration Debug for project mbperiApp ****
+000-make all 
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/sw/mb1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: mbperiApp.elf'
+000-'Invoking: MicroBlaze gcc linker'
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/sw/mb1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mbperiApp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: mbperiApp.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size mbperiApp.elf  |tee "mbperiApp.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  17124	    440	   3572	  21136	   5290	mbperiApp.elf
+000-'Finished building: mbperiApp.elf.size'
+000-' '
+00255-
+17:31:06 Build Finished (took 843ms)
+

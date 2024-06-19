@@ -1323,3 +1323,393 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-06-18 17:31:06.792
 !MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+!SESSION 2024-06-19 09:05:20.890 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-06-19 09:06:09.692
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:06:16.872
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:06:16.872
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:06:16.889
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:06:16.889
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:06:16.889
+!MESSAGE XSCT Command: [setws C:/Harman/Verilog], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:06:16.889
+!MESSAGE XSCT command with result: [setws C:/Harman/Verilog], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:08:01.555
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:08:02.488
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:08:02.504
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:08:02.520
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/SharedData/2024.1/data;C:/Xilinx/Vitis/2024.1/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:24.873
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.179
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.219
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.228
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Tue Jun 18 16:01:22 2024",
+"vivado_version": "2024.1",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.232
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.240
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Result: [null, {"microblaze_0": "mb1_i/microblaze_0:mb1_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.241
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:17:25.247
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa], Result: [null, {"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_2": {"hier_name": "axi_gpio_2",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_3": {"hier_name": "axi_gpio_3",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-06-19 09:17:28.320
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-06-19 09:17:28.321
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-06-19 09:17:28.321
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:18:31.145
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:18:31.147
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:18:31.148
+!MESSAGE Workspace path used is: C:\Harman\Verilog
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:19:33.318
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:19:33.319
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:19:33.321
+!MESSAGE Workspace path used is: C:\Harman\Verilog
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:19:52.789
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:19:52.794
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:19:52.795
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:19:52.799
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.684
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.692
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.694
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.847
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.850
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.855
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.856
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.871
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.881
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.882
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.883
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.905
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.906
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.907
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.908
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.913
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.914
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.936
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.938
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:06.940
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Basys3-210183B9A60DA-0362d093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:07.010
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:07.046
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:07.047
+!MESSAGE XSCT Command: [fpga -file C:/Harman/Verilog/mbperiApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:07.413
+!MESSAGE XSCT command with result: [fpga -file C:/Harman/Verilog/mbperiApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:08.227
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:20:08.232
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:55:23.860
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:55:23.863
+!MESSAGE Preference loaded using local preference: C:\Harman\Verilog\mbperiApp\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:56:05.708
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:56:05.714
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:56:19.220
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:56:19.224
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/hw/mb1_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.954
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.957
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.957
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.979
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.980
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.985
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:29.986
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 09:58:30.001
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:58:34.170
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: soc_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:58:34.170
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 09:58:34.171
+!MESSAGE Workspace path used is: C:\Harman\Verilog
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.630
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.646
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.647
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.652
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.653
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.659
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.659
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:00:20.675
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.127
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.128
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.129
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.140
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.140
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.145
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183B9A60DA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.146
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-06-19 10:01:33.162
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-06-19 10:03:04.156
+!MESSAGE Tool usage for 'FLASH' updated to '1'

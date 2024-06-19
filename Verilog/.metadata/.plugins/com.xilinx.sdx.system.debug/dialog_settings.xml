@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="mbperiApp_system-imgFile" value="C:\Harman\Verilog\mbperiApp\_ide\bitstream\download.bit"/>
+	<item key="mbperiApp_system-offSet" value=""/>
+	<item key="mbperiApp_system-initFile" value=""/>
+	<item key="mbperiApp_system-flashType" value="mx25l3273f-spi-x1_x2_x4"/>
+	<item key="mbperiApp_system-flashDensity" value=""/>
+	<item key="mbperiApp_system-verifyFlash" value="false"/>
+	<item key="mbperiApp_system-blankCheck" value="false"/>
+	<item key="mbperiApp_system-device" value="Auto Detect"/>
+	<item key="mbperiApp_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="mbperiApp_system"/>
+</section>

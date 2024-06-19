@@ -1,0 +1,32 @@
+16:46:49 DEBUG : Logs will be stored at 'C:/Harman/Verilog/SoC_06_19_UI/IDE.log'.
+16:46:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Harman\Verilog\SoC_06_19_UI\temp_xsdb_launch_script.tcl
+16:46:56 INFO  : Registering command handlers for Vitis TCF services
+16:46:56 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+16:46:56 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+16:46:56 ERROR : (XSDB Server)'\gnuwin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+16:47:00 INFO  : Platform repository initialization has completed.
+16:47:00 INFO  : XSCT server has started successfully.
+16:47:00 INFO  : Successfully done setting XSCT server connection channel  
+16:47:01 INFO  : plnx-install-location is set to ''
+16:47:01 INFO  : Successfully done setting workspace for the tool. 
+16:47:01 INFO  : Successfully done query RDI_DATADIR 
+16:49:09 INFO  : Result from executing command 'getProjects': micBlazeAppTop
+16:49:09 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+16:49:11 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:49:13 INFO  : Platform 'micBlazeAppTop' is added to custom repositories.
+16:49:16 INFO  : Platform 'micBlazeAppTop' is added to custom repositories.
+16:50:12 INFO  : Hardware specification for platform project 'micBlazeAppTop' is updated.
+16:50:45 INFO  : Result from executing command 'getProjects': micBlazeAppTop
+16:50:45 INFO  : Result from executing command 'getPlatforms': micBlazeAppTop|C:/Harman/Verilog/SoC_06_19_UI/micBlazeAppTop/export/micBlazeAppTop/micBlazeAppTop.xpfm;xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+17:39:54 INFO  : Checking for BSP changes to sync application flags for project 'blazePeriApp'...
+17:41:05 INFO  : Checking for BSP changes to sync application flags for project 'blazePeriApp'...
+17:43:55 INFO  : Bit file 'C:/Harman/Verilog/SoC_06_19_UI/blazePeriApp/_ide/bitstream/download.bit' is generated.
+17:43:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+17:43:59 INFO  : Device configured successfully with "C:/Harman/Verilog/SoC_06_19_UI/blazePeriApp/_ide/bitstream/download.bit"

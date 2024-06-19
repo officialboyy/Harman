@@ -1,0 +1,7 @@
+timestamp=[2024-06-19 16:46:54], mode=WORKBENCH_START, duration=0:00:10.145, duration_ms=10145, data={}
+timestamp=[2024-06-19 16:46:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.004, duration_ms=4, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-06-19 16:47:00], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.982, duration_ms=3982, data={}
+timestamp=[2024-06-19 16:49:15], mode=APP_CREATION, duration=0:00:10.782, duration_ms=10782, data={name=blazePeriApp, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=micBlazeAppTop, application_type=application}
+timestamp=[2024-06-19 16:50:47], mode=PLATFORM_GENERATION, duration=0:00:11.428, duration_ms=11428, data={name=micBlazeAppTop}
+timestamp=[2024-06-19 17:39:55], mode=BUILD, duration=0:00:00.766, duration_ms=766, data={name=blazePeriApp, configuration=Debug, clean_build=false}
+timestamp=[2024-06-19 17:41:06], mode=BUILD, duration=0:00:01.532, duration_ms=1532, data={name=blazePeriApp, configuration=Debug, clean_build=false}

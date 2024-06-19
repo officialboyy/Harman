@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="scw_hwspec" value="C:\Harman\Verilog\SoC_06_18_MB_Peri"/>
+	<item key="fpga_elf_mem_selection" value="C:\Harman\Verilog\mbperiApp\Debug"/>
+	<item key="soc_flash_files_selection" value="C:\Harman\Verilog\mbperiApp\_ide\bitstream"/>
 </section>

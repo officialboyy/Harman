@@ -25,3 +25,31 @@
 17:29:00 INFO  : Result from executing command 'getPlatforms': mb1_wrapper|C:/Harman/Verilog/mb1_wrapper/export/mb1_wrapper/mb1_wrapper.xpfm;xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
 17:29:02 INFO  : Checking for BSP changes to sync application flags for project 'mbperiApp'...
 17:31:05 INFO  : Checking for BSP changes to sync application flags for project 'mbperiApp'...
+09:06:11 DEBUG : Logs will be stored at 'C:/Harman/Verilog/IDE.log'.
+09:06:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Harman\Verilog\temp_xsdb_launch_script.tcl
+09:06:13 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+09:06:13 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+09:06:13 ERROR : (XSDB Server)'\gnuwin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+09:06:16 INFO  : XSCT server has started successfully.
+09:06:16 INFO  : plnx-install-location is set to ''
+09:06:16 INFO  : Successfully done setting XSCT server connection channel  
+09:06:16 INFO  : Successfully done setting workspace for the tool. 
+09:06:20 INFO  : Platform repository initialization has completed.
+09:08:02 INFO  : Registering command handlers for Vitis TCF services
+09:08:02 INFO  : Successfully done query RDI_DATADIR 
+09:20:06 INFO  : Bit file 'C:/Harman/Verilog/mbperiApp/_ide/bitstream/download.bit' is generated.
+09:20:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:20:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+09:20:07 INFO  : Device configured successfully with "C:/Harman/Verilog/mbperiApp/_ide/bitstream/download.bit"
+09:56:19 INFO  : Bit file 'C:/Harman/Verilog/mbperiApp/_ide/bitstream/download.bit' is generated.
+09:58:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:01:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:03:04 INFO  : Invoking Bootgen: bootgen -arch fpga -image C:/Harman/Verilog/mbperiApp_system/_ide/flash/bootimage.bif -w -o C:/Harman/Verilog/mbperiApp_system/_ide/flash/BOOT.bin  -interface spi
+10:03:06 INFO  : Bootgen command execution is done.

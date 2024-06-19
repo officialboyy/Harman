@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="blazePeriApp_system-bitFile" value="${project_loc:blazePeriApp}/_ide/bitstream/micBlazeAppTop.bit"/>
+	<item key="blazePeriApp_system-bmmFile" value="${project_loc:blazePeriApp}/_ide/bitstream/micBlazeAppTop.mmi"/>
+	<item key="blazePeriApp_system-target" value="Local"/>
+	<item key="blazePeriApp_system-device" value="Auto Detect"/>
+	<item key="blazePeriApp_system-partial_bit" value="false"/>
+	<item key="blazePeriApp_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="blazePeriApp_system"/>
+	<item key="blazePeriApp_system-microblaze_0-initElf" value="C:\Harman\Verilog\SoC_06_19_UI\blazePeriApp\Debug\blazePeriApp.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183B9A60DA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183B9A60DA-0362d093-0&quot;}}]}"/>
+</section>

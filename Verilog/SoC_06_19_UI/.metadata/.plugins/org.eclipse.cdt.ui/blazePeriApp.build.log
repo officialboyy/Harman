@@ -1,0 +1,26 @@
+17:41:05 **** Incremental Build of configuration Debug for project blazePeriApp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Harman/Verilog/SoC_06_19_UI/micBlazeAppTop/export/micBlazeAppTop/sw/micBlazeAppTop/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Harman/Verilog/SoC_06_19_UI/micBlazeAppTop/export/micBlazeAppTop/sw/micBlazeAppTop/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: blazePeriApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Harman/Verilog/SoC_06_19_UI/micBlazeAppTop/export/micBlazeAppTop/sw/micBlazeAppTop/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "blazePeriApp.elf"  ./src/comm_task.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: blazePeriApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size blazePeriApp.elf  |tee "blazePeriApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25700	    468	   3696	  29864	   74a8	blazePeriApp.elf
+'Finished building: blazePeriApp.elf.size'
+' '
+
+17:41:06 Build Finished (took 1s.515ms)
+
