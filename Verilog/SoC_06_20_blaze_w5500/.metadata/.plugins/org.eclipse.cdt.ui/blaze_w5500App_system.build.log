@@ -1,0 +1,6 @@
+15:48:54 **** Build of configuration Debug for project blaze_w5500App_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+15:48:54 Build Finished (took 195ms)
+

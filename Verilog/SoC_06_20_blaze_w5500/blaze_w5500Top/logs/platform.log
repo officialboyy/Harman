@@ -1,0 +1,1048 @@
+TRACE::2024-06-20.15:19:10::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:10::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:10::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:12::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-06-20.15:19:12::SCWPlatform::Opened new HwDB with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:12::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-06-20.15:19:12::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top"
+		}]
+}
+TRACE::2024-06-20.15:19:12::SCWPlatform::Boot application domains not present, creating them
+TRACE::2024-06-20.15:19:12::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2024-06-20.15:19:12::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top"
+		}]
+}
+TRACE::2024-06-20.15:19:12::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top"
+		}]
+}
+TRACE::2024-06-20.15:19:12::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:12::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:12::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:12::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:12::SCWDomain::checking for install qemu data   : 
+TRACE::2024-06-20.15:19:12::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:12::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:13::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:13::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:13::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:13::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:13::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:13::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-06-20.15:19:13::SCWMssOS::No sw design opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::mss does not exists at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::Creating sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::Adding the swdes entry, created swdb C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::updating the scw layer changes to swdes at   C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::Writing mss at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:13::SCWMssOS::Completed writing the mss file at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-06-20.15:19:13::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-06-20.15:19:13::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-06-20.15:19:13::SCWMssOS::Completed writing the mss file at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-06-20.15:19:13::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2024-06-20.15:19:15::SCWMssOS::Saving the mss changes C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2024-06-20.15:19:15::SCWMssOS::Writing the mss file completed C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::Commit changes completed.
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"69b4a061761569e166e832d6b9274e9a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-06-20.15:19:15::SCWPlatform::Started generating the artifacts platform blaze_w5500Top
+TRACE::2024-06-20.15:19:15::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-06-20.15:19:15::SCWPlatform::Started generating the artifacts for system configuration blaze_w5500Top
+LOG::2024-06-20.15:19:15::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-06-20.15:19:15::SCWSystem::Not a boot domain 
+LOG::2024-06-20.15:19:15::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-06-20.15:19:15::SCWDomain::Generating domain artifcats
+TRACE::2024-06-20.15:19:15::SCWMssOS::Generating standalone artifcats
+TRACE::2024-06-20.15:19:15::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::Completed writing the mss file at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-06-20.15:19:15::SCWMssOS::Mss edits present, copying mssfile into export location C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-06-20.15:19:15::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-06-20.15:19:15::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2024-06-20.15:19:15::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-06-20.15:19:15::SCWMssOS::Copying to export directory.
+TRACE::2024-06-20.15:19:15::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-06-20.15:19:15::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-06-20.15:19:15::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-06-20.15:19:15::SCWSystem::Completed Processing the sysconfig blaze_w5500Top
+LOG::2024-06-20.15:19:15::SCWPlatform::Completed generating the artifacts for system configuration blaze_w5500Top
+TRACE::2024-06-20.15:19:15::SCWPlatform::Started preparing the platform 
+TRACE::2024-06-20.15:19:15::SCWSystem::Writing the bif file for system config blaze_w5500Top
+TRACE::2024-06-20.15:19:15::SCWSystem::dir created 
+TRACE::2024-06-20.15:19:15::SCWSystem::Writing the bif 
+TRACE::2024-06-20.15:19:15::SCWPlatform::Started writing the spfm file 
+TRACE::2024-06-20.15:19:15::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-06-20.15:19:15::SCWPlatform::Completed generating the platform
+TRACE::2024-06-20.15:19:15::SCWMssOS::Saving the mss changes C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-06-20.15:19:15::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-06-20.15:19:15::SCWMssOS::Commit changes completed.
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:15::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:15::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:15::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"69b4a061761569e166e832d6b9274e9a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-06-20.15:19:15::SCWPlatform::updated the xpfm file.
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::Saving the mss changes C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-06-20.15:19:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-06-20.15:19:16::SCWMssOS::Commit changes completed.
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"69b4a061761569e166e832d6b9274e9a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::Saving the mss changes C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-06-20.15:19:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-06-20.15:19:16::SCWMssOS::Commit changes completed.
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"69b4a061761569e166e832d6b9274e9a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-06-20.15:19:16::SCWPlatform::Started generating the artifacts platform blaze_w5500Top
+TRACE::2024-06-20.15:19:16::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-06-20.15:19:16::SCWPlatform::Started generating the artifacts for system configuration blaze_w5500Top
+LOG::2024-06-20.15:19:16::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-06-20.15:19:16::SCWDomain::Generating domain artifcats
+TRACE::2024-06-20.15:19:16::SCWMssOS::Generating standalone artifcats
+TRACE::2024-06-20.15:19:16::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::Completed writing the mss file at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-06-20.15:19:16::SCWMssOS::Mss edits present, copying mssfile into export location C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-06-20.15:19:16::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-06-20.15:19:16::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-06-20.15:19:16::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-06-20.15:19:16::SCWMssOS::Copying to export directory.
+TRACE::2024-06-20.15:19:16::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-06-20.15:19:16::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-06-20.15:19:16::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-06-20.15:19:16::SCWSystem::Completed Processing the sysconfig blaze_w5500Top
+LOG::2024-06-20.15:19:16::SCWPlatform::Completed generating the artifacts for system configuration blaze_w5500Top
+TRACE::2024-06-20.15:19:16::SCWPlatform::Started preparing the platform 
+TRACE::2024-06-20.15:19:16::SCWSystem::Writing the bif file for system config blaze_w5500Top
+TRACE::2024-06-20.15:19:16::SCWSystem::dir created 
+TRACE::2024-06-20.15:19:16::SCWSystem::Writing the bif 
+TRACE::2024-06-20.15:19:16::SCWPlatform::Started writing the spfm file 
+TRACE::2024-06-20.15:19:16::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-06-20.15:19:16::SCWPlatform::Completed generating the platform
+TRACE::2024-06-20.15:19:16::SCWMssOS::Saving the mss changes C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-06-20.15:19:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-06-20.15:19:16::SCWMssOS::Commit changes completed.
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:19:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:19:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:19:16::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:19:16::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:19:16::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"69b4a061761569e166e832d6b9274e9a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-06-20.15:19:16::SCWPlatform::updated the xpfm file.
+LOG::2024-06-20.15:48:44::SCWPlatform::Started generating the artifacts platform blaze_w5500Top
+TRACE::2024-06-20.15:48:44::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-06-20.15:48:44::SCWPlatform::Started generating the artifacts for system configuration blaze_w5500Top
+LOG::2024-06-20.15:48:44::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-06-20.15:48:44::SCWSystem::Not a boot domain 
+LOG::2024-06-20.15:48:44::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-06-20.15:48:44::SCWDomain::Generating domain artifcats
+TRACE::2024-06-20.15:48:44::SCWMssOS::Generating standalone artifcats
+TRACE::2024-06-20.15:48:44::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-06-20.15:48:44::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:44::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:44::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:44::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:48:44::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:44::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:48:44::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:48:44::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:48:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:48:44::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:44::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:44::SCWMssOS::Completed writing the mss file at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-06-20.15:48:44::SCWMssOS::Mss edits present, copying mssfile into export location C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:44::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-06-20.15:48:44::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-06-20.15:48:44::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-06-20.15:48:44::SCWMssOS::doing bsp build ... 
+TRACE::2024-06-20.15:48:44::SCWMssOS::System Command Ran  C: & cd  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2024-06-20.15:48:44::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -j 6 --no-print-directory par_libs
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_10/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-06-20.15:48:44::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-06-20.15:48:44::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-06-20.15:48:44::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-06-20.15:48:44::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_11/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-06-20.15:48:44::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-06-20.15:48:44::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_18/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-06-20.15:48:44::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-06-20.15:48:44::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/spi_v4_12/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-06-20.15:48:44::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-06-20.15:48:44::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v9_1/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-06-20.15:48:44::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-06-20.15:48:44::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_10/src"
+
+TRACE::2024-06-20.15:48:44::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2024-06-20.15:48:44::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2024-06-20.15:48:44::SCWMssOS::Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_10/src"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-06-20.15:48:45::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2024-06-20.15:48:45::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_11/src"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-06-20.15:48:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-06-20.15:48:45::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-06-20.15:48:45::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2024-06-20.15:48:45::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_18/src"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_18/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-06-20.15:48:45::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2024-06-20.15:48:45::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/spi_v4_12/src"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-06-20.15:48:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-06-20.15:48:45::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v9_1/src"
+
+TRACE::2024-06-20.15:48:45::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-06-20.15:48:45::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-06-20.15:48:45::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_10/src"
+
+TRACE::2024-06-20.15:48:46::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-06-20.15:48:46::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2024-06-20.15:48:46::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-06-20.15:48:47::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2024-06-20.15:48:47::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-06-20.15:48:47::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-06-20.15:48:47::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2024-06-20.15:48:47::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2024-06-20.15:48:47::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2024-06-20.15:48:47::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2024-06-20.15:48:47::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2024-06-20.15:48:47::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2024-06-20.15:48:47::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2024-06-20.15:48:47::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2024-06-20.15:48:47::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2024-06-20.15:48:47::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2024-06-20.15:48:47::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2024-06-20.15:48:47::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2024-06-20.15:48:47::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2024-06-20.15:48:47::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+TRACE::2024-06-20.15:48:47::SCWMssOS::b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+TRACE::2024-06-20.15:48:47::SCWMssOS::_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+TRACE::2024-06-20.15:48:47::SCWMssOS::m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+TRACE::2024-06-20.15:48:47::SCWMssOS::il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+TRACE::2024-06-20.15:48:47::SCWMssOS::o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+TRACE::2024-06-20.15:48:47::SCWMssOS::ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+TRACE::2024-06-20.15:48:47::SCWMssOS::e_0/lib/xpm_init.o microblaze_0/lib/xspi.o microblaze_0/lib/xspi_g.o microblaze_0/lib/xspi_options.o microblaze_0/lib/xspi_self
+TRACE::2024-06-20.15:48:47::SCWMssOS::test.o microblaze_0/lib/xspi_sinit.o microblaze_0/lib/xspi_stats.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+TRACE::2024-06-20.15:48:47::SCWMssOS::microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+TRACE::2024-06-20.15:48:47::SCWMssOS::te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2024-06-20.15:48:48::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-06-20.15:48:49::SCWMssOS::Copying to export directory.
+TRACE::2024-06-20.15:48:49::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-06-20.15:48:49::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-06-20.15:48:49::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-06-20.15:48:49::SCWSystem::Completed Processing the sysconfig blaze_w5500Top
+LOG::2024-06-20.15:48:49::SCWPlatform::Completed generating the artifacts for system configuration blaze_w5500Top
+TRACE::2024-06-20.15:48:49::SCWPlatform::Started preparing the platform 
+TRACE::2024-06-20.15:48:49::SCWSystem::Writing the bif file for system config blaze_w5500Top
+TRACE::2024-06-20.15:48:49::SCWSystem::dir created 
+TRACE::2024-06-20.15:48:49::SCWSystem::Writing the bif 
+TRACE::2024-06-20.15:48:49::SCWPlatform::Started writing the spfm file 
+TRACE::2024-06-20.15:48:49::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-06-20.15:48:49::SCWPlatform::Completed generating the platform
+TRACE::2024-06-20.15:48:49::SCWMssOS::Saving the mss changes C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-06-20.15:48:49::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-06-20.15:48:49::SCWMssOS::Commit changes completed.
+TRACE::2024-06-20.15:48:49::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:48:49::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:48:49::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:48:49::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:48:49::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:48:49::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:48:49::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:48:49::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:49::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:48:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:48:49::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:48:49::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:49::SCWWriter::formatted JSON is {
+	"platformName":	"blaze_w5500Top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"blaze_w5500Top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/blaze_w5500Top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"blaze_w5500Top",
+	"systems":	[{
+			"systemName":	"blaze_w5500Top",
+			"systemDesc":	"blaze_w5500Top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"blaze_w5500Top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"69b4a061761569e166e832d6b9274e9a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-06-20.15:48:49::SCWPlatform::updated the xpfm file.
+TRACE::2024-06-20.15:48:51::SCWPlatform::Trying to open the hw design at C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:51::SCWPlatform::DSA given C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:51::SCWPlatform::DSA absoulate path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:51::SCWPlatform::DSA directory C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw
+TRACE::2024-06-20.15:48:51::SCWPlatform:: Platform Path C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/hw/blaze_w5500Top.xsa
+TRACE::2024-06-20.15:48:51::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-06-20.15:48:51::SCWPlatform::Trying to set the existing hwdb with name blaze_w5500Top_0
+TRACE::2024-06-20.15:48:51::SCWPlatform::Opened existing hwdb blaze_w5500Top_0
+TRACE::2024-06-20.15:48:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-06-20.15:48:51::SCWMssOS::Checking the sw design at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-06-20.15:48:51::SCWMssOS::DEBUG:  swdes dump  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-06-20.15:48:51::SCWMssOS::Sw design exists and opened at  C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/microblaze_0/standalone_microblaze_0/bsp/system.mss

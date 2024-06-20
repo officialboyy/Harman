@@ -1,0 +1,46 @@
+15:48:51 **** Build of configuration Debug for project blaze_w5500App ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/w5500.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/w5500.o" -IC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/w5500.d" -MT"src/w5500.o" -o "src/w5500.o" "../src/w5500.c"
+'Finished building: ../src/w5500.c'
+' '
+'Building file: ../src/w5500_loopback.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/w5500_loopback.o" -IC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/w5500_loopback.d" -MT"src/w5500_loopback.o" -o "src/w5500_loopback.o" "../src/w5500_loopback.c"
+'Finished building: ../src/w5500_loopback.c'
+' '
+'Building file: ../src/w5500_socket.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/w5500_socket.o" -IC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/w5500_socket.d" -MT"src/w5500_socket.o" -o "src/w5500_socket.o" "../src/w5500_socket.c"
+'Finished building: ../src/w5500_socket.c'
+' '
+'Building file: ../src/w5500_task.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/w5500_task.o" -IC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/w5500_task.d" -MT"src/w5500_task.o" -o "src/w5500_task.o" "../src/w5500_task.c"
+'Finished building: ../src/w5500_task.c'
+' '
+'Building target: blaze_w5500App.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/sw/blaze_w5500Top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "blaze_w5500App.elf"  ./src/helloworld.o ./src/platform.o ./src/w5500.o ./src/w5500_loopback.o ./src/w5500_socket.o ./src/w5500_task.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: blaze_w5500App.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size blaze_w5500App.elf  |tee "blaze_w5500App.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23908	    424	   5052	  29384	   72c8	blaze_w5500App.elf
+'Finished building: blaze_w5500App.elf.size'
+' '
+
+15:48:53 Build Finished (took 2s.116ms)
+

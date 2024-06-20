@@ -1,0 +1,37 @@
+15:16:16 DEBUG : Logs will be stored at 'C:/Harman/Verilog/SoC_06_20_blaze_w5500/IDE.log'.
+15:16:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Harman\Verilog\SoC_06_20_blaze_w5500\temp_xsdb_launch_script.tcl
+15:16:23 INFO  : Registering command handlers for Vitis TCF services
+15:16:24 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+15:16:24 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+15:16:24 ERROR : (XSDB Server)'\gnuwin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+15:16:27 INFO  : Platform repository initialization has completed.
+15:16:27 INFO  : XSCT server has started successfully.
+15:16:28 INFO  : plnx-install-location is set to ''
+15:16:28 INFO  : Successfully done setting XSCT server connection channel  
+15:16:28 INFO  : Successfully done query RDI_DATADIR 
+15:16:28 INFO  : Successfully done setting workspace for the tool. 
+15:19:15 INFO  : Result from executing command 'getProjects': blaze_w5500Top
+15:19:15 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+15:19:16 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:19:18 INFO  : Platform 'blaze_w5500Top' is added to custom repositories.
+15:19:22 INFO  : Platform 'blaze_w5500Top' is added to custom repositories.
+15:48:49 INFO  : Result from executing command 'getProjects': blaze_w5500Top
+15:48:49 INFO  : Result from executing command 'getPlatforms': blaze_w5500Top|C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500Top/export/blaze_w5500Top/blaze_w5500Top.xpfm;xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+15:48:51 INFO  : Checking for BSP changes to sync application flags for project 'blaze_w5500App'...
+16:02:26 INFO  : Bit file 'C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500App/_ide/bitstream/download.bit' is generated.
+16:02:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:02:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+16:02:31 INFO  : Device configured successfully with "C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500App/_ide/bitstream/download.bit"
+16:26:28 INFO  : Bit file 'C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500App/_ide/bitstream/download.bit' is generated.
+16:26:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+16:26:29 INFO  : Device configured successfully with "C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500App/_ide/bitstream/download.bit"
+16:44:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:47 INFO  : Invoking Bootgen: bootgen -arch fpga -image C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500App_system/_ide/flash/bootimage.bif -w -o C:/Harman/Verilog/SoC_06_20_blaze_w5500/blaze_w5500App_system/_ide/flash/BOOT.bin  -interface spi
+16:45:50 INFO  : Bootgen command execution is done.
