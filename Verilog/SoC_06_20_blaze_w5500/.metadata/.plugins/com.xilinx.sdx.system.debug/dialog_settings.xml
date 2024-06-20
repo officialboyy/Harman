@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="blaze_w5500App_system-imgFile" value="C:\Harman\Verilog\SoC_06_20_blaze_w5500\blaze_w5500App\_ide\bitstream\download.bit"/>
+	<item key="blaze_w5500App_system-offSet" value=""/>
+	<item key="blaze_w5500App_system-initFile" value=""/>
+	<item key="blaze_w5500App_system-flashType" value="mx25l3273f-spi-x1_x2_x4"/>
+	<item key="blaze_w5500App_system-flashDensity" value=""/>
+	<item key="blaze_w5500App_system-verifyFlash" value="false"/>
+	<item key="blaze_w5500App_system-blankCheck" value="false"/>
+	<item key="blaze_w5500App_system-device" value="Auto Detect"/>
+	<item key="blaze_w5500App_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="blaze_w5500App_system"/>
+</section>
