@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="userMapApp" location="C:/Harman/Verilog/SoC_06_21_userMap/userMapApp" platform="C:/Harman/Verilog/SoC_06_21_userMap/userMapTop/export/userMapTop/userMapTop.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="userMapApp_system" sysConfig="userMapTop" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="a05d6139f88513f9d3f2103a3aedcab6">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.534839396">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.441464892" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

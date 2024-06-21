@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Thu Jun 20 17:35:56 2024
+//Date        : Fri Jun 21 11:09:55 2024
 //Host        : ST04 running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -1066,8 +1066,8 @@ module system
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio TRI_O" *) output [3:0]gpio_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN system_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart " *) input uart_rxd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart " *) output uart_txd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart RxD" *) input uart_rxd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart TxD" *) output uart_txd;
 
   wire [12:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;

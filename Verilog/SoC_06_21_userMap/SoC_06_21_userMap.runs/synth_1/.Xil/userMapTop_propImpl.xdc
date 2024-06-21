@@ -1,0 +1,25 @@
+set_property SRC_FILE_INFO {cfile:C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.srcs/constrs_1/new/userMapTop.xdc rfile:../../../SoC_06_21_userMap.srcs/constrs_1/new/userMapTop.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W5 IOSTANDARD LVCMOS33 } [get_ports sys_clock]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R2 IOSTANDARD LVCMOS33 } [get_ports {reset}]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U16 IOSTANDARD LVCMOS33 } [get_ports {pwm_out[0]}]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E19 IOSTANDARD LVCMOS33 } [get_ports {pwm_out[1]}]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U19 IOSTANDARD LVCMOS33 } [get_ports {pwm_out[2]}]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V19 IOSTANDARD LVCMOS33 } [get_ports {pwm_out[3]}]
+set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN A14 IOSTANDARD LVCMOS33 } [get_ports {gpio[0]}];#Sch name = JB1
+set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN A16 IOSTANDARD LVCMOS33 } [get_ports {gpio[1]}];#Sch name = JB2
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B15 IOSTANDARD LVCMOS33 } [get_ports {gpio[2]}];#Sch name = JB3
+set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B16 IOSTANDARD LVCMOS33 } [get_ports {gpio[3]}];#Sch name = JB4
+set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B18 IOSTANDARD LVCMOS33 } [get_ports uart_rxd]
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN A18 IOSTANDARD LVCMOS33 } [get_ports uart_txd]

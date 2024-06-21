@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="C:\Harman\Verilog\SoC_06_21_userMap"/>
+	<item key="fpga_elf_mem_selection" value="C:\Harman\Verilog\SoC_06_21_userMap\userMapApp\Debug"/>
+	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="C:\Harman\Verilog\SoC_06_21_userMap\userMapApp\_ide\bitstream"/>
+</section>

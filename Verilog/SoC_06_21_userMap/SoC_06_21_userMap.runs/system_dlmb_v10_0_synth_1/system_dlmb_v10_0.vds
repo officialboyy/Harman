@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Jun 21 14:35:34 2024
+# Process ID: 15904
+# Current directory: C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1
+# Command line: vivado.exe -log system_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_dlmb_v10_0.tcl
+# Log file: C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1/system_dlmb_v10_0.vds
+# Journal file: C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1\vivado.jou
+# Running On        :ST04
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8541 MB
+# Swap memory       :11519 MB
+# Total Virtual     :20061 MB
+# Available Virtual :4108 MB
+#-----------------------------------------------------------
+source system_dlmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 664.336 ; gain = 235.508
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_dlmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 946579cc9e208a21 to dir: C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.cache/ip/2024.1/9/4/946579cc9e208a21/system_ilmb_v10_0.dcp to C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1/system_dlmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.cache/ip/2024.1/9/4/946579cc9e208a21/system_ilmb_v10_0_sim_netlist.v to C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1/system_dlmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.cache/ip/2024.1/9/4/946579cc9e208a21/system_ilmb_v10_0_sim_netlist.vhdl to C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1/system_dlmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.cache/ip/2024.1/9/4/946579cc9e208a21/system_ilmb_v10_0_stub.v to C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1/system_dlmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.cache/ip/2024.1/9/4/946579cc9e208a21/system_ilmb_v10_0_stub.vhdl to C:/Harman/Verilog/SoC_06_21_userMap/SoC_06_21_userMap.runs/system_dlmb_v10_0_synth_1/system_dlmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_dlmb_v10_0, cache-ID = 946579cc9e208a21.
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 21 14:35:57 2024...

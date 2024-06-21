@@ -1,0 +1,26 @@
+16:00:45 **** Build of configuration Debug for project userMapApp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Harman/Verilog/SoC_06_21_userMap/userMapTop/export/userMapTop/sw/userMapTop/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Harman/Verilog/SoC_06_21_userMap/userMapTop/export/userMapTop/sw/userMapTop/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: userMapApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Harman/Verilog/SoC_06_21_userMap/userMapTop/export/userMapTop/sw/userMapTop/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "userMapApp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: userMapApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size userMapApp.elf  |tee "userMapApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7588	    328	   3108	  11024	   2b10	userMapApp.elf
+'Finished building: userMapApp.elf.size'
+' '
+
+16:00:47 Build Finished (took 1s.139ms)
+

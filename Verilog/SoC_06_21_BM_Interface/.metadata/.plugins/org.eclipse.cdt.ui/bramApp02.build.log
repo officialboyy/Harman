@@ -1,0 +1,26 @@
+11:49:07 **** Build of configuration Debug for project bramApp02 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Harman/Verilog/SoC_06_21_BM_Interface/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Harman/Verilog/SoC_06_21_BM_Interface/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bramApp02.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Harman/Verilog/SoC_06_21_BM_Interface/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bramApp02.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bramApp02.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bramApp02.elf  |tee "bramApp02.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6664	    328	   3104	  10096	   2770	bramApp02.elf
+'Finished building: bramApp02.elf.size'
+' '
+
+11:49:08 Build Finished (took 1s.10ms)
+

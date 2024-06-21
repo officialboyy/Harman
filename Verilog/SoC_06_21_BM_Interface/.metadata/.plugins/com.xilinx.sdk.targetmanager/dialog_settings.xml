@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="bramApp02_system-bitFile" value="${project_loc:bramApp02}/_ide/bitstream/system_wrapper.bit"/>
+	<item key="bramApp02_system-bmmFile" value="${project_loc:bramApp02}/_ide/bitstream/system_wrapper.mmi"/>
+	<item key="bramApp02_system-target" value="Local"/>
+	<item key="bramApp02_system-device" value="Auto Detect"/>
+	<item key="bramApp02_system-partial_bit" value="false"/>
+	<item key="bramApp02_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="bramApp02_system"/>
+	<item key="bramApp02_system-microblaze_0-initElf" value="C:\Harman\Verilog\SoC_06_21_BM_Interface\bramApp02\Debug\bramApp02.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183B9A60DA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183B9A60DA-0362d093-0&quot;}}]}"/>
+</section>

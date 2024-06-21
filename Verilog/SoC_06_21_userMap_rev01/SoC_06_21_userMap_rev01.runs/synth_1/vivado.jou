@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Jun 21 16:20:37 2024
+# Process ID: 15864
+# Current directory: C:/Harman/Verilog/SoC_06_21_userMap_rev01/SoC_06_21_userMap_rev01.runs/synth_1
+# Command line: vivado.exe -log userMapTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source userMapTop.tcl
+# Log file: C:/Harman/Verilog/SoC_06_21_userMap_rev01/SoC_06_21_userMap_rev01.runs/synth_1/userMapTop.vds
+# Journal file: C:/Harman/Verilog/SoC_06_21_userMap_rev01/SoC_06_21_userMap_rev01.runs/synth_1\vivado.jou
+# Running On        :ST04
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8541 MB
+# Swap memory       :11091 MB
+# Total Virtual     :19632 MB
+# Available Virtual :5724 MB
+#-----------------------------------------------------------
+source userMapTop.tcl -notrace
