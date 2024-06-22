@@ -1,0 +1,12 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.gen/sources_1/ip/fifo_16x8/sim/fifo_16x8.v,1719062876,verilog,,C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/Uart_Tx.v,,fifo_16x8,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sim_1/new/uart_loopback_tb.v,1719070584,verilog,,,,uart_loopback_tb,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sim_1/new/uart_rx_tb.v,1719068323,verilog,,,,uart_rx_tb,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/Uart_Tx.v,1719067138,verilog,,C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/uart_controller.v,,Uart_Tx,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/uart_controller.v,1719069295,verilog,,C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/uart_loopback.v,,uart_controller,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/uart_loopback.v,1719070327,verilog,,C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/uart_rx.v,,uart_loopback,,,,,,,,
+C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sources_1/new/uart_rx.v,1719067331,verilog,,C:/Harman/Verilog/SoC_06_22_UART/SoC_06_22_UART.srcs/sim_1/new/uart_loopback_tb.v,,uart_rx,,,,,,,,
