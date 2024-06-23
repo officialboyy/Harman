@@ -1,0 +1,21 @@
+14:06:04 **** Incremental Build of configuration Debug for project BlazeTopApp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTop/export/BlazeTop/sw/BlazeTop/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: BlazeTopApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTop/export/BlazeTop/sw/BlazeTop/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "BlazeTopApp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: BlazeTopApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size BlazeTopApp.elf  |tee "BlazeTopApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6096	    328	   3104	   9528	   2538	BlazeTopApp.elf
+'Finished building: BlazeTopApp.elf.size'
+' '
+
+14:06:05 Build Finished (took 673ms)
+
