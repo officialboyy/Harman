@@ -1,0 +1,62 @@
+13:50:20 DEBUG : Logs will be stored at 'C:/Harman/Verilog/SoC_06_23_LED_Counter/IDE.log'.
+13:50:25 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Harman\Verilog\SoC_06_23_LED_Counter\temp_xsdb_launch_script.tcl
+13:50:25 INFO  : Registering command handlers for Vitis TCF services
+13:50:25 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+13:50:25 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+'\gnuwin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+13:50:26 INFO  : Platform repository initialization has completed.
+13:50:27 INFO  : XSCT server has started successfully.
+13:50:27 INFO  : Successfully done setting XSCT server connection channel  
+13:50:27 INFO  : plnx-install-location is set to ''
+13:50:27 INFO  : Successfully done setting workspace for the tool. 
+13:50:27 INFO  : Successfully done query RDI_DATADIR 
+13:51:02 INFO  : Result from executing command 'getProjects': BlazeTop
+13:51:02 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+13:51:03 WARN  : An unexpected exception occurred in the module 'platform project logging'
+13:51:03 INFO  : Platform 'BlazeTop' is added to custom repositories.
+13:51:05 INFO  : Platform 'BlazeTop' is added to custom repositories.
+13:56:01 INFO  : Result from executing command 'getProjects': BlazeTop
+13:56:01 INFO  : Result from executing command 'getPlatforms': BlazeTop|C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTop/export/BlazeTop/BlazeTop.xpfm;xilinx_vck190_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_202410_1/xilinx_vck190_base_202410_1.xpfm;xilinx_vck190_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vck190_base_dfx_202410_1/xilinx_vck190_base_dfx_202410_1.xpfm;xilinx_vek280_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_202410_1/xilinx_vek280_base_202410_1.xpfm;xilinx_vek280_base_bdc_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vek280_base_bdc_202410_1/xilinx_vek280_base_bdc_202410_1.xpfm;xilinx_vmk180_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_vmk180_base_202410_1/xilinx_vmk180_base_202410_1.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+13:56:02 INFO  : Checking for BSP changes to sync application flags for project 'BlazeTopApp'...
+13:57:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:57:58 INFO  : Jtag cable 'Digilent Basys3 210183B9A60DA' is selected.
+13:57:58 INFO  : 'jtag frequency' command is executed.
+13:57:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+13:57:59 INFO  : Device configured successfully with "C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/_ide/bitstream/BlazeTop.bit"
+13:57:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:58:00 INFO  : Hardware design and registers information is loaded from 'C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTop/export/BlazeTop/hw/BlazeTop.xsa'.
+13:58:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:58:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:58:00 INFO  : System reset is completed.
+13:58:03 INFO  : 'after 3000' command is executed.
+13:58:03 INFO  : Context for processor 'microblaze_0' is selected.
+13:58:03 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+13:58:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}
+fpga -file C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/_ide/bitstream/BlazeTop.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTop/export/BlazeTop/hw/BlazeTop.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/Debug/BlazeTopApp.elf
+----------------End of Script----------------
+
+13:58:03 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+14:04:37 INFO  : Bit file 'C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/_ide/bitstream/download.bit' is generated.
+14:04:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+14:04:38 INFO  : Device configured successfully with "C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/_ide/bitstream/download.bit"
+14:06:04 INFO  : Checking for BSP changes to sync application flags for project 'BlazeTopApp'...
+14:06:26 INFO  : Bit file 'C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/_ide/bitstream/download.bit' is generated.
+14:06:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B9A60DA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B9A60DA-0362d093-0"}' command is executed.
+14:06:27 INFO  : Device configured successfully with "C:/Harman/Verilog/SoC_06_23_LED_Counter/BlazeTopApp/_ide/bitstream/download.bit"

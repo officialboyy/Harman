@@ -1,0 +1,8 @@
+Nothing to build in platform 'mb1_wrapper'
+
+12:39:29 **** Incremental Build of configuration Debug for project mymb1App ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:30 **** Incremental Build of configuration Debug for project mymb1App_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

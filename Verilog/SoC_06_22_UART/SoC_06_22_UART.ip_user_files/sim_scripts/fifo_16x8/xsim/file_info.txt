@@ -1,0 +1,2 @@
+fifo_16x8.v,verilog,xil_defaultlib,../../../../SoC_06_22_UART.gen/sources_1/ip/fifo_16x8/sim/fifo_16x8.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jun 23 10:48:20 2024
+# Process ID: 5440
+# Current directory: C:/Harman/Verilog/SoC_06_23_HelloWorld/SoC_06_23_HelloWorld.runs/mb1_mdm_1_0_synth_1
+# Command line: vivado.exe -log mb1_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb1_mdm_1_0.tcl
+# Log file: C:/Harman/Verilog/SoC_06_23_HelloWorld/SoC_06_23_HelloWorld.runs/mb1_mdm_1_0_synth_1/mb1_mdm_1_0.vds
+# Journal file: C:/Harman/Verilog/SoC_06_23_HelloWorld/SoC_06_23_HelloWorld.runs/mb1_mdm_1_0_synth_1\vivado.jou
+# Running On        :Park
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 5600 6-Core Processor              
+# CPU Frequency     :3500 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17086 MB
+# Swap memory       :3087 MB
+# Total Virtual     :20173 MB
+# Available Virtual :5290 MB
+#-----------------------------------------------------------
+source mb1_mdm_1_0.tcl -notrace

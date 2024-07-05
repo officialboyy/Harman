@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="mymb0App_system-bitFile" value="${project_loc:mymb0App}/_ide/bitstream/mb1_wrapper.bit"/>
+	<item key="mymb0App_system-bmmFile" value="${project_loc:mymb0App}/_ide/bitstream/mb1_wrapper.mmi"/>
+	<item key="mymb0App_system-target" value="Local"/>
+	<item key="mymb0App_system-device" value="Auto Detect"/>
+	<item key="mymb0App_system-partial_bit" value="false"/>
+	<item key="mymb0App_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="mymb1App_system"/>
+	<item key="mymb0App_system-microblaze_0-initElf" value="C:\Harman\Verilog\SoC_06_23_HelloWorld\mymb0App\Debug\mymb0App.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183B9A60DA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183B9A60DA-0362d093-0&quot;}}]}"/>
+	<item key="mymb1App_system-bitFile" value="${project_loc:mymb1App}/_ide/bitstream/mb1_wrapper.bit"/>
+	<item key="mymb1App_system-bmmFile" value="${project_loc:mymb1App}/_ide/bitstream/mb1_wrapper.mmi"/>
+	<item key="mymb1App_system-target" value="Local"/>
+	<item key="mymb1App_system-device" value="Auto Detect"/>
+	<item key="mymb1App_system-partial_bit" value="false"/>
+	<item key="mymb1App_system-skip_rev_check" value="false"/>
+	<item key="mymb1App_system-microblaze_0-initElf" value="C:\Harman\Verilog\SoC_06_23_HelloWorld\mymb1App\Debug\mymb1App.elf"/>
+</section>

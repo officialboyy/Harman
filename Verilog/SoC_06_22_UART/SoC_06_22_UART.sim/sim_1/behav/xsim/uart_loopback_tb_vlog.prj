@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SoC_06_22_UART.gen/sources_1/ip/fifo_16x8/sim/fifo_16x8.v" \
+"../../../../SoC_06_22_UART.srcs/sources_1/new/Uart_Tx.v" \
+"../../../../SoC_06_22_UART.srcs/sources_1/new/uart_controller.v" \
+"../../../../SoC_06_22_UART.srcs/sources_1/new/uart_loopback.v" \
+"../../../../SoC_06_22_UART.srcs/sources_1/new/uart_rx.v" \
+"../../../../SoC_06_22_UART.srcs/sim_1/new/uart_loopback_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

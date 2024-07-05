@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="mymb1App" location="C:/Harman/Verilog/SoC_06_23_HelloWorld/mymb1App" platform="C:/Harman/Verilog/SoC_06_23_HelloWorld/mb1_wrapper/export/mb1_wrapper/mb1_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="mymb1App_system" sysConfig="mb1_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="b07ab29d2fdd1de8a2bac774e6236cf0">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2023033140">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1342340881" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
