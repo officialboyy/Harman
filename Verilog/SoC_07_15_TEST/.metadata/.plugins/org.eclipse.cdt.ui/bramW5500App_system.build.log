@@ -1,0 +1,6 @@
+21:17:28 **** Build of configuration Debug for project bramW5500App_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+21:17:29 Build Finished (took 174ms)
+

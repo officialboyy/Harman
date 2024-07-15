@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Harman/Verilog/SoC_07_15_TEST/SoC_07_15_TEST.gen/sources_1/ip/spram_2048x32/sim/spram_2048x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spram_2048x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Harman/Lecture Files/SoC Peripheral Design/24_06_25/Veriog_source_평가용_공유/eth_task.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_task
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Harman/Lecture Files/SoC Peripheral Design/24_06_25/Veriog_source_평가용_공유/tb_eth_task.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_eth_task
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Harman/Verilog/SoC_07_15_TEST/SoC_07_15_TEST.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
