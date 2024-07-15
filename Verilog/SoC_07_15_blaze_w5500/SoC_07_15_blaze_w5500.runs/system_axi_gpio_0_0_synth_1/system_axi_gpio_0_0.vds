@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Jul 15 12:07:21 2024
+# Process ID: 7316
+# Current directory: C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log system_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_gpio_0_0.tcl
+# Log file: C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1/system_axi_gpio_0_0.vds
+# Journal file: C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1\vivado.jou
+# Running On        :ST04
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8541 MB
+# Swap memory       :14606 MB
+# Total Virtual     :23147 MB
+# Available Virtual :5190 MB
+#-----------------------------------------------------------
+source system_axi_gpio_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 664.859 ; gain = 237.066
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 3852151969017aa3 to dir: C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.cache/ip/2024.1/3/8/3852151969017aa3/system_axi_gpio_0_0.dcp to C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1/system_axi_gpio_0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.cache/ip/2024.1/3/8/3852151969017aa3/system_axi_gpio_0_0_sim_netlist.v to C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1/system_axi_gpio_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.cache/ip/2024.1/3/8/3852151969017aa3/system_axi_gpio_0_0_sim_netlist.vhdl to C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1/system_axi_gpio_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.cache/ip/2024.1/3/8/3852151969017aa3/system_axi_gpio_0_0_stub.v to C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1/system_axi_gpio_0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.cache/ip/2024.1/3/8/3852151969017aa3/system_axi_gpio_0_0_stub.vhdl to C:/Harman/Verilog/SoC_07_15_blaze_w5500/SoC_07_15_blaze_w5500.runs/system_axi_gpio_0_0_synth_1/system_axi_gpio_0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_axi_gpio_0_0, cache-ID = 3852151969017aa3.
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 15 12:08:07 2024...

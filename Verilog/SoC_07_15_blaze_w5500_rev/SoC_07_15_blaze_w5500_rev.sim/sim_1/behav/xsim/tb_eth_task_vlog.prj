@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SoC_07_15_blaze_w5500_rev.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../SoC_07_15_blaze_w5500_rev.gen/sources_1/bd/system/ipshared/3242" \
+"../../../../SoC_07_15_blaze_w5500_rev.gen/sources_1/ip/spram_2048x32/sim/spram_2048x32.v" \
+"../../../../../../Lecture Files/SoC Peripheral Design/24_06_25/Veriog_source_평가용_공유/eth_task.v" \
+"../../../../../../Lecture Files/SoC Peripheral Design/24_06_25/Veriog_source_평가용_공유/tb_eth_task.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

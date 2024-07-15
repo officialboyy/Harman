@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="blazeW5500App_system-bitFile" value="${project_loc:blazeW5500App}/_ide/bitstream/bramW5500Top.bit"/>
+	<item key="blazeW5500App_system-bmmFile" value="${project_loc:blazeW5500App}/_ide/bitstream/bramW5500Top.mmi"/>
+	<item key="blazeW5500App_system-target" value="Local"/>
+	<item key="blazeW5500App_system-device" value="Auto Detect"/>
+	<item key="blazeW5500App_system-partial_bit" value="false"/>
+	<item key="blazeW5500App_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="blazeW5500App_system"/>
+	<item key="blazeW5500App_system-microblaze_0-initElf" value="C:\Harman\Verilog\SoC_07_15_blaze_w5500_rev\blazeW5500App\Debug\blazeW5500App.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183B9A60DA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183B9A60DA-0362d093-0&quot;}}]}"/>
+</section>

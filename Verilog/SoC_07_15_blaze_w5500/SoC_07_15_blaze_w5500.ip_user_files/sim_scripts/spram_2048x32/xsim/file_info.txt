@@ -1,0 +1,2 @@
+spram_2048x32.v,verilog,xil_defaultlib,../../../../SoC_07_15_blaze_w5500.gen/sources_1/ip/spram_2048x32/sim/spram_2048x32.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
