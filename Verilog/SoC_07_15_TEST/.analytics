@@ -1,0 +1,7 @@
+timestamp=[2024-07-15 21:12:27], mode=WORKBENCH_START, duration=0:00:07.536, duration_ms=7536, data={}
+timestamp=[2024-07-15 21:12:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.037, duration_ms=37, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-07-15 21:12:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.241, duration_ms=2241, data={}
+timestamp=[2024-07-15 21:16:36], mode=APP_CREATION, duration=0:00:05.572, duration_ms=5572, data={name=bramW5500App, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=bramW5500Top, application_type=application}
+timestamp=[2024-07-15 21:17:25], mode=PLATFORM_GENERATION, duration=0:00:05.684, duration_ms=5684, data={name=bramW5500Top}
+timestamp=[2024-07-15 21:17:28], mode=BUILD, duration=0:00:02.394, duration_ms=2394, data={name=bramW5500App, configuration=Debug, clean_build=false}
+timestamp=[2024-07-15 21:17:29], mode=BUILD, duration=0:00:00.182, duration_ms=182, data={name=bramW5500App_system, configuration=Debug, clean_build=false}
