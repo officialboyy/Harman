@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "horse_anim.h": "c"
-    }
+    },
+    "cmake.sourceDirectory": "C:/Harman/Verilog/SoC_06_18_MB_Peri/mbperi/microblaze_0/standalone_microblaze_0/bsp/libsrc"
 }

@@ -1,0 +1,18 @@
+
+*** Running vivado
+    with args -log servo_ilmb_v10_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source servo_ilmb_v10_1.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source servo_ilmb_v10_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1872.098 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Harman/Verilog/VIVADO_IP/ip_repo/servo_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP servo_ilmb_v10_1, cache-ID = 10e94bb90dc28c7e.
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 14:21:43 2024...

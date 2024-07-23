@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jul 23 14:32:24 2024
+# Process ID: 15040
+# Current directory: C:/Harman/Verilog/SoC_07_23_servo_axi/SoC_07_23_servo_axi.runs/impl_1
+# Command line: vivado.exe -log servo_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source servo_wrapper.tcl -notrace
+# Log file: C:/Harman/Verilog/SoC_07_23_servo_axi/SoC_07_23_servo_axi.runs/impl_1/servo_wrapper.vdi
+# Journal file: C:/Harman/Verilog/SoC_07_23_servo_axi/SoC_07_23_servo_axi.runs/impl_1\vivado.jou
+# Running On: ST04, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8541 MB
+#-----------------------------------------------------------
+source servo_wrapper.tcl -notrace

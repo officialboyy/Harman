@@ -1,0 +1,10 @@
+timestamp=[2024-07-23 15:03:43], mode=WORKBENCH_START, duration=0:00:11.567, duration_ms=11567, data={}
+timestamp=[2024-07-23 15:03:44], mode=WORKBENCH_UI_INIT, duration=0:00:01.061, duration_ms=1061, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-07-23 15:03:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.832, duration_ms=3832, data={}
+timestamp=[2024-07-23 15:08:05], mode=APP_CREATION, duration=0:00:11.160, duration_ms=11160, data={name=servo, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=servo_wrapper, application_type=application}
+timestamp=[2024-07-23 15:08:24], mode=PLATFORM_GENERATION, duration=0:00:06.851, duration_ms=6851, data={name=servo_wrapper}
+timestamp=[2024-07-23 15:08:25], mode=BUILD, duration=0:00:00.695, duration_ms=695, data={name=servo, configuration=Debug, clean_build=false}
+timestamp=[2024-07-23 16:25:28], mode=PLATFORM_GENERATION, duration=0:00:07.810, duration_ms=7810, data={name=servo_wrapper}
+timestamp=[2024-07-23 16:25:29], mode=BUILD, duration=0:00:00.363, duration_ms=363, data={name=servo, configuration=Debug, clean_build=true}
+timestamp=[2024-07-23 16:25:29], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=servo_system, configuration=Debug, clean_build=true}
+timestamp=[2024-07-23 16:25:38], mode=PLATFORM_GENERATION, duration=0:00:04.185, duration_ms=4185, data={name=servo_wrapper}

@@ -1,0 +1,80 @@
+2024-07-23T14:57:24.315423900255-14:57:24 **** Build of project servo_wrapper_1 ****
+000-buildplatform.bat 5721 servo_wrapper_1  
+000-'\gnu\microblaze\lin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+000-배치 파일이 아닙니다.
+000-'\gnu\microblaze\nt\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+000-배치 파일이 아닙니다.
+000-'\gnuwin\bin\'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+000-배치 파일이 아닙니다.
+000-XSDB Server Channel: tcfchan#6
+000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+000-make --no-print-directory seq_libs
+000-
+000-"Running Make include in microblaze_0/libsrc/bram_v4_10/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+000- -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/gpio_v4_11/src"
+000-
+000-make -C microblaze_0/libsrc/gpio_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+000- -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/servo_axi_v1_0/src"
+000-
+000-make -C microblaze_0/libsrc/servo_axi_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+000-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+000-Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/standalone_v9_1/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v9_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+000--Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/uartlite_v3_10/src"
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+000-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+000-Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make libs in microblaze_0/libsrc/servo_axi_v1_0/src"
+000-
+000-make -C microblaze_0/libsrc/servo_axi_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+000-l -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Compiling servo_axi..."
+000-
+000-cc1.exe: fatal error: *.c: Invalid argument
+000-compilation terminated.
+000/servo_wrapper_10-1-1make[2]: *** [Makefile:18: libs] Error 12-make[2]: *** [Makefile:18: libs] Error 1
+000/servo_wrapper_10-1-1make[1]: *** [Makefile:46: microblaze_0/libsrc/servo_axi_v1_0/src/make.libs] Error 22-make[1]: *** [Makefile:46: microblaze_0/libsrc/servo_axi_v1_0/src/make.libs] Error 2
+000/servo_wrapper_10-1-1make: *** [Makefile:18: all] Error 22-make: *** [Makefile:18: all] Error 2
+000-Failed to build  the bsp sources for domain - standalone_microblaze_0
+000-Failed to generate the platform.
+000-Reason: Failed to build  the bsp sources for domain - standalone_microblaze_0
+000-    invoked from within
+000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active servo_wrapper_1; platform generate }}}"
+000-    (procedure "::tcf::send_command" line 4)
+000-    invoked from within
+000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
+000-    invoked from within
+000-"if { $iswindows == 1 } {    
+000-
+000-    set XSDB_PORT [lindex $argv 0]
+000-    set PLATFORM_NAME [lindex $argv 1]
+000-    set arglen [llength $argv]
+000-    set lastind..."
+000-    (file "C:/Xilinx/Vitis/2024.1\scripts\vitis\util\buildplatform.tcl" line 11)
+00255-
+14:57:28 Build Finished (took 3s.743ms)
+

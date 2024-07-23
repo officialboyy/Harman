@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="servo" location="C:/Harman/Verilog/SoC_07_23_servo_axi/servo_new_vitis/servo" platform="C:/Harman/Verilog/SoC_07_23_servo_axi/servo_new_vitis/servo_wrapper/export/servo_wrapper/servo_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="servo_system" sysConfig="servo_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="894eb9a30fcf7b15a2999c6c886f3359">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1941388343">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.2074117430" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

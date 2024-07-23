@@ -1,0 +1,7 @@
+14:57:11 **** Clean-only build of configuration Debug for project servo_rev ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  servo_rev.elf.size  servo_rev.elf
+' '
+
+14:57:11 Build Finished (took 275ms)
+
