@@ -1,0 +1,10 @@
+../Core/Src/main.c:70:10:millis	1
+../Core/Src/main.c:74:10:micros	1
+../Core/Src/main.c:78:6:delay_us	4
+../Core/Src/main.c:99:9:DHT_read	16
+../Core/Src/main.c:161:5:main	3
+../Core/Src/main.c:229:6:SystemClock_Config	3
+../Core/Src/main.c:275:13:MX_TIM1_Init	4
+../Core/Src/main.c:321:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:354:13:MX_GPIO_Init	1
+../Core/Src/main.c:394:6:Error_Handler	1
