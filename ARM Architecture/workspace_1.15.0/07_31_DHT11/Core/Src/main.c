@@ -64,6 +64,7 @@ int __io_putchar(int ch)
 
 DHT_DataTypedef DHT11_Data;
 float Temperature, Humidity;
+int i=0;
 
 /* USER CODE END 0 */
 
@@ -100,6 +101,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   printf("\033[H\033[J");	// Screen Clear
   printf("DHT11 Test Start..\r\n");
+  printf("---------------------------------\r\n");
 
   /* USER CODE END 2 */
 
@@ -113,10 +115,18 @@ int main(void)
 	  DHT_GetData(&DHT11_Data);
 	  Temperature = DHT11_Data.Temperature;
 	  Humidity = DHT11_Data.Humidity;
-	  printf("while start test\r\n\r\n");
-	  printf("온도 : %0.2f \r\n", (float)Temperature);
-	  printf("습도 : %0.2f \r\n", (float)Humidity);
+
+	  i++;
+	  printf("%d회 측정!\r\n",i);
+	  printf("----- 온도 : %0.2f'C ----- \r\n", (float)Temperature);
+	  printf("----- 습도 : %0.2f%%  ----- \r\n\r\n", (float)Humidity);
 	  HAL_Delay(3000);
+
+	  if(i >= 30)
+	  {
+		  printf("%d회 측정 초과로 횟수 초기화. \r\n", i);
+		  i = 0;
+	  }
   }
   /* USER CODE END 3 */
 }

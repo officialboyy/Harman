@@ -60,8 +60,8 @@ all: main-build
 main-build: 07_31_DHT11.elf secondary-outputs
 
 # Tool invocations
-07_31_DHT11.elf 07_31_DHT11.map: $(OBJS) $(USER_OBJS) /Users/parkjunho/GitClone/Harman/ARM\ Architecture/workspace_1.15.0/07_31_DHT11/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "07_31_DHT11.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/parkjunho/GitClone/Harman/ARM Architecture/workspace_1.15.0/07_31_DHT11/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="07_31_DHT11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+07_31_DHT11.elf 07_31_DHT11.map: $(OBJS) $(USER_OBJS) /Users/parkjunho/Harman/ARM\ Architecture/workspace_1.15.0/07_31_DHT11/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "07_31_DHT11.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/parkjunho/Harman/ARM Architecture/workspace_1.15.0/07_31_DHT11/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="07_31_DHT11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
