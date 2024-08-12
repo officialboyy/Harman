@@ -1,0 +1,11 @@
+../Core/Src/main.c:85:6:send_data_via_bluetooth	1
+../Core/Src/main.c:98:5:main	6
+../Core/Src/main.c:272:6:SystemClock_Config	3
+../Core/Src/main.c:319:13:MX_ADC1_Init	4
+../Core/Src/main.c:381:13:MX_TIM1_Init	6
+../Core/Src/main.c:450:13:MX_TIM3_Init	4
+../Core/Src/main.c:495:13:MX_TIM4_Init	6
+../Core/Src/main.c:554:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:587:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:620:13:MX_GPIO_Init	1
+../Core/Src/main.c:680:6:Error_Handler	1
