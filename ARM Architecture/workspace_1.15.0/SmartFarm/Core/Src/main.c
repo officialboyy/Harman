@@ -85,7 +85,9 @@ float ground_humid = 0;
 void send_data_via_bluetooth(void)
 {
 	char buffer[100];
-	int len = snprintf(buffer, sizeof(buffer), "Temp: %.1f ['C]  Humid: %.1f [%%]\r\nGround_Humid: %.f [%%]\r\n Lux: %d [lx]", Temperature, Humidity, ground_humid, lux);
+	int len = snprintf(buffer, sizeof(buffer),
+			"Temp: %.1f ['C]  Humid: %.1f [%%]\r\nGround_Humid: %.f [%%]\r\n Lux: %d [lx]"
+			, Temperature, Humidity, ground_humid, lux);
 	HAL_UART_Transmit(&huart1, (uint8_t *)buffer, len, HAL_MAX_DELAY);
 }
 
@@ -172,33 +174,25 @@ int main(void)
 	  }
 
 	  ground_humid = -((float)soil_moisture_value - 4095) * 100 / (4095 - 1095);
-	  if(ground_humid <= 0)
+	  if(ground_humid <= 0)	// If value is negative.
 	  {
 		  ground_humid = 0;
 	  }
-	  //(x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-	  //ground_humid = map(soil_moisture_value, 4095, 3000, 0, 100);
-
-	  // printf("ground_humid = %f \r\n", ground_humid);
-	  if(ground_humid < 40)
+	  else if(ground_humid < 40)
 	  {
+		  // Water Pump ON for 3s
 		  htim1.Instance->CCR2 = 35000;
 		  HAL_Delay(3000);
 		  htim1.Instance->CCR2 = 0;
 	  }
 	  else {
+		  // Water Pump does not work.
 		  htim1.Instance->CCR2 = 0;
 	  }
-	  printf("soil_moisture_value: %f\r\n", soil_moisture_value);
-	  printf("ground_humid: %f\r\n", ground_humid);
-	  printf("Water Pump Complete\r\n");
-
-
 
 		soil_moisture_value = GetAdcValue();
+
 		light_intensity_value = GetAdcValue();
-	    //printf("soil_moisture_value : %d\r\n", soil_moisture_value);
-	    //printf("light_intensity_value : %d\r\n", light_intensity_value);
 
 		/* Process the LDR value */
 		lux = Illuminance(light_intensity_value); // Update the global variable
@@ -210,8 +204,6 @@ int main(void)
 		/* Using lux for LED control */
 		if(lux <= 50) HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 		else HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-
-		printf("LED Complete\r\n");
 
     /* USER CODE END WHILE */
 
